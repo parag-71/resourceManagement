@@ -1,0 +1,2623 @@
+$base-gray: #1b1d1f;
+$gray: #545658;
+$light-gray: #9A9B9C;
+$lighter-gray: #DEE1E4;
+$lightest-gray: #F7F8F9;
+$leankor-orange: #ED6C00;
+$leankor-orange-RL: #F6BF90;
+$leankor-orange-RB: #F48F3B;
+$green:#6DC762;
+$green-RL:#D9F2D6;
+$green-RB:#8EDD84;
+$highlight-yellow: #FDC685;
+$highlight-yellow-RL: #FEECD7;
+$highlight-yellow-RB: #FDD5A6;
+$dead-red: #F27777;
+$dead-red-RL: #F8DADA;
+$dead-red-RB: #F8A0A0;
+$leankor-blue: #00A1E0;
+$leankor-blue-RL: #B4E9FD;
+$leankor-blue-RB: #35BCF0;
+
+$activity-bar-color: $leankor-blue-RB;
+$folder-bar-color: $green-RB;
+$text-shadow-color: $lightest-gray;
+$component-border-color: $lighter-gray;
+$icon-color: $light-gray;
+$fa-font-path: "../fonts" !default;
+$fa-version: "4.3.0" !default;
+$fa-version-IconList: "4.4.0";
+$font-family: dynamic('Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif);
+
+/**********Font************/
+/* cyrillic-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 300;
+     src: local('Open Sans Light'),local('OpenSans-Light'),url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTa-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+     unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;
+     font-display: auto;
+}
+/* cyrillic */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 300;
+     src: local('Open Sans Light'), local('OpenSans'), url(../resources/fonts/Open-Sans/DXI1ORHCpsQm3Vp6mXoaTZX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+     unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+     font-display: auto;
+}
+/* greek-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 300;
+     src: local('Open Sans Light'),local('OpenSans-Light'),url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTRWV49_lSm1NYrwo-zkhivY.woff2) format('woff2');
+     unicode-range: U+1F00-1FFF;
+     font-display: auto;
+}
+/* greek */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 300;
+     src: local('Open Sans Light'),local('OpenSans-Light'),url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTaaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+     unicode-range: U+0370-03FF;
+     font-display: auto;
+}
+/* vietnamese */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 300;
+     src: local('Open Sans Light'),local('OpenSans-Light'),url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTf8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+     unicode-range: U+0102-0103,U+1EA0-1EF9,U+20AB;
+     font-display: auto;
+}
+/* latin-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 300;
+     src: local('Open Sans Light'),local('OpenSans-Light'),url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTT0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+     unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
+     font-display: auto;
+}
+/* latin */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 300;
+     src: local('Open Sans Light'), local('OpenSans-Light'), url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+     font-display: auto;
+     font-display: auto;
+}
+/* cyrillic-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/K88pR3goAWT7BTt32Z01mxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+     unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+     font-display: auto;
+}
+/* cyrillic */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/RjgO7rYTmqiVp7vzi-Q5URJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+     font-display: auto;
+}
+/* greek-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/LWCjsQkB6EMdfHrEVqA1KRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+     unicode-range: U+1F00-1FFF;
+     font-display: auto;
+}
+/* greek */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/xozscpT2726on7jbcb_pAhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+     unicode-range: U+0370-03FF;
+     font-display: auto;
+}
+/* vietnamese */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/59ZRklaO5bWGqF5A9baEERJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+     unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+     font-display: auto;
+}
+/* latin-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+     font-display: auto;
+}
+/* latin */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+     font-display: auto;
+}
+/* cyrillic-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 600;
+     src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSq-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+     unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+     font-display: auto;
+}
+/* cyrillic */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 600;
+     src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSpX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+     font-display: auto;
+}
+/* greek-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 600;
+     src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNShWV49_lSm1NYrwo-zkhivY.woff2) format('woff2');
+     unicode-range: U+1F00-1FFF;
+     font-display: auto;
+}
+/* greek */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 600;
+     src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSqaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+     unicode-range: U+0370-03FF;
+     font-display: auto;
+}
+/* vietnamese */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 600;
+     src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSv8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+     unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+     font-display: auto;
+}
+/* latin-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 600;
+     src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSj0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+     font-display: auto;
+}
+/* latin */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 600;
+     src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+     font-display: auto;
+}
+/* cyrillic-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzK-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+     unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+     font-display: auto;
+}
+/* cyrillic */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzJX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+     font-display: auto;
+}
+/* greek-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzBWV49_lSm1NYrwo-zkhivY.woff2) format('woff2');
+     unicode-range: U+1F00-1FFF;
+     font-display: auto;
+}
+/* greek */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzKaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+     unicode-range: U+0370-03FF;
+     font-display: auto;
+}
+/* vietnamese */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzP8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+     unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+     font-display: auto;
+}
+/* latin-ext */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzD0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+     font-display: auto;
+}
+/* latin */
+ @font-face {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 700;
+     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+     font-display: auto;
+}
+/**************Font end**********************/
+
+//@include font-face("Carousel",  inline-font-files("packages/local/ganttCustomTheme/resources/fonts/Carousel.woff", woff, "packages/local/ganttCustomTheme/resources/fonts/Carousel.ttf", truetype, "packages/local/ganttCustomTheme/resources/fonts/Carousel.svg", svg));
+
+
+@font-face {
+  font-family: 'Carousel';
+  src: url('#{$fa-font-path}/Carousel.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/Carousel.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+  
+    url('#{$fa-font-path}/Carousel.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/Carousel.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/Carousel.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+//  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'hervayballIcon';
+  src: url('#{$fa-font-path}/icomoon.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/icomoon.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+    
+    url('#{$fa-font-path}/icomoon.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/icomoon.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/icomoon.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+//  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+@mixin pictosicons($content, $fontSize, $color) {
+    font-family: 'Carousel';
+    content: $content !important;
+    font-size: $fontSize;
+    color: $color;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+	font-display: auto;
+}
+@mixin placeholderColorCls($color) {
+	input::-webkit-input-placeholder {
+		color: $color;
+	}
+}
+.textFieldPlaceholderCls {
+	@include placeholderColorCls($light-gray);
+}
+.column-icon-parent-cls {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+}
+.sch-gantt-timeline-scheduler .sch-schedulerview .x-grid-cell {
+    border: none !important;
+    background: $base-color !important;
+}
+.sch-gantt-timeline-scheduler .sch-timelineview .x-grid-item-container {
+    padding-bottom: 0px !important;
+    height: 7px;
+    width: 90% !important;
+    margin: 0 auto;
+}
+.sch-gantt-timeline-scheduler .sch-event {
+    color: #fff;
+    background-color: #8BD7EE;
+    border-color: #8BD7EE;
+}
+.gnt-resourceutilizationpanel .sch-event {
+    border: 0 none;
+    background: transparent none;
+    box-shadow: none;
+    line-height: 30px;
+    height: 100% !important;
+    top: 0px !important;
+}
+// WCAG 2.4.7 Focus Visible — Bryntum events have tabindex=0 (set at runtime)
+// so they receive focus on click and via keyboard navigation. Without an
+// outline the focused event is indistinguishable from its neighbours.
+.sch-event:focus {
+    outline: 2px solid #008CDD !important;
+    outline-offset: 1px;
+    z-index: 50;
+}
+// Window Splitter pattern: ExtJS gives Ext.resizer.Splitter tabindex=0
+// and role=separator out of the box, but no visible focus indicator.
+// Without an outline the keyboard user can't see they've landed on it.
+.x-splitter:focus {
+    outline: 2px solid #008CDD !important;
+    outline-offset: -2px;
+    z-index: 50;
+}
+.sch-event:focus:not(:focus-visible) {
+    // Honour :focus-visible when supported, but keep the outline for browsers
+    // that match :focus-visible on click for divs (rare, but possible).
+    outline: 2px solid #008CDD !important;
+}
+.addBtn {
+    background: $green;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    min-width: 10px;
+    position: relative;
+    overflow: hidden;
+    line-height: 30px;
+    padding: 8px 6px 5px 7px;
+    z-index: 0;
+    &:before {
+        @include pictosicons("\b122",17px,#fff);
+    }
+}
+.activity-custom-cls {
+    @extend .sch-gantt-progress-bar;
+    border: 1px solid $activity-bar-color;
+    background-color: $activity-bar-color;
+    text-align: right;
+}
+.folder-custom-cls {
+    background-color: $folder-bar-color;
+    text-align: right;
+    height: 100%;
+}
+.sch-gantt-parenttask-bar {
+    height: 13px !important;
+    font-size: 11px !important;
+    line-height: 0px !important;
+    position: relative;
+    background-color: #fafafa;
+    border-color: $folder-bar-color;
+    border: 1px solid $folder-bar-color;
+    box-shadow: 1px 1px 2px rgba(150,150,150,0.3);
+    border-radius: 2px;
+}
+.sch-gantt-parenttask-bar .sch-gantt-progress-bar {
+    background-color: $folder-bar-color;
+}
+.sch-gantt-parenttask-leftarrow {
+    left: -1px !important;
+    border-width: 8px 8px 0 0px;
+}
+.sch-gantt-parenttask-rightarrow {
+    right: -1px !important;
+    border-width: 8px 0 0 8px;
+}
+.sch-gantt-parenttask-bar {
+    background-color: #fff;
+    border-color: $folder-bar-color;
+    border-width: 1px;
+    box-shadow: 1px 1px 2px rgba(150,150,150,0.3);
+    border-radius: 2px;
+}
+.sch-gantt-column-dragdrop-header .x-column-header-text-inner {
+    &:before {
+        @include pictosicons("",13px,#757F91);
+    }
+}
+.sch-ganttpanel .x-grid-cell {
+    height: 35px !important;
+    border-left: 1px solid #EEEEEE;
+}
+.x-tree-node-text {
+    font-size: 13px !important;
+    line-height: 13px !important;
+    padding-left: 3px !important;
+}
+.x-panel-header-title-timeline-panel .x-title-text-timeline-panel:after {
+    font-family: ext-watermark;
+    font-size: 32.25px;
+    content: '' !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #b5b7ba;
+}
+.x-panel-header-title-default > .x-title-text-default:after {
+    @extend .x-panel-header-title-timeline-panel .x-title-text-timeline-panel:after;
+}
+.sch-gantt-column-dragdrop:hover .x-grid-cell-inner {
+    background: #e6e8ed;
+    text-decoration: none;
+    vertical-align: -webkit-baseline-middle;
+    text-overflow: clip;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 8px 3px 8px;
+    z-index: 0;
+    &:before {
+        @include pictosicons("\b145",13px,#757F91);
+    }
+}
+.namecolumn {
+    border-left: none !important;
+    .x-column-header-sort-ASC .x-column-header-text-inner {
+        &:after {
+            color: rgba(234,234,234,0) !important;
+        }
+    }
+}
+.text-node {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+.sch-column-header {
+    border-right: 1px solid $component-border-color !important;
+    padding: 2px 0;
+    border-color: $component-border-color;
+    color: $base-gray;
+    background-image: none;
+    background-color: #fff;
+}
+.sch-header-row {
+    border-top: 1px solid $lighter-gray;
+}
+.icon-undo {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+    &:before {
+        @include pictosicons("\b134",13px,$icon-color);
+    }
+}
+.icon-previous {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+    &:before {
+        @include pictosicons("\b149",13px,$icon-color);
+    }
+}
+.icon-next {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+    &:before {
+        @include pictosicons("\b150",13px,$icon-color);
+    }
+}
+.icon-fire {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+    &:before {
+        content: "\f06d" !important;
+        font: 18px/1 FontAwesome;
+        background: none;
+        color: $icon-color;
+        width: 20px;
+        height: 20px;
+        margin: 0 2px;
+    }
+}
+.icon-arrow-down {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: 3px;
+    &:after {
+        @include pictosicons("\b113",8px,$icon-color);
+    }
+}
+.icon-setting {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+    &:before {
+        @include pictosicons("\b136",13px,$icon-color);
+    }
+}
+.icon-zoom-to-fit {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+    &:after {
+        @include pictosicons("\b135",20px,$icon-color);
+    }
+}
+.icon-help {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+    &:before {
+        @include pictosicons("\b130",27px,$icon-color);
+    }
+}
+.divparent {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 auto;
+    width: 100% !important;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    span {
+        margin: auto 0px;
+        line-height: 32px;
+        font-size: 12.5px;
+    }
+    .projecticon {
+        &:before {
+            font-family: 'Carousel';
+            content: "\b129" !important;
+            font-size: 10px;
+            color: #93a0b5;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+            margin-top: 8px;
+        }
+    }
+    .activity-dot-icon {
+        &:before {
+            font-family: 'FontAwesome';
+            content: "\f111" !important;
+            font-size: 10px;
+            color: $activity-bar-color;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+            margin-top: 8px;
+        }
+    }
+    .milestone-diamond-icon {
+        &:before {
+            font-family: 'Carousel';
+            content: "\b151" !important;
+            font-size: 10px;
+            color: #FDC685;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+            margin-top: 8px;
+        }
+    }
+    .mycustomExpander {
+        height: 20px;
+        width: 20px;
+    }
+    .folderCollapse {
+        &:before {
+            font-family: 'Carousel';
+            content: "\b155" !important;
+            font-size: 9px;
+            color: #93a0b5;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+            margin-top: 8px;
+        }
+    }
+    .folderExpanded {
+        &:before {
+            font-family: 'Carousel';
+            content: "\b146" !important;
+            font-size: 10px;
+            color: $activity-bar-color;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+            margin-top: 8px;
+        }
+    }
+    .columnname {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
+        flex: 1 1 0%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #707070;
+        position: relative;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        align-content: center;
+    }
+    .lmenu-parent {
+        text-align: center;
+        height: 34px;
+        width: 30px;
+        cursor: pointer;
+        margin-right: -8px;
+        &:after {
+            font-family: 'Carousel';
+            content: "\b124" !important;
+            font-size: 13px;
+            color: $icon-color;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+        }
+    }
+}
+.fix-width {
+	max-width: 120px !important;
+    min-width: 70px !important;
+	text-overflow: ellipsis !important;
+}
+.toolbar-custom-btn {
+	border-color: transparent !important;
+    background-color: $lightest-gray !important;
+    padding-top: 9px !important;
+    margin-left: 5px !important;
+    .x-btn-inner-default-small {
+		@extend .fix-width;
+        color: $base-gray !important;
+        font: 400 11px/16px 'Open Sans','Helvetica Neue',helvetica,arial,verdana,sans-serif;
+    }
+    .x-btn-wrap-default-small.x-btn-arrow-right:after {
+        @include pictosicons("\b113",8px,$icon-color);
+        margin-top: 7px;
+    }
+}
+
+.toolbar-settings-custom-btn {
+    @extend .toolbar-custom-btn;
+}
+.toolbar-search-cls {
+    width: 200px;
+}
+.owner-header-cls {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+    margin-left: 2px;
+    &:before {
+        @include pictosicons("\b152",17px,$icon-color);
+    }
+}
+.combo-custom-cls {
+    .x-form-text-field-body-default {
+        @extend .fix-width;
+    }
+    .x-form-trigger-default {
+        width: 25px;
+        font: 16px/30px FontAwesome;
+        background: transparent;
+        color: #919191;
+        vertical-align: 1px;
+        &:before {
+            @include pictosicons("\b113",8px,$icon-color);
+        }
+    }
+    .x-form-trigger-wrap-default {
+        width: 74px;
+        border-width: 0px;
+        border-style: solid;
+        border-color: $component-border-color;
+    }
+    .x-form-text-default {
+        color: #9d9d9d !important;
+        padding: 5px;
+        background-color: transparent;
+        font: 400 13px/21px 'Open Sans','Helvetica Neue',helvetica,arial,verdana,sans-serif;
+        min-height: 30px;
+    }
+}
+.combo-custom-cls-setting {
+	margin-left: 10px !important;
+	.x-form-text-field-body-default {
+         min-width: 70px;
+    }
+    .x-form-trigger-default {
+        width: 65px;
+        font: 13px/36px FontAwesome;
+        padding-top: 7px;
+        background: transparent;
+        color: #919191;
+        &:before {
+            vertical-align: 2px;
+            @include pictosicons("\b136",18px,$icon-color);
+        }
+        &:after {
+            vertical-align: 6px;
+            margin-left: 10px;
+            @include pictosicons("\b113",8px,$icon-color);
+        }
+    }
+    .x-form-trigger-wrap-default {
+        width: 74px;
+        border-width: 0px;
+		margin-left : -10px !important;
+		top : 2px !important;
+        border-style: solid;
+        border-color: $component-border-color;
+    }
+    .x-form-text-default {
+        color: #9d9d9d !important;
+        padding: 5px;
+        background-color: transparent;
+        font: 400 13px/21px 'Open Sans','Helvetica Neue',helvetica,arial,verdana,sans-serif;
+        min-height: 30px;
+		margin-top : 2px !important;
+    }
+}
+.combo-custom-cls-period {
+	@include placeholderColorCls($base-gray);
+    .x-form-text-field-body-default {
+       @extend .fix-width;
+    }
+    .x-form-trigger-default {
+        width: 19px;
+        font: 16px/30px FontAwesome;
+        background: transparent;
+        color: #919191;
+        padding-top: 1px;
+        &:before {
+            @include pictosicons("\b113",8px,$icon-color);
+        }
+    }
+    .x-form-trigger-wrap-default {
+        width: 120px;
+        border-width: 0px;
+        border-style: solid;
+        border-color: $component-border-color;
+		
+    }
+    .x-form-text-default {
+        color: #9d9d9d !important;
+        background-color: transparent;
+        font: 400 13px/21px 'Open Sans','Helvetica Neue',helvetica,arial,verdana,sans-serif;
+        min-height: 30px;
+        text-align: right;
+		margin-top : 2px !important;
+    }
+}
+
+
+.x-boundlist {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $component-border-color;
+    background: #fff;
+    width: 150px;
+}
+.x-boundlist-item {
+    margin-left: 0px;	
+    color: $base-gray !important;
+	height: 36px !important;
+	min-height: 36px !important;
+    max-height: 36px !important;
+}
+.x-boundlist-item-over {
+    color: $leankor-orange !important;
+    background-color: $lightest-gray !important;
+    /*border-color: $lightest-gray !important;*/
+}
+.highlight-task-cls {
+    -webkit-animation-name: sch-gantt-critical-chain;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-name: sch-gantt-critical-chain;
+    animation-iteration-count: infinite;
+    animation-duration: .8s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 0 red;
+}
+input[type="radio"]:checked:before {
+    content: "\b154";
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    font-family: 'Carousel';
+    font-size: 13px;
+    color: #EE842B;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+}
+input[type="radio"] {
+    margin: 3px 0.5ex;
+    padding: initial;
+    background-color: white;
+    border: initial;
+    content: "\b153";
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    font-family: 'Carousel';
+    font-size: 13px;
+    color: #EE842B;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+}
+.x-boundlist-selected {
+    background: $lightest-gray;
+	color: $leankor-orange !important;
+    border-color: $lightest-gray;
+}
+.sidemenuCls {
+    background: white;
+    border: 1px solid #EFEDED;
+    border-radius: 2px !important;
+    margin: 0px;
+    padding: 5px 2px !important;
+    background: white;
+    box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.2);
+    .x-dock.x-sized {
+        margin: 0px;
+    }
+    .x-anchor {
+        display: none !important;
+    }
+}
+.searchFieldPopUp {
+    .x-component-outer {
+        -ms-flex: 1 0 auto;
+    }
+}
+.searchFieldCls {
+    font-size: 13px;
+    border: 1px solid #e7eaee;
+    font-family: 'Open Sans',sans-serif;
+}
+.addBtnCls {
+    @extend .addBtn;
+    border-radius: 0px;
+    width: 44px;
+    line-height: 0px;
+    border: none !important;
+    padding: 14px 8px 3px 6px !important;
+    background: $green !important;
+    text-decoration: none;
+    cursor: pointer;
+    height: 32px;
+    text-align: center;
+    min-width: 10px;
+    position: relative;
+    overflow: hidden;
+    &:before {
+        @include pictosicons("ADD",10px,#fff);
+    }
+}
+.x-menu-item-active .x-menu-item-text-default {
+    color: #EE842B !important;
+}
+.x-window-header-title-default > .x-title-text-default:after {
+    font-family: ext-watermark;
+    font-size: 30px;
+    content: '' !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #f5f5f5;
+}
+.x-tool-close {
+    font: 16px/1 FontAwesome;
+    background: none;
+    &:before {
+        @include pictosicons("\b106" ,16px,$gray);
+    }
+}
+.x-window-header-title-default {
+    color: $base-gray !important;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans','Helvetica Neue',helvetica,arial,verdana,sans-serif;
+    line-height: 20px;
+}
+.editNameFieldCls {
+    @extend .addBtnCls;
+    width: 55px;
+    &:before {
+        @include pictosicons("UPDATE",10px,#fff);
+    }
+}
+::-webkit-input-placeholder {
+    color: #b8c1ce;
+}
+:-moz-placeholder {
+    color: #b8c1ce;
+}
+::-moz-placeholder {
+    color: #b8c1ce;
+}
+:-ms-input-placeholder {
+    &.x-form-text-default {
+        color: #b8c1ce !important;
+    }
+}
+.x-mask {
+    background-image: none;
+    background-color: rgba(0,0,0,0.3) !important;
+    cursor: default;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+}
+.title-first-phase {
+    color: #080808;
+    font-size: 18px;
+}
+.title-second-phase {
+    color: #7C7979;
+    font-size: 16px;
+}
+.activity-top-bar-cls {
+    background-color: #6AC55E !important;
+    height: 4px !important;
+}
+.task-body-parent-custom {
+    width: 100%;
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    .kanbantaskcls {
+        overflow: hidden;
+        padding-left: 11px;
+    }
+    .kanbantaskcls-box {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        margin-left: 3px;
+        transition: background-color 0.25s;
+        &:hover {
+            border: 1px solid white;
+        }
+        &.Done {
+            background-color: #1ec81e;
+        }
+        &.NotStarted {
+            background-color: #BA3A3A;
+        }
+        &.InProgress {
+            background-color: #e7a84b;
+        }
+    }
+}
+.foldergantt {
+    border: 1px solid $activity-bar-color;
+    background-color: #fff;
+}
+.projectgantt {
+    background-color: #E7E8E9;
+}
+.x-menu-item-text-default.x-menu-item-indent-no-separator {
+    margin-left: 13px !important;
+}
+.sch-gantt-milestone-diamond {
+    border: 1px solid #EF8D3B;
+    background-color: #FDC685;
+    border-radius: 1px;
+}
+.sactionbtn {
+    background: $green !important;
+    color: #fff !important;
+    background-image: none !important;
+    border-radius: 2px !important;
+    border: none !important;
+    margin: 5px !important;
+    min-height: 30px;
+    cursor: pointer;
+    min-width: 65px !important;
+}
+.saveBtnClss {
+    @extend .sactionbtn;
+    &.x-button-pressing {
+        @extend .sactionbtn;
+    }
+    .x-button-label {
+        font-weight: 300;
+        font-size: 13px !important;
+        line-height: 2.2em !important;
+    }
+    span {
+        font-family: 'Open Sans',sans-serif;
+        opacity: 1 !important;
+    }
+}
+.cancelBtnClss {
+    @extend .sactionbtn;
+    background: $light-gray !important;
+    &.x-button-pressing {
+        @extend .sactionbtn;
+        background: #9ba1aa !important;
+    }
+    .x-button-label {
+        font-weight: 300;
+        font-size: 13px !important;
+        line-height: 2.2em !important;
+    }
+    span {
+        font-family: 'Open Sans',sans-serif;
+        opacity: 1 !important;
+    }
+}
+.x-toolbar {
+    &.x-toolbar-footer {
+        padding: 6px 0 6px 6px;
+        border-style: solid;
+        border-color: #ffffff;
+        border-width: 0;
+        background-image: none;
+        background-color: #ffffff;
+    }
+}
+.x-panel-header-title-default {
+    color: $base-gray !important;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans','Helvetica Neue',helvetica,arial,verdana,sans-serif;
+    line-height: 20px;
+}
+.taskEditorCls {
+    .x-window-header-default {
+        background-color: #eef1f6 !important;
+    }
+    .x-window-header-title-default {
+        color: #878b90;
+    }
+    .x-tool-img {
+        font-size: 18px !important;
+        color: rgb(171,173,175);
+    }
+    .x-tool-close {
+        &:before {
+            font-size: 16px !important;
+        }
+    }
+}
+.editCardPopupCls {
+    .x-tab-inner-default {
+        color: #999;
+    }
+    .x-tab-icon-el-default {
+        color: #999;
+    }
+    .x-tab-button-center {
+        text-align: left;
+    }
+    .x-tab.x-tab-active.x-tab-default {
+        background: #fff !important;
+    }
+    .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+        color: #ed6d02;
+    }
+    .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+        color: #ed6d02;
+    }
+    .x-tab-bar-default-left > .x-tab-bar-body-default {
+        border-right: 1px solid rgba(153,153,153,0.44);
+    }
+    .x-tab-bar-default {
+        background-color: $text-shadow-color !important;
+    }
+}
+//.editCardPopupCls .x-tab-inner-default
+@mixin tabpanelIconCss($content, $fontSize) {
+    font-family: 'Carousel';
+    content: $content !important;
+    font-size: $fontSize;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+}
+.activeInfo {
+    color: #9c9c9e;
+    font-family: 'Carousel';
+    font-size: 16px !important;
+    text-align: center;
+    text-shadow: 0 0 0;
+    cursor: pointer;
+    &:after {
+        content: "\b138";
+    }
+}
+@mixin hervyBallIcon($checkcontent, $fontSize) {
+    text-align: center;
+    content: $checkcontent;
+    text-shadow: 0 0 0;
+    font-size: $fontSize !important;
+    font-family: 'hervayballIcon';
+    display: -webkit-inline-box;
+}
+.statusIcon {
+    &:before {
+        @include hervyBallIcon('\a25',16px);
+    }
+}
+.combolblCls {
+    font-weight: normal !important;
+    color: #000000 !important;
+    text-shadow: rgba(255,255,255,0.25) 0 0.08em 0 !important;
+    font-size: 12px !important;
+}
+.x-form-item-label-default {
+    font-weight: normal !important;
+    color: $base-gray !important;
+    text-shadow: rgba(255,255,255,0.25) 0 0.08em 0 !important;
+    font-size: 13px !important;
+}
+.prority_lbl_white .x-form-trigger-default {
+    background: #eef1f6 !important;
+}
+.fix-width-button {
+	display:inline-block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+	max-width: 75px !important;
+    min-width: 30px !important;
+	text-overflow: ellipsis !important;
+}
+.editPopUpSaveBtn {
+	@extend .fix-width-button;
+	background-image: none;
+    border: none;
+    height: 32px;
+    border-radius: 2px!important;
+    background-color: $green !important;
+    color: #FFFFFF;
+}
+.deleteCardBtn {
+    @extend .editPopUpSaveBtn;
+    background-color: $light-gray !important;
+}
+.btn_down {
+    width: 85px;
+    margin: 2px;
+    border-radius: 2px !important;
+}
+@mixin statusbtn($color) {
+    background-color: $color !important;
+    border-radius: 0px;
+    min-height: 34px;
+    color: #ffffff !important;
+    .x-btn-button-center {
+        justify-content: flex-start !important;
+    }
+    .x-menu-item-text-default {
+        color: #ffffff !important;
+    }
+    .x-menu-item-active .x-menu-item-text-default {
+        color: #ffffff !important;
+    }
+}
+.Green {
+    @include statusbtn(#6dc961);
+}
+.Amber {
+    @include statusbtn(#f7d145);
+}
+.Red {
+    @include statusbtn(#fc5d5d);
+}
+.harveyBallPanel_0 {
+    &:before {
+        @include hervyBallIcon('\a24',24px);
+    }
+}
+.harveyBallPanel_25 {
+    &:before {
+        @include hervyBallIcon('\a25',24px);
+    }
+}
+.harveyBallPanel_50 {
+    &:before {
+        @include hervyBallIcon('\a26',24px);
+    }
+}
+.harveyBallPanel_75 {
+    &:before {
+        @include hervyBallIcon('\a27',24px);
+    }
+}
+.harveyBallPanel_100 {
+    &:before {
+        @include hervyBallIcon('\a28',24px);
+    }
+}
+.parcentcompleteCls {
+    border-top: none;
+    border-bottom: none;
+    .x-dataview-item {
+        width: 25px;
+        height: 24px;
+        div {
+            font-size: 21px;
+            &.overcls:hover {
+                color: $green;
+            }
+        }
+        &.x-item-selected {
+            color: $green;
+        }
+    }
+}
+.herveyBallItemCls {
+    width: 25px;
+    height: 24px;
+}
+.itemSelectorCls {
+    background: transparent;
+    margin-left: 5px;
+    display: -webkit-inline-box;
+    display: inline-block;
+    .x-view.item-focused {
+        outline: none !important;
+        outline-offset: 0px;
+    }
+}
+.radiofieldCls {
+    .x-form-checkbox-focus.x-form-radio-default {
+        color: #6dc961;
+    }
+    .x-form-cb-checked .x-form-radio-default {
+        font: 20px/1 FontAwesome;
+        color: #6dc961;
+    }
+    .x-form-checkbox-default, .x-form-radio-default {
+        width: 20px;
+        height: 22px;
+    }
+    .x-form-cb-label-default {
+        color: #000000 !important;
+        font-weight: normal;
+        font-size: 12px;
+    }
+}
+.selectedClsDataview, .selectedClsDataviewOnOver {
+    .overclass {
+        color: #6dc961;
+    }
+    &.x-view.item-focused {
+        outline: none !important;
+        outline-offset: 0px;
+    }
+}
+/*Edit Popup CSS end*/
+.statusTabpanelCls {
+    @extend .editCardPopupCls;
+    .x-tab-bar-horizontal > .x-tab-bar-body-default {
+        border-left: 1px solid #d1d1d1;
+    }
+    .x-tab-inner-default {
+        font-size: 16px;
+    }
+    .x-tab.x-tab-active.x-tab-default {
+        border-bottom: 2px solid #777879;
+    }
+    .x-tab-default-top {
+        border-bottom: 2px solid $component-border-color;
+        font-size: 16px;
+        margin-left: -5px;
+    }
+    .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+        color: #999;
+        font-size: 16px;
+    }
+    .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+        color: #999;
+    }
+    .x-tab-over.x-tab-default {
+        border-color: #777879 !important;
+    }
+    .x-tab-button-center {
+        text-align: center;
+    }
+    .x-tab-bar-default-top > .x-tab-bar-body-default {
+        padding: 8px 0px 0px 0px !important;
+    }
+}
+.statusTabBarCls {
+    background-color: rgba(0,0,0,0.02) !important;
+}
+.x-column-header-sort-ASC .x-column-header-text-inner:after {
+    color: transparent !important;
+}
+@mixin checkStickerBox {
+    font-size: 8px;
+    text-align: center;
+    text-shadow: 0 0 0;
+    font-family: 'hervayballIcon';
+    margin-right: 10px;
+    font-weight: bold;
+    display: inline-block;
+    content: '\a23';
+    line-height: 14px;
+    width: 13px;
+    float: left;
+    height: 13px;
+    border-radius: 2px;
+    border: 1px solid #bbb6b6;
+}
+.setCheck {
+    color: #fff;
+    &:before {
+        @include checkStickerBox;
+        background: $green;
+    }
+}
+.setUncheck {
+    color: #fff;
+    &:before {
+        @include checkStickerBox;
+        background: #fff;
+    }
+}
+.deleteLog {
+    &:before {
+        @include hervyBallIcon('\a31',14px);
+        color: rgb(163,163,163);
+        font-size: 14px;
+        text-shadow: none;
+        cursor: pointer;
+    }
+}
+.editLog {
+    &:before {
+        @include hervyBallIcon('\a29',14px);
+        margin-left: 5px;
+        float: left;
+        margin-right: 2px;
+        color: rgb(163,163,163);
+        font-size: 14px;
+        text-shadow: none;
+        cursor: pointer;
+    }
+}
+.statuslist {
+    font-size: 12px;
+    line-height: 35px;
+    tr {
+        text-align: left;
+    }
+    td {
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    div {
+        text-align: left;
+    }
+    span {
+        text-align: left;
+    }
+}
+.headerStatusCls {
+    .x-panel-body-default {
+        background: #eef1f6 !important;
+    }
+}
+.checkBoxlblCls {
+    .x-form-checkbox-default {
+        color: #6dc961;
+    }
+    .x-form-checkbox-focus.x-form-checkbox-default {
+        color: #6dc961;
+    }
+}
+.riskIcon {
+    &:before {
+        @include hervyBallIcon('\b126',16px);
+        font-family: 'Carousel';
+    }
+}
+.saveBtnClssCross {
+    @extend .sactionbtn;
+    background: #e1e2e2 !important;
+    border: 2px solid #0078d7 !important;
+    &.x-button-pressing {
+        @extend .sactionbtn;
+    }
+    .x-button-label {
+        font-weight: 300;
+        font-size: 13px !important;
+        line-height: 2.2em !important;
+    }
+    span {
+        font-family: 'Open Sans',sans-serif;
+        opacity: 1 !important;
+        color: #000 !important;
+    }
+}
+.cancelBtnClssCross {
+    @extend .sactionbtn;
+    background: #e1e1e1 !important;
+    border: 2px solid #adadad !important;
+    &.x-button-pressing {
+        @extend .sactionbtn;
+        background: #9ba1aa !important;
+    }
+    .x-button-label {
+        font-weight: 300;
+        font-size: 13px !important;
+        line-height: 2.2em !important;
+    }
+    span {
+        font-family: 'Open Sans',sans-serif;
+        opacity: 1 !important;
+        color: #000 !important;
+    }
+}
+.addStatusLogBtn {
+    @extend .editPopUpSaveBtn;
+    background: #0ca789 !important;
+    left: 352px;
+    right: auto;
+    .x-btn-button-center {
+        text-align: left !important;
+        -webkit-box-pack: inherit !important;
+        -ms-flex-pack: inherit !important;
+        justify-content: inherit !important;
+    }
+}
+.setCheckHideShow {
+    @extend .setCheck;
+    &:before {
+        width: 34px;
+        height: 28px;
+        line-height: 30px;
+        font-size: 12px;
+        border: none;
+    }
+}
+.riskIssueAdded {
+    background: #8fd14f;
+    color: #000;
+    height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 40px;
+    line-height: 30px;
+}
+.hideShowMsgCls {
+    left: 180px;
+}
+.statusListCls {
+    margin: 0px 0px 12px 0px !important;
+}
+.copyUrlIcon {
+    &:before {
+        @include hervyBallIcon('\b140',16px);
+        font-family: 'Carousel';
+        margin-top: 8px;
+    }
+    .x-tool-img {
+        background-image: none;
+        opacity: 1;
+        margin-top: -8px;
+        background-color: rgba(127,255,212,0) !important;
+    }
+    .x-window-header-default .x-tool-img {
+        background-color: none;
+    }
+}
+.x-window-header-default .x-tool-img {
+    background-color: rgba(255,255,255,0) !important;
+}
+
+.labelClsStatusForm {
+    color: #000000 !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
+.incrementDecrementBtn {
+    @extend .editPopUpSaveBtn;
+    background: $text-shadow-color !important;
+    border: 2px solid #ddd !important;
+    .x-btn-inner-default-small {
+        color: #000 !important;
+        font-size: 16px;
+        margin-bottom: 2px;
+        font-weight: bold;
+    }
+    .x-btn.x-btn-pressed.x-btn-default-small {
+        background: #d6d4d4 !important;
+    }
+}
+.percentFldCls {
+    .x-form-trigger-wrap-default {
+        border: none;
+        border-top: 2px solid #dddddd;
+        border-bottom: 2px solid #dddddd;
+    }
+    .x-form-text-default {
+        min-height: 28px !important;
+    }
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+.mycustomTree {
+    .x-tree-icon-leaf {
+        color: $light-gray !important;
+        font-size: 12px !important;
+        &:before {
+            font-family: 'Carousel' !important;
+            content: "\b129";
+        }
+    }
+    .x-tree-icon {
+        font-size: 15px;
+        color: $light-gray !important;
+        &.x-tree-icon-parent {
+            font-size: 12px;
+            &:before {
+                font-family: 'Carousel' !important;
+                content: "\b155";
+            }
+        }
+        &.x-tree-icon-parent-expanded {
+            font-size: 12px;
+            &:before {
+                font-family: 'Carousel';
+                content: "\b146";
+            }
+        }
+    }
+    .x-tree-arrows .x-tree-expander {
+        font-size: 13px !important;
+        color: #a4a4a4 !important;
+        font-family: 'Carousel' !important;
+        &:before {
+            font-family: 'Carousel' !important;
+            content: "\b153" !important;
+        }
+    }
+    .x-grid-item {
+		min-height: 36px !important;
+		height: 36px !important;
+        .x-grid-tree-node-leaf {
+            .x-tree-elbow, .x-tree-elbow-end {
+                font-size: 13px !important;
+                color: $lighter-gray !important;
+                font-family: 'Carousel' !important;
+                width: 18px !important;
+                display: inline-block;
+                &:before {
+                    content: "\b153" !important;
+                }
+            }
+        }
+        .x-tree-arrows {
+            font-size: 13px !important;
+            color: #a4a4a4 !important;
+            font-family: 'Carousel' !important;
+        }
+        .x-tree-expander, .x-tree-elbow-plus, .x-tree-elbow-end, .x-tree-elbow {
+            font-size: 13px !important;
+            color: $lighter-gray !important;
+            font-family: 'Carousel' !important;
+            width: 0px !important;
+            display: none;
+            &:before {
+                content: "\b153" !important;
+            }
+        }
+        &.x-grid-item-selected {
+			background-color: $lightest-gray !important;
+			color: $leankor-orange !important;
+            .x-tree-elbow, .x-tree-elbow-end {
+                font-size: 13px !important;
+                color: $lighter-gray !important;
+                font-family: 'Carousel' !important;
+                &:before {
+                    content: "\b154" !important;
+                    color: $leankor-orange-RB;
+                }
+            }
+            .x-tree-elbow-img .x-tree-elbow {
+                font-size: 13px !important;
+                font-family: 'Carousel' !important;
+                color: $green !important;
+                &:before {
+                    content: "\b154";
+                    color: #ee842b;
+                }
+            }
+        }
+    }
+	.x-grid-item-over {
+		color: $leankor-orange !important;
+		background-color: $lightest-gray !important;
+	}
+	.x-grid-item-focused {
+		background-color: $lightest-gray !important;
+		color: $leankor-orange !important;
+	}
+	.x-toolbar.x-toolbar-footer {
+		border-top: 1px solid $lighter-gray !important;
+	}
+}
+.mycustomTree_Role {
+    & > .x-tree-expander {
+        color: $light-gray !important;
+    }
+    .x-tree-expander {
+        color: $light-gray !important;
+    }
+	.x-tree-icon-parent-expanded {
+		color: $light-gray !important;
+		font-family: 'Font Awesome 5 Free regular';
+	}
+	.x-tree-icon-leaf {
+		color: $light-gray !important;
+		font-family: 'Font Awesome 5 Free regular';
+	}
+	.x-grid-item-over {
+		color: $leankor-orange !important;
+		background-color: $lightest-gray !important;
+	}
+	.x-grid-item-focused {
+		background-color: $lightest-gray !important;
+		color: $leankor-orange !important;
+	}
+	.x-grid-item {
+		min-height: 36px;
+		height: 36px;
+	}
+	.x-tree-icon-parent {   
+		font-family: 'Font Awesome 5 Free regular';    
+	}
+}
+.customulcls {
+    span {
+        &.checked {
+            width: 25px;
+            height: 25px;
+            font-family: 'Carousel';
+            color: $leankor-orange-RB;
+            font-size: 13px;
+            &:before {
+                content: "\b154";
+            }
+        }
+        &.unchecked {
+            width: 25px;
+            height: 25px;
+            font-family: 'Carousel';
+            color: $lighter-gray;
+            font-size: 13px;
+            &:before {
+                content: "\b153";
+            }
+        }
+        &.name {
+            padding: 0px 8px;
+        }
+    }
+}
+.x-tree-arrows .x-tree-expander {
+    font-size: 16px;
+    font-family: FontAwesome;
+    color: $light-gray !important;
+}
+.x-tree-icon-parent {
+    font-size: 16px;
+    font-family: FontAwesome;
+    color: $light-gray !important;
+}
+:-ms-input-placeholder {
+    &.x-form-text-default {
+        color: #b8c1ce !important;
+    }
+}
+.chatterButtonCls {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+    &:after {
+        @include pictosicons("\b135",15px,$icon-color);
+    }
+}
+.backGroudCls {
+    background: white;
+	& .x-tree-icon.x-tree-icon-leaf{
+	   color: $light-gray;
+	   font-family: 'Font Awesome 5 Free regular';
+	}
+	& .x-tree-icon-parent-expanded{
+	    color: $light-gray;
+		font-family: 'Font Awesome 5 Free regular';
+	}
+	& .x-tree-icon.x-tree-icon-parent {
+		font-family: 'Font Awesome 5 Free regular';
+	}
+}
+.sch-zone {
+    //background-color: rgb(233,233,233) !important;
+	background-color: #f3f0f0 !important;
+}
+.linkIcon{
+    margin-right: 3px;
+	 &:before {
+		content: '\b140' !important;
+		font-family: 'Carousel';
+	}
+}
+.linkIcon_Resourcesche{
+  
+	 &:before {
+	color : #FFFFFF !important;
+	}
+}
+.addBtnTop {
+	@extend .addBtn;
+	background: $green;
+	// Override the .addBtn parent's overflow:hidden — without this, the
+	// inset focus outline (offset: -2px) gets clipped at the edges and
+	// renders as a wavy/jagged top stroke.
+	min-width: 30px;
+	overflow: visible;
+    &:before {
+		@include pictosicons("\b122", 17px, #fff);
+	}
+
+}
+.resourceGridStyleCls {
+	.x-toolbar.x-toolbar-footer {
+        border-top: 1px solid $lighter-gray;
+    }
+	.x-toolbar-default {
+		padding: 6px 0 6px 8px;
+		border-style: solid;
+		border-color: $lighter-gray;
+		border-top: 1px solid $lighter-gray !important;
+		border-width: 1px;
+		background-image: none;
+		background-color: #fff;
+	}
+	@include placeholderColorCls($light-gray);
+	.x-grid-with-row-lines .x-grid-item {
+		border-style: solid;
+		border-width: 0px 0 0;
+		border-color: unset;
+		min-height: 36px;
+		max-height: 36px;
+		height: 36px;
+		color: $base-gray;
+	}
+	.x-grid-with-row-lines .x-grid-item.x-grid-item-selected {
+		background-color: $lightest-gray !important;
+		color: $leankor-orange !important;
+		border: none !important;
+	}
+	.x-grid-item-alt {
+		background-color: #fff !important;
+	}
+	.x-grid-item-focused {
+		background-color: $lightest-gray !important;
+		color: $leankor-orange !important;
+	}
+	.x-grid-item-over {
+		background-color: $lightest-gray !important;
+		color: $leankor-orange !important;
+	}
+	.x-grid-with-row-lines .x-grid-item:last-child {
+		border-bottom-width: 0px !important;
+	}
+	.x-form-trigger-default {
+		color: $light-gray !important;
+	}
+	.x-btn-default-small {
+		background-color: $lightest-gray;
+		border-color: $lighter-gray !important;
+	}
+	.x-btn-over.x-btn-default-small {
+		border-color: $lighter-gray;
+		background-color: $lighter-gray;
+	}
+}
+.x-form-text-default {
+    color: $base-gray !important;
+    font-weight: normal !important;
+}
+.x-form-trigger-wrap-default, .x-form-trigger-wrap-focus {
+    border-color: $lighter-gray !important;
+}
+.x-grid-item {
+    color: $base-gray !important;
+}
+.x-grid-item-focused {
+	color: $base-gray !important;
+}
+.x-grid-item-selected {
+	background-color: $highlight-yellow-RL !important;
+}
+.gnt-utilizationrow-task .gnt-resource-utilization-interval {
+    color: $base-gray !important;
+}
+.toolbar-custom-textfield {
+	top: 9px !important;
+	margin: 0px 5px 0px 5px !important;
+}
+.nameColumnCls{
+	&.x-column-header {
+		border-right: 1px solid #f2f4f7;
+		color: $base-gray;
+		font: 400 13px/19px 'Open Sans', sans-serif;
+		outline: 0;
+		background-color: #f2f4f7;
+	}
+}
+.x-btn-inner-default-small {
+    font: 400 13px/16px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif !important;
+    color: #fff !important;
+}
+.x-grid-body {
+    border-top-color: $lighter-gray !important;
+}
+.x-progress-default {
+    background-color: $lighter-gray !important;
+    border-color: $lightest-gray;
+}
+.x-grid-locked-split .x-grid-inner-normal {
+    border-left-color: $lighter-gray !important;
+}
+.x-grid-inner-locked {
+    border-right-color: $lighter-gray !important;
+}
+.x-column-header.x-column-header-focus {
+    color: $base-gray !important;
+}
+.radioButtonCls {
+	li {
+		input[type="radio"] {
+			&:before {
+				margin: 0px;
+				padding: initial;
+				background-color: white;
+				border: initial;
+				content: "\b153";
+				top: 0px;
+				left: 0px;
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				background: white;
+				font-family: 'Carousel';
+				font-size: 13px;
+				color: $lighter-gray;
+				display: inline-block;
+				text-align: center;
+				text-shadow: 0 0 0 $text-shadow-color;
+				font-weight: normal;
+			}
+		}
+		input[type="radio"]:checked:before {
+			content: "\b154";
+			top: 0px;
+			left: 0px;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: white;
+			font-family: 'Carousel';
+			font-size: 13px;
+			color: $leankor-orange-RB;
+			display: inline-block;
+			text-align: center;
+			text-shadow: 0 0 0 $text-shadow-color;
+			font-weight: normal;
+		} 
+	}
+}
+.x-panel-header-default {
+    background-color: $lightest-gray !important;
+}
+.x-print-field-cls {
+	.x-form-trigger-default:before {
+		content: "\b113";
+		font-size:7px;
+		font-family:'Carousel';
+	}
+	.x-form-trigger-default {
+		width: 32px;
+		font: 16px/30px FontAwesome;
+		color: $gray;
+	}
+	.x-form-trigger-spinner-default:before {
+		content: '' !important;
+	}
+	.printDialogDPIFieldCls {
+		&.x-form-trigger-default {
+			background: #fff !important;
+		}
+	}
+	.x-toolbar.x-toolbar-footer {
+		border-top: 1px solid $lighter-gray;
+	}
+	.x-form-checkbox-default:before {
+		content: "\e614";
+		color: $light-gray;
+	}
+	.x-form-cb-checked .x-form-checkbox-default:before {
+		content: "\e613";
+		color: $green;
+	}
+}
+.x-btn-inner-default-medium {
+    font: 400 13px/18px 'Open Sans', sans-serif !important;
+    color: #fff !important;
+}
+.x-tip-default {
+    background-color: $gray !important;
+    border-color: $gray !important;;
+}
+.x-tip-body-default {
+    padding: 6px 8px;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 400;
+}
+.x-mask-msg-inner {
+    color: $base-gray !important;
+}
+.messagepopUpCls {
+    text-shadow: none;
+    padding: 4px;
+    font-size: 16px !important;
+    padding-bottom: 5px;
+    color: $base-gray;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.sch-timelinepanel-highlightweekends .sch-dayheadercell-nonworking, .sch-timelinepanel-highlightweekends .sch-dayheadercell-nonworking {
+    background-image: none;
+    background-color: #f3f0f0;
+    color: $base-gray;
+}
+
+.x-form-field-date .x-form-date-trigger:before {
+    font-family: 'Carousel' !important;
+    font-size: 16px !important;
+    content: "\b137" !important;
+	color: $green;
+}
+
+/*Override*/
+.x-btn-inner {
+    overflow: hidden;
+    text-overflow: initial !important;
+    -ms-flex-negative: 1;
+    display: block;
+}
+/*eOf Code*/
+
+// ═══════════════════════════════════════════════════════════════════════════
+// WCAG 2.1 AA Accessibility — Resource Management
+// ═══════════════════════════════════════════════════════════════════════════
+//
+// Single source of truth for every a11y-related CSS rule in this app.
+// Variables are defined at the start of the block; rules use them.
+// Sits at the end of the file so the upstream theme variables aren't disturbed.
+//
+// See docs/accessibility/ for the audit, plan, change log, test cases, and
+// the user-facing user-guide.html.
+//
+// Sections:
+//   1. Variables
+//   2. Visually-hidden helpers (sr-only, skip link)
+//   3. Keyboard focus indicator (WCAG 2.4.7) — overrides theme's outline:none
+//   4. Text-spacing baseline (WCAG 1.4.12)
+//   5. Reflow / responsive (WCAG 1.4.10)
+//   6. Color-contrast helpers (WCAG 1.4.3 / 1.4.11)
+//   7. ControlHeader button text class (replaces inline `font:` shorthand)
+// ═══════════════════════════════════════════════════════════════════════════
+
+// ── 1. Variables ───────────────────────────────────────────────────────────
+$a11y-focus-color        : #008CDD;
+$a11y-focus-width        : 2px;
+$a11y-focus-offset       : 2px;
+$a11y-focus-offset-inset : -2px;
+
+// ── 2. Visually-hidden helpers ─────────────────────────────────────────────
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+}
+
+// Skip-link — WCAG 2.4.1 Bypass Blocks. Hidden until focused.
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 10001;
+    padding: 8px 16px;
+    background: $a11y-focus-color;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: top 0.15s ease-in-out;
+}
+.skip-link:focus {
+    top: 0;
+    outline: $a11y-focus-width solid #ffffff;
+    outline-offset: -4px;
+}
+
+// ── 3. Keyboard focus indicator (WCAG 2.4.7) ───────────────────────────────
+//
+// PATTERN: "Show outlines on keyboard only, not mouse."
+//
+// :focus-visible alone is unreliable in this build's iframe context — some
+// mouse focus events are flagged as keyboard-style and the outline appears
+// on click. Two-step solution:
+//   STEP 1: aggressively suppress :focus AND :focus-visible.
+//   STEP 2: re-enable ONLY when .x-keyboard-mode is set on <body>.
+// ExtJS automatically adds .x-keyboard-mode on Tab/arrow keydown and
+// removes it on mousedown — so this is the most reliable keyboard signal.
+
+// STEP 1 — Suppress all focus outlines globally on focusable controls,
+// covering both mouse and any spurious :focus-visible matches.
+.x-btn:focus,
+.x-btn:focus-visible,
+.x-btn .x-btn-focus,
+.x-btn-focus,
+.x-form-trigger-wrap:focus,
+.x-form-trigger-wrap:focus-visible,
+.x-form-trigger-wrap-focus,
+.x-form-trigger-focus,
+.x-form-checkbox-focus,
+.x-form-spinner-focus,
+.x-form-text:focus,
+.x-form-text:focus-visible,
+.x-tool:focus,
+.x-tool:focus-visible,
+.x-tool-focus,
+.x-arrow-focus,
+.x-title-focus,
+.x-splitter-focus,
+.x-slider-focus,
+.x-progress-focus,
+.x-menu-item-focus,
+.x-column-header-focus,
+.x-grid-item-focused,
+.x-view-item-focused {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+// STEP 2 — Re-enable outlines ONLY under body.x-keyboard-mode.
+// ExtJS toggles this class on keydown (adds) and mousedown (removes), so
+// the outline never appears for mouse users.
+.x-keyboard-mode .x-btn-focus,
+.x-keyboard-mode .x-form-trigger-wrap-focus,
+.x-keyboard-mode .x-form-trigger-focus,
+.x-keyboard-mode .x-form-checkbox-focus,
+.x-keyboard-mode .x-form-spinner-focus,
+.x-keyboard-mode .x-tool-focus,
+.x-keyboard-mode .x-arrow-focus,
+.x-keyboard-mode .x-title-focus,
+.x-keyboard-mode .x-splitter-focus,
+.x-keyboard-mode .x-slider-focus,
+.x-keyboard-mode .x-progress-focus,
+.x-keyboard-mode .x-menu-item-focus,
+.x-keyboard-mode .x-column-header-focus,
+.x-keyboard-mode .x-grid-item-focused,
+.x-keyboard-mode .x-view-item-focused,
+.x-keyboard-mode .x-focus {
+    outline: $a11y-focus-width solid $a11y-focus-color !important;
+    outline-offset: $a11y-focus-offset !important;
+    box-shadow: none !important;
+}
+
+// Grid cells inside a focused row — outline sits inside the cell border.
+.x-keyboard-mode .x-grid-item-focused .x-grid-cell,
+.x-keyboard-mode .x-grid-cell.x-grid-item-focused {
+    outline: $a11y-focus-width solid $a11y-focus-color !important;
+    outline-offset: $a11y-focus-offset-inset !important;
+}
+
+// Class-based hook for ad-hoc JS-toggled outlines (used by AccessibilityUtil).
+.a11y-keyboard-focus {
+    outline: $a11y-focus-width solid $a11y-focus-color !important;
+    outline-offset: $a11y-focus-offset !important;
+    box-shadow: none !important;
+}
+
+// Picker / menu items — outline the keyboard-highlighted item so users can
+// see where they are while arrow-key-ing through Period, Settings, Show,
+// Department, Project pickers and the right-click context menu.
+.x-keyboard-mode .x-boundlist-item-over {
+    outline: $a11y-focus-width solid $a11y-focus-color !important;
+    outline-offset: $a11y-focus-offset-inset !important;
+}
+.x-keyboard-mode .x-menu-item-active {
+    box-shadow: inset 0 0 0 $a11y-focus-width $a11y-focus-color !important;
+}
+
+// Skip-link uses :focus-visible (it's a real <a>, not an Ext widget; safe).
+.skip-link:focus-visible {
+    outline: $a11y-focus-width solid #ffffff !important;
+    outline-offset: -4px;
+}
+
+// ── 3b. Header-scoped focus suppression (panel header / toolbar) ──────────
+//
+// The bundled LeankorApp-all_2.css declares `.x-panel-header .x-btn:focus`
+// and `.x-form-trigger-wrap:focus-within` rules that paint outlines on mouse
+// click. The generic Section 3 above doesn't beat them because those rules
+// already include the `.x-panel-header` ancestor.
+//
+// Fix: scope every header rule to `.controlheader.x-panel-header` (specificity
+// 0-4-0+) which always beats the bundled `.x-panel-header .x-btn:focus`
+// (0-3-0). Then re-enable outlines under `.x-keyboard-mode` only.
+//
+// Also explicitly suppresses `:focus-visible` on form-field inputs inside
+// combo trigger wraps — per browser spec, text inputs match :focus-visible
+// even on mouse click, so :focus-visible alone is unreliable for combos.
+
+// Suppress mouse-click outlines on every focusable header element.
+.controlheader.x-panel-header .x-btn:focus,
+.controlheader.x-panel-header .x-btn.x-btn-focus,
+.controlheader.x-panel-header [role="button"]:focus,
+.controlheader.x-panel-header [tabindex]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+
+// Re-enable button focus for keyboard only.
+.controlheader.x-panel-header .x-btn:focus-visible {
+    outline: $a11y-focus-width solid $a11y-focus-color !important;
+    outline-offset: $a11y-focus-offset-inset !important;
+}
+
+// Suppress :focus-visible AND :focus on form fields inside combo trigger wraps.
+// (Text inputs always match :focus-visible even on mouse click, per CSSWG;
+// combo focus is handled at the wrapper level via .x-keyboard-mode below.)
+.controlheader.x-panel-header .x-form-trigger-wrap .x-form-field:focus-visible,
+.controlheader.x-panel-header .x-form-trigger-wrap .x-form-field:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+// CRITICAL — suppress the INNER trigger-wrap-focus / trigger-focus / chevron
+// focus indicators. Without these, Section 3 paints an outline on
+// .x-form-trigger-wrap-focus (inner) AND Section 3b's combo-custom-cls-*:
+// focus-within paints another outline on the outer wrapper — TWO outlines
+// stacked = the "double border" the user observed on Select Period etc.
+//
+// Selectors target both the bare class AND the .x-keyboard-mode prefix so
+// we beat Section 3's keyboard-mode re-enable rule (specificity 0-2-0)
+// with our 0-3-0 selector here.
+.controlheader.x-panel-header .x-form-trigger-wrap-focus,
+.controlheader.x-panel-header .x-form-trigger-focus,
+.controlheader.x-panel-header .x-form-trigger:focus,
+.controlheader.x-panel-header .x-form-trigger:focus-visible,
+.x-keyboard-mode .controlheader.x-panel-header .x-form-trigger-wrap-focus,
+.x-keyboard-mode .controlheader.x-panel-header .x-form-trigger-focus,
+.x-keyboard-mode .controlheader.x-panel-header .x-form-trigger:focus,
+.x-keyboard-mode .controlheader.x-panel-header .x-form-trigger:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+// Suppress :focus-within on combos/triggers (mouse click activates this).
+.controlheader.x-panel-header .x-form-trigger-wrap:focus-within,
+.controlheader.x-panel-header .combo-custom-cls-period:focus-within,
+.controlheader.x-panel-header .combo-custom-cls-setting:focus-within,
+.controlheader.x-panel-header .toolbar-custom-textfield:focus-within {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+// Re-enable combo focus only under keyboard mode.
+// outline-offset: 1px (outside) instead of -2px (inset) because combos
+// have no internal padding — inset overlaps the arrow icon.
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-period:focus-within,
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-setting:focus-within,
+.x-keyboard-mode .controlheader.x-panel-header .toolbar-custom-textfield:focus-within {
+    outline: $a11y-focus-width solid $a11y-focus-color !important;
+    outline-offset: 1px !important;
+}
+
+// Hide combo header outline while its dropdown is open — focus outline
+// should appear on the picker list items, not the combo trigger.
+// `.combo-expanded` is toggled by AccessibilityUtil.wireComboAria via
+// the combo's expand/collapse events.
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-period.combo-expanded:focus-within,
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-setting.combo-expanded:focus-within {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+// ── 3c. Popup buttons — inset focus ring (no clipping) ────────────────────
+//
+// Reset / Filter / Save / Cancel buttons inside floating popups have rounded
+// corners. An OUTSIDE outline (`outline-offset: 2px`) on a rounded button
+// gets clipped on the corners by the surrounding popup's overflow, so the
+// outline only shows on top + bottom edges. Uses `box-shadow: inset` to
+// draw the focus ring INSIDE the button where nothing can clip it.
+.editPopUpSaveBtn.x-btn:focus,
+.editPopUpSaveBtn.x-btn.x-btn-focus,
+.deleteCardBtn.x-btn:focus,
+.deleteCardBtn.x-btn.x-btn-focus,
+.saveBtnClss.x-btn:focus,
+.saveBtnClss.x-btn.x-btn-focus,
+.cancelBtnClss.x-btn:focus,
+.cancelBtnClss.x-btn.x-btn-focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.x-keyboard-mode .editPopUpSaveBtn.x-btn.x-btn-focus,
+.x-keyboard-mode .deleteCardBtn.x-btn.x-btn-focus,
+.x-keyboard-mode .saveBtnClss.x-btn.x-btn-focus,
+.x-keyboard-mode .cancelBtnClss.x-btn.x-btn-focus,
+.editPopUpSaveBtn.x-btn:focus-visible,
+.deleteCardBtn.x-btn:focus-visible,
+.saveBtnClss.x-btn:focus-visible,
+.cancelBtnClss.x-btn:focus-visible {
+    outline: none !important;
+    box-shadow: inset 0 0 0 $a11y-focus-width $a11y-focus-color !important;
+}
+
+// ── 3d. Popup grid items — visible focus on rows + tree leaves ────────────
+//
+// Popup classes: .resourceGridStyleCls (Departments user picker, + Add
+// Resources picker) and .mycustomTree (Projects picker). Without these
+// rules, keyboard-mode arrow-key navigation through rows shows no outline.
+.x-keyboard-mode .resourceGridStyleCls .x-grid-item:focus,
+.x-keyboard-mode .resourceGridStyleCls .x-grid-item-focused,
+.x-keyboard-mode .resourceGridStyleCls .x-grid-row:focus,
+.x-keyboard-mode .mycustomTree .x-grid-item:focus,
+.x-keyboard-mode .mycustomTree .x-grid-item-focused,
+.x-keyboard-mode .mycustomTree .x-grid-row:focus {
+    outline: $a11y-focus-width solid $a11y-focus-color !important;
+    outline-offset: $a11y-focus-offset-inset !important;
+}
+
+// ── 3e. Popup search field — single focus ring (no double border) ─────────
+//
+// Search fields in popups use `triggers: { clear, search }` which renders
+// chevron icons inside the trigger-wrap. ExtJS's default focus styling
+// paints outlines on:
+//   1. the <input> itself
+//   2. the .x-form-trigger-wrap (because of :focus-within)
+//   3. the .x-form-trigger / .x-form-search-trigger (the icon)
+// → up to three stacked outlines. Suppress all three at the inner level
+// and paint a single outline on the wrap when keyboard-driven.
+.resourceGridStyleCls .x-form-trigger-wrap .x-form-field:focus,
+.resourceGridStyleCls .x-form-trigger-wrap .x-form-field:focus-visible,
+.resourceGridStyleCls .x-form-trigger:focus,
+.resourceGridStyleCls .x-form-trigger:focus-visible,
+.resourceGridStyleCls .x-form-trigger-focus,
+.resourceGridStyleCls .x-form-trigger-wrap-focus,
+.mycustomTree .x-form-trigger-wrap .x-form-field:focus,
+.mycustomTree .x-form-trigger-wrap .x-form-field:focus-visible,
+.mycustomTree .x-form-trigger:focus,
+.mycustomTree .x-form-trigger:focus-visible,
+.mycustomTree .x-form-trigger-focus,
+.mycustomTree .x-form-trigger-wrap-focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.x-keyboard-mode .resourceGridStyleCls .x-form-trigger-wrap:focus-within,
+.x-keyboard-mode .mycustomTree .x-form-trigger-wrap:focus-within {
+    outline: $a11y-focus-width solid $a11y-focus-color !important;
+    outline-offset: 1px !important;
+    box-shadow: none !important;
+}
+
+// Custom add-resource <span class="addBtnTop"> inside the tree column header.
+// Uses outline-offset: -2px (inset) so the outline draws *inside* the green
+// box. With outside offset (+2px), the surrounding column-header overflow
+// clips the outline so only the top and bottom strokes are visible.
+.addBtnTop:focus,
+.addBtnTop.x-btn-focus {
+    outline: none !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+.addBtnTop:focus-visible,
+.x-keyboard-mode .addBtnTop:focus {
+    outline: $a11y-focus-width solid $a11y-focus-color !important;
+    outline-offset: $a11y-focus-offset-inset !important;
+}
+
+// ── 4. Text-spacing baseline (WCAG 1.4.12) ─────────────────────────────────
+.x-grid-cell-inner,
+.x-form-display-field,
+.x-panel-body,
+.x-toolbar-text {
+    line-height: 1.5;
+}
+.x-grid-cell-inner { white-space: normal; }
+
+// ── 5. Reflow / responsive (WCAG 1.4.10) ───────────────────────────────────
+//
+// (a) Small-viewport breakpoints — wrap the toolbar at narrow widths.
+@media (max-width: 480px) {
+    .controlheader .x-toolbar-item,
+    .controlheader .x-form-item-body {
+        max-width: 100% !important;
+        flex: 1 1 auto !important;
+    }
+    .controlheader { flex-wrap: wrap !important; }
+    .gnt-tooltip,
+    .x-tip {
+        max-width: 90vw !important;
+        max-height: 70vh !important;
+        overflow: auto;
+    }
+}
+@media (max-width: 360px) {
+    .controlheader .x-box-inner { flex-wrap: wrap !important; }
+    .x-print-field-cls,
+    .x-window { max-width: 95vw !important; }
+    .x-print-field-cls .x-form-item-body { flex-wrap: wrap !important; }
+}
+
+// (b) Horizontal scrollbar on browser zoom overflow.
+//     JS in MainViewport.js toggles the .x-zoom-overflow class on <html>
+//     when the viewport is narrower than the initial layout width (zoom
+//     or window resize). --min-viewport-width is set by JS to the actual
+//     full-size layout width.
+html.x-viewport.x-zoom-overflow {
+    overflow-x: auto !important;
+    position: relative; // makes html the containing block for the absolute body
+}
+html.x-viewport.x-zoom-overflow > .x-body {
+    position: absolute !important; // switch from fixed so html can scroll it
+    min-width: var(--min-viewport-width, 1024px);
+}
+@media print {
+    html.x-viewport > .x-body {
+        position: static !important;
+        min-width: unset;
+    }
+    html.x-viewport { overflow-x: hidden !important; }
+}
+
+// (c) Vertical overflow for windows / menus / popups when zoomed.
+//     Mirrors the layered rules in Gantt's all.scss:7135–7212.
+//     Each "Layer" caps a different floater type at a fraction of the viewport
+//     height and gives it its own scrollbar, so when the zoom factor shrinks
+//     the available height nothing gets cut off.
+html.x-viewport.x-zoom-overflow {
+
+    // Layer 1 — Windows / modal dialogs (MessageBox, chatter, etc.)
+    .x-window {
+        max-height: 100vh !important;
+        > .x-window-body { overflow-y: auto !important; }
+    }
+
+    // Layer 2 — Menus (right-click context menu, etc.)
+    .x-menu:not(.submenu2):not(.addBtnMenuClass) {
+        max-height: 90vh !important;
+        overflow-y: auto !important;
+    }
+    .x-menu:not(.submenu2) > .x-menu-body { overflow-y: auto !important; }
+
+    // Layer 3 — Combo / Select dropdowns (Select Period, Settings, View,
+    // Department, Project, etc.). This is the rule that fixes the
+    // "lists not scrollable at 200% zoom" issue — without it, ExtJS's
+    // configured listConfig.height/maxHeight wins and the picker overflows
+    // off the bottom of the visible viewport.
+    .x-boundlist {
+        max-height: 80vh !important;
+        .x-boundlist-list-ct {
+            max-height: 80vh !important;
+            overflow-y: auto !important;
+        }
+    }
+
+    // Layer 4 — Tooltips (hover popup over allocation cells).
+    .x-tip,
+    .gnt-tooltip {
+        max-height: 80vh !important;
+        overflow-y: auto !important;
+    }
+
+    // Layer 5 — Print export dialog (Sencha printable plugin).
+    .sch-exportdialog,
+    .gantt-exportdialog,
+    .x-print-field-cls {
+        max-height: 95vh !important;
+        overflow-y: auto !important;
+    }
+}
+
+// Bound-list items keep single-line layout so the picker height calculation
+// stays predictable. Long names get ellipsis instead of wrapping.
+.x-boundlist-list-ct > ul > li {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// High-DPI / zoom companion — date pickers, mask messages, and certain
+// floating popups need extra help when the device-pixel ratio passes
+// ~1.6 (200% zoom on a 1× display, or 1.5× zoom on a Retina display).
+//
+// Without these rules at high zoom:
+//   - Loader spinner ("Please wait…") drifts off-screen because the mask
+//     centers on a panel that is now wider than the viewport.
+//   - Date picker can extend below the visible area without scrolling.
+//   - Floating grid popups (popupGridStyleCls) inherit a `top` value
+//     calculated for normal zoom and end up below the fold.
+@media (min-resolution: 1.6dppx) {
+    html.x-viewport.x-zoom-overflow .x-mask > .x-mask-msg {
+        // Anchor mask message to a fixed offset from the left edge so
+        // the spinner stays visible regardless of the masked panel's
+        // computed width. (Centered positioning fails when the panel
+        // overflows the viewport.)
+        left: 5rem !important;
+    }
+    html.x-viewport.x-zoom-overflow .popupGridStyleCls {
+        top: auto !important;
+    }
+    html.x-viewport.x-zoom-overflow .x-datepicker {
+        max-height: 90vh !important;
+        overflow-y: auto !important;
+        top: auto !important;
+        scrollbar-width: thin !important;
+    }
+}
+
+// ── 6. Color-contrast helpers (WCAG 1.4.3 / 1.4.11) ────────────────────────
+//
+// Inactive resources used to render with inline `color: #ddd` (1.4:1, fail).
+// .gnt-resource-inactive replaces that — #595959 italic = 7.0:1 on white.
+.gnt-resource-inactive,
+.gnt-resource-inactive .x-grid-cell-inner {
+    color: #595959 !important;
+    font-style: italic;
+}
+
+// Allocation status bars get a subtle outline for non-text contrast on white.
+.notutilized,
+.underallocated,
+.overallocated,
+.optimallyallocated,
+.notcalculated {
+    outline: 1px solid rgba(0, 0, 0, 0.12);
+    outline-offset: -1px;
+}
+
+// ── 7. ControlHeader button text class (WCAG 1.4.12) ───────────────────────
+//
+// Replaces the inline `style="font: 300 13px/17px Open Sans, ..."` shorthand
+// previously hard-coded on Previous/Next buttons in ControlHeader.js.
+// The shorthand locked line-height to 17px, breaking user-stylesheet overrides.
+.controlheader-btn-text {
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}

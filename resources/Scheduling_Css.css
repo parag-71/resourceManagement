@@ -1,0 +1,262 @@
+.taskTip {
+    font-size: 11px;
+}
+
+.taskTip td {
+    width: 70px;
+}
+
+.parent .x-grid-cell-inner {
+    font-weight: bold;
+    padding-left: 21px;
+    background: url("images/puzzle.png") no-repeat 1px 1px;
+}
+
+.task .x-grid-cell-inner {
+    padding-left: 21px;
+    background: url("images/cog.png") no-repeat 1px 1px;
+}
+@-webkit-keyframes glow {
+    0% {-webkit-box-shadow:
+        0 0 8px rgba(255, 0, 0, 1);
+}
+    100% {-webkit-box-shadow:
+        0;
+}
+}
+
+.sch-gantt-critical-chain .x-grid-row-selected .sch-gantt-item, .sch-dependency-selected {
+    -webkit-animation-name: glow;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-box-shadow: 0 0 8px rgba(255, 0, 0, 1);
+}
+
+.togglebutton {
+    background: url("images/checkbox.gif") no-repeat 0 0 !important;
+}
+
+.x-btn-pressed .togglebutton {
+    background-position: 0 -16px !important;
+}
+
+.action {
+    background: url("images/checkbox.play.png") no-repeat 0 0 !important;
+}
+
+.sch-ganttpanel .x-table-layout-cell {
+    text-align: left;
+}
+
+.zoomfit {
+    background: url("images/zoom-fit.png") no-repeat left center !important;
+}
+
+.icon-collapseall {
+    background: url("images/up.png") no-repeat left center !important;
+}
+
+.icon-expandall {
+    background: url("images/down.png") no-repeat left center !important;
+}
+
+.icon-save-background {
+    background: url("images/save.png") no-repeat left center !important;
+}
+.icon-gear{
+		background: url("images/setting.png") no-repeat left center !important;
+}
+.icon-popout{
+		background: url("images/arrow-light-gray.png") no-repeat left center !important;
+}
+.LowPrio {
+    border-color: #555;
+    background-color: #bbb;
+}
+
+.LowPrio .sch-gantt-progress-bar {
+    background-color: #ddd;
+}
+
+.percent {
+    margin: 0 auto;
+    width: 18px;
+    border: 1px solid #3172D7;
+    background: Aqua;
+    border-radius: 2px;
+    height: 9px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.percent div {
+    background: blue;
+    height: 3px;
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+.percent0 div {
+    width: 0%;
+}
+
+.percent25 div {
+    width: 25%;
+}
+
+.percent75 div {
+    width: 75%;
+}
+
+.percent50 div {
+    width: 50%;
+}
+
+.percent100 div {
+    width: 100%;
+}
+.x-tree-node-text {
+	font-size: 12px !important;
+	line-height: 13px !important;
+	padding-left: 3px !important;
+}
+
+.mc-inner-class{
+	padding-top: 1px !important;
+	font-weight: bold !important;
+	color: rgb(131,131,131);
+	width: 280px;
+	float: left;
+}
+.swim-inner-class{
+	color: white !important;
+	width: 280px;
+	float: left;
+	
+}
+.zone-inner-class{
+	width: 280px;
+	float: left;
+}
+.ghost-inner-class {
+  text-align: center !important;
+  width: 280px;
+  float: left;
+  color: rgb(176, 160, 160);
+}
+.kc-inner-class{
+	height: 24px !important;
+	color: rgb(131,131,131);
+	width: 280px;
+	float: left;
+}
+.task-inner-class{
+	height: 24px !important;
+	color: rgb(131,131,131);
+	width: 310px;
+	float: left;
+	padding-left : 30px;
+}
+.small-photo-url-cls{
+	margin-left: 6px !important;
+	width: 18px !important;
+	height: 18px !important;
+	margin-top: 4px !important;
+	border-radius: 9px !important;
+}
+.image-header-cls{
+	margin-left: 16% !important; 
+	width: 70% !important;
+	padding-left: 7px !important;
+	padding-top: 1px !important;
+	box-shadow: 2px 0 1px 1px #E7E1E1, -3px 0 1px 0px #E7E1E1;
+	margin-top: -5%!important;
+	height: 19px !important;
+	font-size: 10px !important;
+}
+.link-icon{
+background: url("images/link-icon.png") no-repeat !important;
+padding-top: 4px;
+padding-left: 3px;
+margin-top: 2px;
+margin-left: 3px;
+}
+.trash-icon{
+background: url("images/trash.png") no-repeat !important;
+padding-top: 4px;
+padding-left: 3px;
+margin-top: 2px;
+margin-left: 3px;
+}
+.icon-print
+{
+	background: url(images/printer.png) no-repeat left center !important;
+}
+/*.sch-gantt-milestone-diamond-ct {
+position: relative;
+z-index: 2;
+height: 71%;
+width: 13px;
+border: 1px solid #117be9;
+}*/
+.x-form-display-field {
+font: normal 12px /14px tahoma, arial, verdana, sans-serif;
+color: black;
+margin-top: 4px;
+white-space: nowrap !important;
+overflow: hidden !important;
+text-overflow: ellipsis !important;
+
+}
+.sch-dependency-arrow, .sch-dependency-arrow-ct {
+position: absolute;
+height: 11px !important;
+width: 11px;
+border-style: solid;
+line-height: 0;
+z-index: 1;
+}
+.sch-dependency-arrow-right {
+margin-top: -4.5px;
+border-width: 4px 0 4px 8px;
+border-style: solid;
+border-top-color: transparent!important;
+border-bottom-color: transparent!important;
+border-right-color: transparent!important;
+}
+
+.sch-dependency-arrow-left {
+margin-top: -4.5px;
+margin-left: -10px;
+border-top-color: transparent!important;
+border-bottom-color: transparent!important;
+border-left-color: transparent!important;
+border-width: 4px 8px 4px 0;
+border-style: solid;
+}
+
+.sch-dependency-arrow-down {
+    margin-left: -3.5px;
+    border-right-color: transparent!important;
+    border-left-color: transparent!important;
+    border-width: 8px 4px 0;
+    border-style: solid;
+}
+.x-tool-expand-bottom, .x-tool-collapse-bottom {
+  background-position: 0 -195px;
+  top: 3px !important;
+}
+.sch-ganttpanel .x-grid-cell{
+  height : 35px !important;
+}
+.sch-gantt-task-bar{
+      border : none !important;
+      border-radius : 2px !important;
+}
+.innerMiniatureDiv{
+    overflow: hidden;
+    padding-left: 3px;
+}
+

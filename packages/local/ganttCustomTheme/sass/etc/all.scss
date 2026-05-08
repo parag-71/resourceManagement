@@ -1,0 +1,7725 @@
+$base-gray: #1b1d1f;
+$gray: #545658;
+$light-gray: #646F76;
+$lighter-gray: #DEE1E4;
+$lightest-gray: #F7F8F9;
+$leankor-orange: #BB4513;
+$leankor-orange-RL: #F6BF90;
+$leankor-orange-RB: #BB4513;
+$green:#41833A;
+$green-RL:#D9F2D6;
+$green-RB:#41833A;
+$highlight-yellow: #AD6507;
+$highlight-yellow-RL: #FEECD7;
+$highlight-yellow-RB: #FDD5A6;
+$dead-red: #CE3F3F;
+$dead-red-RL: #F8DADA;
+$dead-red-RB: #F8A0A0;
+$leankor-blue: #1573A0;
+$leankor-blue-purple: #55779A;
+$leankor-blue-RL: #B4E9FD;
+$leankor-blue-RB: #1573A0;
+$white-color: #FFFFFF;
+$leankor-green-RB: #41833A;
+
+$activity-bar-color: $leankor-blue-RB;
+$folder-bar-color: $green-RB;
+$text-shadow-color: $lightest-gray;
+$component-border-color: $lighter-gray;
+$icon-color: #646F76;
+
+// Focus outline variables (ADA accessibility)
+$bright-cerulean-blue : #008CDD;
+$focus-outline-width: 2px;
+$focus-outline-color: $bright-cerulean-blue;
+$focus-outline-offset: 2px;
+$focus-outline-offset-inset: -2px;
+$fa-font-path: "../fonts" !default;
+$fa-version: "4.3.0" !default;
+$fa-version-IconList: "4.4.0";
+$leankor-font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+
+/**********Font************/
+//
+.unclickable-label {
+    color: #888;  // Optional: Change the color to make it visually disabled
+    cursor: not-allowed;  // Optional: Change the cursor to indicate it's not clickable
+}
+
+// .x-table-layout {
+//     font-size: 0.813rem !important;
+// }
+
+.x-boundlist-item {
+    font: normal 0.813rem $leankor-font-family !important;
+    line-height: 2.188rem !important;
+}
+
+.x-box-inner {
+    overflow: scroll;
+}
+
+.x-column-header {
+    font: 400 0.813rem/1.188rem $leankor-font-family !important;
+}
+.x-column-header-over{
+    font-size: 0.813rem !important;
+}
+.x-btn-inner-default-toolbar-small {
+    font: 400 0.75rem/1rem  $leankor-font-family !important; //
+}
+
+.x-tab-inner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 134px;
+}
+
+.custom-tooltip {
+    font-size: 0.875rem;
+}
+
+//
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTa-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+    font-display: auto;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans'), url(../resources/fonts/Open-Sans/DXI1ORHCpsQm3Vp6mXoaTZX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    font-display: auto;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTRWV49_lSm1NYrwo-zkhivY.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+    font-display: auto;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTaaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+    font-display: auto;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTf8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+    font-display: auto;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTT0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-display: auto;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(../resources/fonts/open-sans/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-display: auto;
+    font-display: auto;
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/K88pR3goAWT7BTt32Z01mxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+    font-display: auto;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/RjgO7rYTmqiVp7vzi-Q5URJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    font-display: auto;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/LWCjsQkB6EMdfHrEVqA1KRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+    font-display: auto;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/xozscpT2726on7jbcb_pAhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+    font-display: auto;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/59ZRklaO5bWGqF5A9baEERJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+    font-display: auto;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-display: auto;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(../resources/fonts/open-sans/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-display: auto;
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSq-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+    font-display: auto;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSpX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    font-display: auto;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNShWV49_lSm1NYrwo-zkhivY.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+    font-display: auto;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSqaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+    font-display: auto;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSv8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+    font-display: auto;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSj0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-display: auto;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../resources/fonts/open-sans/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-display: auto;
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzK-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+    font-display: auto;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzJX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    font-display: auto;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzBWV49_lSm1NYrwo-zkhivY.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+    font-display: auto;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzKaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+    font-display: auto;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzP8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+    font-display: auto;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzD0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-display: auto;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../resources/fonts/open-sans/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-display: auto;
+}
+
+/**************Font end**********************/
+
+// @font-face {
+//     font-family: 'Carousel';
+//     src: url('../resources/fonts/Carousel.eot?v=#{$fa-version}');
+//     src: url('../resources/fonts/Carousel.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+//     url('../resources/fonts/Carousel.woff?v=#{$fa-version}') format('woff'),
+//     url('../resources/fonts/Carousel.ttf?v=#{$fa-version}') format('truetype'),
+//     url('../resources/fonts/Carousel.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+//     //  src: url('../resources/fonts/FontAwesome.otf') format('opentype'); // used when developing fonts
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: auto;
+// }
+
+// @font-face {
+//     font-family: 'hervayballIcon';
+//     src: url('#{$fa-font-path}/icomoon.eot?v=#{$fa-version}');
+//     src: url('#{$fa-font-path}/icomoon.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+//     url('#{$fa-font-path}/icomoon.woff?v=#{$fa-version}') format('woff'),
+//     url('#{$fa-font-path}/icomoon.ttf?v=#{$fa-version}') format('truetype'),
+//     url('#{$fa-font-path}/icomoon.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+//     //  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: auto;
+// }
+
+// @font-face {
+//     font-family: 'listIconImages';
+//     src: url('#{$fa-font-path}/icomoon_listIcon.eot?v=#{$fa-version-IconList}');
+//     src: url('#{$fa-font-path}/icomoon_listIcon.eot?#iefix&v=#{$fa-version-IconList}') format('embedded-opentype'),
+//     url('#{$fa-font-path}/icomoon_listIcon.woff?v=#{$fa-version-IconList}') format('woff'),
+//     url('#{$fa-font-path}/icomoon_listIcon.ttf?v=#{$fa-version-IconList}') format('truetype'),
+//     url('#{$fa-font-path}/icomoon_listIcon.svg?v=#{$fa-version-IconList}#fontawesomeregular') format('svg');
+//     //  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: auto;
+// }
+
+
+@font-face {
+    font-family: 'LeankorFonts';
+    src: url('../resources/fonts/LeankorFonts.eot?9sg03b');
+    src: url('../resources/fonts/LeankorFonts.eot?9sg03b#iefix') format('embedded-opentype'),
+
+    url('../resources/fonts/LeankorFonts.woff?9sg03b') format('woff'),
+    url('../resources/fonts/LeankorFonts.ttf?9sg03b') format('truetype'),
+    url('../resources/fonts/LeankorFonts.svg?9sg03b#LeankorFonts') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+}
+@font-face {
+    font-family: 'NewLeankorFonts';
+    src: url('../resources/fonts/NewLeankorFonts.eot?9sg03b');
+    src: url('../resources/fonts/NewLeankorFonts.eot?9sg03b#iefix') format('embedded-opentype'),
+
+    url('../resources/fonts/NewLeankorFonts.woff?9sg03b') format('woff'),
+    url('../resources/fonts/NewLeankorFonts.ttf?9sg03b') format('truetype'),
+    url('../resources/fonts/NewLeankorFonts.svg?9sg03b#LeankorFonts') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+}
+
+@mixin pictosicons($content, $fontSize, $color) {
+    font-family: 'LeankorFonts';
+    content: $content !important;
+    font-size: $fontSize;
+    color: $color;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+}
+@mixin pictosiconsNew($content, $fontSize, $color) {
+    font-family: 'LeankorFonts';
+    content: $content !important;
+    font-size: $fontSize;
+    color: $color;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+}
+@mixin newLeankorfonts($content, $fontSize, $color) {
+    font-family: 'NewLeankorFonts';
+    content: $content !important;
+    font-size: $fontSize;
+    color: $color;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+}
+@mixin listIconImagesFamily($content, $fontSize, $color) {
+    font-family: 'LeankorFonts';
+    content: $content !important;
+    font-size: $fontSize;
+    color: $color;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+}
+
+@mixin comboCustomFormattingCls {
+    .x-form-trigger-default {
+        background: $lighter-gray !important;
+    }
+
+    .x-form-trigger-default:before {
+        font-family: 'LeankorFonts';
+        content: "\e216" !important;
+        font-size: 0.4375rem;
+        color: $gray;
+    }
+}
+
+@mixin placeholderColorCls($color) {
+    input::-webkit-input-placeholder {
+        color: $color;
+    }
+}
+
+.x-datepicker {
+    .x-datepicker-disabled .x-datepicker-date {
+        background-color: $lighter-gray;
+        cursor: pointer;
+        border-radius: 50%;
+        color: #fff;
+
+        &:hover {
+            background-color: $lighter-gray;
+            border-radius: 50%;
+            color: #333;
+        }
+    }
+
+    .x-btn-default-toolbar-small {
+        background-color: #ffffff;
+        border: 1px solid $leankor-blue-RB;
+        border-radius: 7px;
+        color: $leankor-blue-RB;
+    }
+
+    .x-btn-over.x-btn-default-toolbar-small {
+        border-color: $leankor-blue-RB;
+        background-image: none;
+        background-color: #fff;
+    }
+
+    .x-btn.x-btn-pressed.x-btn-default-toolbar-small {
+        border-color: $leankor-blue-RB;
+        background-image: none;
+        background-color: #fff;
+    }
+
+    .x-monthpicker-yearnav-button:hover {
+        background: $lighter-gray !important;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    .x-monthpicker-yearnav-button {
+        height: 23px;
+        width: 23px;
+        margin-top: 15px;
+        padding-top: 2px;
+    }
+
+    .x-datepicker-column-header {
+        background-color: #fff;
+        font: 400 13px  $leankor-font-family;
+    }
+
+    .gnt-datepicker-nonworkingday {
+        background-color: #fff !important;
+    }
+
+    .x-datepicker-prevday .x-datepicker-date, .x-datepicker-nextday .x-datepicker-date {
+        color: $light-gray !important;
+    }
+
+    .x-datepicker-date {
+        color: #000;
+        padding: 0px;
+        text-align: center;
+        width: 37px;
+        font-size: 0.813rem !important;
+        margin: 0px 7px;
+    }
+
+    .x-datepicker-date:hover {
+        background: $lighter-gray !important;
+        background-color: $lighter-gray !important;
+        border-radius: 50%;
+        color: $base-gray !important;
+    }
+
+    .x-datepicker-arrow {
+        height: 32px;
+        top: 7px;
+        background-color: #fff;
+    }
+
+    .x-datepicker-month {
+        background: #fff;
+
+        .x-btn {
+            border-color: transparent;
+            background: #ffffff;
+        }
+
+        .x-btn.x-btn-pressed {
+            background: #fff;
+        }
+
+        .x-btn-inner {
+            font-size: 0.938rem !important;
+            color: #1b1d1f !important;
+        }
+    }
+
+    .x-datepicker-column-header-inner {
+        font-weight: bold;
+    }
+
+    .x-datepicker-prev:before {
+        content: "\e182";
+        color: $light-gray !important;
+        background: transparent;
+        font-family: 'LeankorFonts';
+        font-size: small;
+    }
+
+    .x-datepicker-next {
+        right: 5px;
+    }
+
+    .x-datepicker-prev {
+        left: 5px;
+    }
+
+    .x-datepicker-next:before {
+        content: "\e181";
+        color: $light-gray !important;
+        background: transparent;
+        font-family: 'LeankorFonts';
+        font-size: small;
+    }
+
+    .x-datepicker-next:hover {
+        background: $lighter-gray !important;
+        border-radius: 50%;
+    }
+
+    .x-datepicker-prev:hover {
+        background: $lighter-gray !important;
+        border-radius: 50%;
+    }
+
+    .x-monthpicker-item-inner {
+        margin: 0px 0px 0px 26px;
+        color: #333;
+        width: 42px;
+        height: 40px;
+        border: 0;
+        line-height: 2.5000rem;
+        cursor: pointer;
+
+        &:hover {
+            color: #333;
+            background-color: $lighter-gray !important;
+            border-radius: 50%;
+        }
+    }
+
+    .x-monthpicker-years .x-monthpicker-item {
+        width: 77px;
+        height: 40px;
+    }
+
+    .x-monthpicker-item a.x-monthpicker-selected {
+        background-color: $lighter-gray;
+        border-radius: 5px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .x-monthpicker-yearnav-prev:before {
+        content: "\e182";
+        font-family: 'LeankorFonts';
+        font-size: small;
+    }
+
+    .x-monthpicker-yearnav-next:before {
+        content: "\e181";
+        font-family: 'LeankorFonts';
+        font-size: small;
+    }
+
+    .x-datepicker-selected div.x-datepicker-date {
+        background-color: $leankor-blue-RB;
+        border-radius: 50%;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .x-btn-wrap-default-small.x-btn-arrow-right:after {
+        width: 18px;
+        content: "\e93";
+        font-family: 'LeankorFonts' !important;
+        font-size: 0.5000rem !important;
+        font: 16px/1 FontAwesome;
+        color: $light-gray !important;
+    }
+
+    .x-btn-inner-default-toolbar-small {
+        font: 400 13px/16px  $leankor-font-family;
+        color: $base-gray;
+        padding: 0 5px;
+        max-width: 100%;
+    }
+}
+
+/* .column-icon-parent-cls {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+} */
+.sch-gantt-timeline-scheduler .sch-schedulerview .x-grid-cell {
+    border: none !important;
+    background: $base-color !important;
+}
+
+.sch-gantt-timeline-scheduler .sch-timelineview .x-grid-item-container {
+    padding-bottom: 0px !important;
+    height: 7px;
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+.sch-gantt-timeline-scheduler .sch-event {
+    color: #fff;
+    background-color: #8BD7EE;
+    border-color: #8BD7EE;
+}
+
+.addBtn {
+    background: $green;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    min-width: 10px;
+    position: relative;
+    overflow: hidden;
+    // line-height: 30px;
+    padding: 8px 6px 5px 7px;
+    z-index: 0;
+
+    &:before {
+        @include pictosiconsNew("\e225", 10px, #fff);
+    }
+}
+
+.addBtnTop {
+    @extend .addBtn;
+    background: $green;
+	min-width: 30px;
+    overflow: visible;
+
+    &:before {
+        @include pictosiconsNew("\e225", 1.063rem, #fff);
+    }
+}
+
+.activity-custom-cls {
+    @extend .sch-gantt-progress-bar;
+    border: 1px solid $activity-bar-color;
+    background-color: $activity-bar-color;
+    text-align: right;
+}
+
+.folder-custom-cls {
+    background-color: $folder-bar-color;
+    text-align: right;
+    height: 100%;
+}
+
+.sch-gantt-parenttask-bar {
+    // height: 13px !important;
+    height: 0.813rem !important;
+    font-size: 0.688rem !important;
+    line-height: 0px !important;
+    position: relative;
+    //background-color: #fafafa !important;
+    background-color: #fafafa;
+    border-color: $folder-bar-color;
+    border: 1px solid $folder-bar-color;
+    box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);
+    border-radius: 2px;
+}
+
+.sch-gantt-parenttask-bar .sch-gantt-progress-bar {
+    background-color: $folder-bar-color;
+}
+
+.sch-gantt-parenttask-leftarrow {
+    left: -1px !important;
+    border-width: 8px 8px 0 0px;
+}
+
+.sch-gantt-parenttask-rightarrow {
+    right: -1px !important;
+    border-width: 8px 0 0 8px;
+}
+
+.sch-gantt-parenttask-bar {
+    //background-color: #fff !important;
+    background-color: #fff;
+    border-color: $folder-bar-color;
+    border-width: 1px;
+    box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);
+    border-radius: 2px;
+}
+
+.sch-gantt-column-dragdrop-header .x-column-header-text-inner {
+    &:before {
+        @include pictosicons("", 13px, #757F91);
+    }
+}
+
+.sch-ganttpanel .x-grid-cell {
+    height: 2.188rem !important;
+    /* border-right: 1px solid $lighter-gray; */
+    box-shadow: -0.55px 0 0 $lighter-gray;
+}
+
+.x-tree-node-text {
+    font-size: 0.7500rem !important;
+    line-height: 0.813rem !important;
+    padding-left: 3px !important;
+}
+
+.x-panel-header-title-timeline-panel .x-title-text-timeline-panel:after {
+    font-family: ext-watermark;
+    font-size: 2.0156rem;
+    content: '' !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #b5b7ba;
+}
+
+.x-panel-header-title-default .x-title-text-default:after {
+    @extend .x-panel-header-title-timeline-panel.x-title-text-timeline-panel:after;
+}
+
+.sch-gantt-column-dragdrop:hover .x-grid-cell-inner {
+    background: #e6e8ed;
+    text-decoration: none;
+    vertical-align: -webkit-baseline-middle;
+    text-overflow: clip;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 8px 3px 8px;
+    z-index: 0;
+
+    &:before {
+        @include pictosicons("\e291", 13px, #757F91);
+    }
+}
+
+.namecolumn {
+    border-left: none !important;
+
+    .x-column-header-sort-ASC .x-column-header-text-inner {
+        &:after {
+            color: rgba(234, 234, 234, 0) !important;
+        }
+    }
+}
+
+.text-node {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.sch-column-header {
+    border-right: 1px solid $component-border-color !important;
+    padding: 2px 0;
+    border-color: $component-border-color;
+    color: $base-gray;
+    background-image: none;
+    background-color: #fff;
+}
+.header-icon-default {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 10px;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    z-index: 0;
+    margin-left: 10px;
+    line-height: 1em !important;
+}
+.icon-undo {
+    @extend .header-icon-default;
+
+    &:before {
+        @include newLeankorfonts("\e310", 1.125rem, $icon-color);
+    }
+}
+.icon-view {
+    @extend .header-icon-default;
+    &:before {
+        @include newLeankorfonts("\e305", 1.125rem, $icon-color);
+    }
+}
+.undo-button-disabled {
+
+    opacity: 1 !important;
+    font-size: 1.125rem !important;
+}
+
+.icon-logo {
+    background-repeat: no-repeat !important;
+    background-size: 150px 55px !important;
+}
+
+.icon-previous {
+    @extend .header-icon-default;
+
+    &:before {
+        @include newLeankorfonts("\e302", 1.125rem, $light-gray);
+    }
+}
+
+.icon-next {
+    @extend .header-icon-default;
+
+    &:before {
+         @include newLeankorfonts("\e303", 1.125rem, $light-gray);
+    }
+}
+
+.icon-fire {
+    @extend .header-icon-default;
+    &:before {
+        content: "\f06d" !important;
+        font: 18px/1 FontAwesome;
+        background: none;
+        color: $icon-color;
+        width: 20px;
+        height: 20px;
+        margin: 0 2px;
+    }
+}
+
+.icon-arrow-down {
+    @extend .header-icon-default;
+    vertical-align: 3px;
+
+    &:after {
+        @include pictosiconsNew("\e216", 8px, $icon-color);
+    }
+}
+
+.icon-setting {
+    @extend .header-icon-default;
+
+    &:before {
+        @include pictosiconsNew("\e239", 0.813, $icon-color);
+    }
+}
+
+.icon-zoom-to-fit {
+    @extend .header-icon-default;
+
+    &:after {
+        @include pictosiconsNew("\e238", 1.25rem, $icon-color);
+    }
+}
+
+.icon-help {
+    @extend .header-icon-default;
+
+    &:before {
+        @include pictosicons("\e233", 27px, $icon-color);
+    }
+}
+.icon-scheduler {
+    @extend .header-icon-default;
+    &:before {
+         @include newLeankorfonts("\e304", 1.125rem, $icon-color);
+    }
+}
+.icon-scheduler-enabled {
+    @extend .header-icon-default;
+    &:before {
+       @include newLeankorfonts("\e304", 1.125rem, $leankor-orange);
+    }
+}
+.icon-save-view {
+    @extend .header-icon-default;
+    &:before {
+        @include newLeankorfonts("\e308", 1.125rem, $icon-color);
+    }
+}
+.icon-save-view-enabled {
+    @extend .header-icon-default;
+    &:before {
+        @include newLeankorfonts("\e308", 1.75rem, $leankor-orange);
+    }
+}
+
+.divparent {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 auto;
+    width: 100% !important;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    span {
+        margin: auto 0px;
+        font-size: 0.813rem;
+        height: 1.1rem;
+        color: $base-gray;
+    }
+
+    .projecticon {
+        &:before {
+            font-family: 'LeankorFonts';
+            content: "\e232" !important;
+            font-size: 0.7500rem;
+            color: $light-gray;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+        }
+    }
+
+    .activity-dot-icon {
+        &:before {
+            font-family: 'LeankorFonts';
+            content: "\e270" !important;
+            font-size: 0.75rem;
+            color: $activity-bar-color;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+        }
+    }
+
+    .milestone-diamond-icon {
+        &:before {
+            font-family: 'LeankorFonts';
+            content: "\e254" !important;
+            font-size: 0.625rem;
+            color: $leankor-orange-RB;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+            margin-top: 2px;
+        }
+    }
+
+    .mycustomExpander {
+        height: 20px;
+        width: 20px;
+    }
+
+    .folderCollapse {
+        &:before {
+            font-family: 'LeankorFonts';
+            content: "\e258" !important;
+            font-size: 0.563rem;
+            color: $light-gray;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+        }
+    }
+
+    .folderExpanded {
+        &:before {
+            font-family: 'LeankorFonts';
+            content: "\e249" !important;
+            font-size: 0.625rem;
+            color: $activity-bar-color;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+        }
+    }
+
+    .columnname {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
+        flex: 1 1 0%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #707070;
+        position: relative;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        align-content: center;
+    }
+
+    .lmenu-parent {
+        text-align: center;
+        height: 34px;
+        width: 30px;
+        cursor: pointer;
+        margin-right: -8px;
+
+        &:after {
+            font-family: 'LeankorFonts';
+            content: "\e227" !important;
+            font-size: 0.813rem;
+            color: $icon-color;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+        }
+    }
+}
+
+.toolbar-custom-btn {
+    border-color: transparent !important;
+    background-color: $lightest-gray !important;
+    background-image: none !important;
+    text-decoration: none !important;
+
+    .x-btn-over.x-btn-default-small {
+        text-decoration: none !important;
+    }
+
+    .x-btn-inner-default-small {
+        color: $base-gray !important;
+        font: 300 0.813rem/1.313rem  $leankor-font-family;
+        text-overflow: ellipsis;
+    }
+
+    .x-btn-wrap-default-small.x-btn-arrow-right:after {
+        // @include pictosicons("\b113", 8px, $icon-color);
+        @include pictosiconsNew("\e216", 0.5rem, $icon-color);
+        margin-top: 0.413rem;
+    }
+}
+
+.toolbar-custom-action {
+    .x-btn-wrap-default-small.x-btn-arrow-right:after {
+        display: none;
+    }
+}
+
+.toolbar-settings-custom-btn {
+    @extend .toolbar-custom-btn;
+}
+
+.toolbar-search-cls {
+    width: 200px;
+}
+
+.owner-header-cls {
+    @extend .header-icon-default;
+    margin-left: 2px;
+    color: #eef1f6;
+
+    &:before {
+        @include pictosiconsNew("\e255", 17px, $icon-color);
+    }
+}
+// Base class for text field body
+.text-field-body-base {
+    min-width: 0.30rem;
+    max-width: 5.625rem;
+    
+}
+
+// Base class for form trigger
+.form-trigger-base {
+    width: 0.625rem;
+    font: 1rem/1.875rem FontAwesome;
+    background: transparent;
+    color: #919191;
+}
+
+// Base class for trigger wrap
+.trigger-wrap-base {
+    
+    border-width: 0px;
+    border-style: solid;
+    border-color: $component-border-color;
+}
+
+// Base class for form text
+.form-text-base {
+    color: #9d9d9d;
+    background-color: transparent;
+    font: 300 0.813rem/1.313rem  $leankor-font-family;
+    min-height: 2.063rem;
+    padding: 0.313rem;
+    text-overflow: ellipsis;
+    text-align: right;
+    overflow: hidden;
+}
+
+.combo-custom-cls-setting {
+    .x-form-text-field-body-default {
+        @extend .text-field-body-base;
+    }
+    .x-form-item-label-inner{
+        width: 0px !important;
+    }
+    .x-form-item-label{
+        visibility: hidden;
+    }
+    .x-form-text-wrap {
+        width: 0px;
+    }
+    .x-form-trigger-default {
+        @extend .form-trigger-base;
+        width: 2.5rem;
+
+        &:before {
+            margin-top: 0.125rem;
+            @include pictosiconsNew("\e239", 1.125rem, $icon-color);
+        }
+
+        &:after {
+            vertical-align: 0.188rem;
+            margin-left: 0.625rem;
+            @include pictosiconsNew("\e216", 0.50rem, $icon-color);
+        }
+    }
+
+    .x-form-trigger-wrap-default {
+        @extend .trigger-wrap-base;
+    }
+
+    .x-form-text-default {
+        @extend .form-text-base;
+    }
+}
+
+.combo-custom-cls-baseline {
+    @include placeholderColorCls($base-gray);
+    .x-form-trigger-default {
+        @extend .form-trigger-base;
+
+        &:before {
+
+            margin-right: 1rem !important;
+            @include pictosiconsNew("\e216", 0.50rem, $icon-color);
+        }
+    }
+
+    .x-form-trigger-wrap-default {
+        @extend .trigger-wrap-base;
+       //width: 5.313rem;
+    }
+
+    .x-form-text-default {
+        @extend .form-text-base;
+    }
+    .x-form-item-label{
+        overflow: visible !important;
+    }
+
+}
+
+.combo-custom-cls-period {
+  span {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+}
+
+.combo-custom-cls-period {
+    @include placeholderColorCls($base-gray);
+     .x-form-item-label{
+        width: 80px !important;
+     }
+    .x-form-trigger-default {
+        @extend .form-trigger-base;
+
+        &:before {
+
+            margin-right: 1.2rem !important;
+            @include pictosiconsNew("\e216", 0.50rem, $icon-color);
+        }
+    }
+
+    .x-form-trigger-wrap-default {
+        @extend .trigger-wrap-base;
+       //width: 5.313rem;
+    }
+    .visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+
+    .x-form-text-default {
+        @extend .form-text-base;
+    }
+
+
+}
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.combo-custom-cls-showview {
+    @include placeholderColorCls($base-gray);
+
+    .x-form-text-field-body-default {
+        @extend .text-field-body-base;
+        //width: 5.313rem;
+    }
+
+    .x-form-trigger-default {
+        @extend .form-trigger-base;
+
+        &:before {
+
+            margin-right: 1rem !important;
+            @include pictosiconsNew("\e216", 0.50rem, $icon-color);
+        }
+    }
+
+    .x-form-trigger-wrap-default {
+        @extend .trigger-wrap-base;
+       //width: 5.313rem;
+    }
+
+    .x-form-text-default {
+        @extend .form-text-base;
+    }
+
+    .x-form-trigger-wrap{
+        width: 100% !important;
+    }
+}
+/*Coomenting out below class due to fixed width. We don't want to set fix width in select-field list*/
+/*
+.x-boundlist {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $component-border-color !important;
+    background: #fff;
+    width: 150px;
+}*/
+.x-boundlist-item {
+    margin-left: 0px;
+    color: $base-gray !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    max-height: 36px !important;
+}
+
+.x-boundlist-item-over {
+    color: $leankor-orange !important;
+    background-color: $lightest-gray !important;
+    /* border-color: $lighter-gray !important; */
+}
+
+.highlight-task-cls {
+    -webkit-animation-name: blinkCls;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-name: blinkCls;
+    animation-iteration-count: infinite;
+    animation-duration: .8s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 0 red;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes blinkCls {
+    0% {
+        -webkit-box-shadow: 0 0 8px rgba(255, 0, 0, 1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0;
+    }
+}
+
+@keyframes blinkCls {
+    0% {
+        -webkit-box-shadow: 0 0 8px rgba(255, 0, 0, 1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0;
+    }
+}
+
+input[type="radio"]:checked:before {
+    content: "\e257";
+    top: 0px;
+    left: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    font-family: 'LeankorFonts';
+    font-size: 0.8125rem;
+    color: $leankor-orange-RB;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+}
+
+input[type="radio"] {
+    margin: 3px 0.5ex;
+    padding: initial;
+    background-color: white;
+    border: initial;
+    content: "\e256";
+    top: 0px;
+    left: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    font-family: 'LeankorFonts';
+    font-size: 0.8125rem;
+    color: $leankor-orange-RB;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+    line-height: 1 !important;
+}
+
+.x-boundlist-selected {
+    color: $leankor-orange !important;
+    background: $lightest-gray;
+    /* border-color: #f9f9f9; */
+}
+
+.sidemenuCls {
+    background: white;
+    border: 1px solid #EFEDED;
+    border-radius: 2px !important;
+    margin: 0px;
+    padding: 5px 2px !important;
+    background: white;
+    z-index: 20000 !important;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
+
+    .x-dock.x-sized {
+        margin: 0px;
+    }
+
+    .x-anchor {
+        display: none !important;
+    }
+}
+
+.searchFieldPopUp {
+    .x-component-outer {
+        -ms-flex: 1 0 auto;
+    }
+}
+
+.searchFieldCls {
+    font-size: 0.8125rem !important;
+    font-family: 'Open Sans', sans-serif !important;
+    padding-top: 0px !important;
+}
+
+.addBtnCls {
+    @extend .addBtn;
+    width: 44px;
+    line-height: 0.0000rem;
+    border: none !important;
+    padding: 14px 6px !important;
+    background: $green !important;
+    height: 2.46em;
+    text-align: center;
+    min-width: 10px;
+    margin-left: -1px !important;
+
+    &:before {
+        @include pictosicons("ADD", 11px, #fff);
+        font-family: 'Open Sans', sans-serif !important;
+    }
+}
+.x-menu-item-active {
+    background-color: $lightest-gray !important;
+}
+.x-menu-item-active .x-menu-item-text-default {
+    color: $leankor-orange !important;
+    
+}
+
+.x-window-header-title-default>.x-title-text-default:after {
+    font-family: ext-watermark;
+    font-size: 1.8750rem;
+    content: '' !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #f5f5f5;
+}
+
+.x-tool-close {
+    font: 16px/1 FontAwesome;
+    background: none;
+
+    &:before {
+        @include pictosiconsNew("\e210", 18px, $gray);
+        left: 350 !important;
+    }
+}
+
+.x-window-header-title-default {
+    color: #606060 !important;
+    font-size: 1rem !important;
+    font-weight: 400;
+    font-family:  $leankor-font-family;
+    line-height: 1.25rem !important;
+}
+
+.editNameFieldCls {
+    @extend .addBtnCls;
+    width: 55px;
+
+    &:before {
+        @include pictosicons("UPDATE", 11px, #fff);
+        font-family: 'Open Sans', sans-serif !important;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #b8c1ce;
+}
+
+:-moz-placeholder {
+    color: #b8c1ce;
+}
+
+::-moz-placeholder {
+    color: #b8c1ce;
+}
+
+:-ms-input-placeholder {
+    &.x-form-text-default {
+        color: #b8c1ce !important;
+    }
+}
+
+.x-mask {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    cursor: default;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    .x-mask-msg-inner {
+        //shakil
+		font: 400 0.813rem 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+	}
+}
+
+.title-first-phase {
+    color: $base-gray;
+    font-size: 1.125rem;//
+}
+
+.title-second-phase {
+    color: $light-gray;
+    font-size: 1.0000rem;
+}
+
+.activity-top-bar-cls {
+    background-color: $green !important;
+    height: 4px !important;
+}
+
+.miniatureInfoQTipCls table tr td:first-child {
+    min-width: 100px;
+    max-width: 100px;
+    vertical-align: top;
+}
+
+.miniatureInfoQTipCls table tr td:last-child {
+    word-wrap: break-word;
+    max-width: 451px;
+}
+
+.task-body-parent-custom {
+    width: 100%;
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+
+    .kanbantaskcls {
+        overflow: hidden;
+        padding-left: 11px;
+    }
+
+    .kanbantaskcls-box {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        margin-left: 3px;
+        transition: background-color 0.25s;
+
+        &:hover {
+            border: 1px solid white;
+        }
+
+        &.Done {
+            background-color: #1ec81e;
+        }
+
+        &.NotStarted {
+            background-color: #BA3A3A;
+        }
+
+        &.InProgress {
+            background-color: #e7a84b;
+        }
+
+        /**@Author Rahul Raghuvanshi
+         * Miniature coloring css_Start
+        */
+        &.blueMiniature {
+            background-color: $leankor-blue;
+        }
+
+        &.whiteMiniature {
+            background-color: #fff;
+            border: 1px solid $base-gray;
+        }
+
+        &.orangeMiniature {
+            background-color: $highlight-yellow;
+        }
+
+        &.redMiniature {
+            background-color: $dead-red !important;
+        }
+
+        &.greenMiniature {
+            background-color: $green !important;
+        }
+
+        /* Miniature coloring css_End */
+    }
+}
+
+.foldergantt {
+    border: 1px solid $activity-bar-color;
+    background-color: #fff;
+}
+
+.x-menu-item-text-default.x-menu-item-indent-no-separator {
+    margin-left: 14px !important;
+}
+
+.sch-gantt-milestone-diamond {
+    border: 1px solid $leankor-orange-RB;
+    //background-color: $highlight-yellow;
+    background-color: #dee1e4;
+    border-radius: 1px;
+}
+
+.sch-gantt-milestone {
+    top: 25%;
+    height: 50% !important;
+}
+
+.sch-ganttpanel-showbaseline .sch-gantt-milestone-baseline {
+    display: block;
+    border: none !important;
+}
+
+.sch-gantt-milestone-baseline .sch-gantt-milestone-diamond {
+    box-shadow: none;
+    border-radius: 1px;
+    border: 2px dotted #4a9cdb !important;
+    background-color: transparent !important;
+    height: 83%;
+    margin-top: 14%;
+    margin-left: -7%;
+}
+
+.sactionbtn {
+    background: $green !important;
+    color: #fff !important;
+    background-image: none !important;
+    border: none !important;
+    margin: 5px;
+    min-height: 30px;
+    border-radius: 2px !important;
+    cursor: pointer;
+    min-width: 65px !important;
+    padding: 7px !important;
+    text-decoration: none !important;
+}
+
+.saveBtnClss {
+    @extend .sactionbtn;
+
+    &.x-button-pressing {
+        @extend .sactionbtn;
+    }
+
+    .x-button-label {
+        font-weight: 300;
+        font-size: 0.8125rem !important;
+        line-height: 2.2em !important;
+    }
+
+    span {
+        font-family: 'Open Sans', sans-serif;
+        opacity: 1 !important;
+    }
+}
+
+.cancelBtnClss {
+    @extend .sactionbtn;
+    background: $light-gray !important;
+
+    &.x-button-pressing {
+        @extend .sactionbtn;
+        background: #9ba1aa !important;
+    }
+
+    .x-button-label {
+        font-weight: 300;
+        font-size: 0.8125rem !important;
+        line-height: 2.2em !important;
+    }
+
+    span {
+        font-family: 'Open Sans', sans-serif;
+        opacity: 1 !important;
+    }
+}
+
+.alertRedBtn {
+    @extend .cancelBtnClss;
+    background: $dead-red !important;
+}
+
+.cancelBtn {
+    @extend .cancelBtnClss;
+    background: $light-gray !important;
+}
+
+.x-toolbar {
+    &.x-toolbar-footer {
+        padding: 6px 0 6px 6px;
+        border-style: solid;
+        //border-top: 1px solid $lighter-gray !important;
+        border-color: #ffffff;
+        border-width: 0;
+        background-image: none;
+        background-color: #ffffff;
+        top: 575px;
+    }
+}
+
+.x-title-text {
+    color: $base-gray;
+}
+
+.x-panel-header-title-default {
+    color: $light-gray !important;
+    font-size: 0.875rem !important;
+    font-weight: 400;
+    font-family:  $leankor-font-family;
+    line-height: 1.25rem !important;
+}
+
+/*Edit Popup CSS Start*/
+.taskEditorCls {
+    .x-window-header-default {
+        background-color: $lightest-gray !important;
+        height: 45px;
+        border-bottom-color: $lightest-gray;
+    }
+
+    .x-window-header-title-default {
+        color: $light-gray !important;
+        top: -2px !important;
+    }
+
+    .x-tool-img {
+        font-size: 1.1250rem !important;
+        color: rgb(171, 173, 175);
+    }
+
+    .x-tool-close {
+        &:before {
+            font-size: 1rem !important;//
+        }
+    }
+
+    .x-toolbar.x-toolbar-footer {
+        border-top: 1px solid $lighter-gray;
+    }
+
+}
+
+.editCardPopupCls {
+    .x-tab-inner-default {
+        color: $base-gray;
+        line-height: 1.875rem;
+        font-size: 0.875rem !important;
+    }
+
+    .x-tab-icon-el-default {
+        color: $light-gray;
+        font-size: 1.125rem !important;
+        margin-right: 0.625rem !important;
+    }
+
+    .x-tab-over.x-tab-default {
+        min-height: 40px !important;
+        background: $lightest-gray !important;
+
+        .x-tab-icon-el-default {
+            color: $leankor-orange !important;
+        }
+
+        .x-tab-inner-default {
+            color: $leankor-orange !important;
+        }
+    }
+
+    .x-tab-button-center {
+        text-align: left;
+    }
+
+    .x-tab.x-tab-active.x-tab-default {
+        background: $lightest-gray !important;
+        line-height: 1.8750rem;
+        min-height: 40px !important;
+        padding: 4px 10px 4px 10px;
+    }
+
+    .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+        line-height: 1.8750rem;
+        color: $leankor-orange;
+    }
+
+    .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+        line-height: 1.8750rem;
+        color: $leankor-orange;
+    }
+
+    .x-tab-bar-default-left>.x-tab-bar-body-default {
+        border-right: 1px solid $lighter-gray;
+        padding: 0px;
+    }
+
+    .x-tab-bar-default {
+        background-color: #fff !important;
+        width: 180px;
+    }
+
+    .x-tab-default-left {
+        padding: 5px 10px 5px 10px;
+        width: 180px !important;
+        line-height: 1.8750rem;
+    }
+}
+
+@mixin tabpanelIconCss($content, $fontSize) {
+    font-family: 'Carousel';
+    content: $content !important;
+    font-size: $fontSize;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+}
+
+.activeInfo {
+    //color: $light-gray;
+    font-family: 'LeankorFonts';
+    font-size: 1rem !important;
+    text-align: center;
+    text-shadow: 0 0 0;
+    cursor: pointer;
+
+    &:after {
+        content: "\e241";
+    }
+
+    &:hover {
+        color: $leankor-orange;
+    }
+}
+
+.baord-setting-icon {
+    color: $light-gray;
+    font-family: 'LeankorFonts';
+    font-size: 1.1250rem !important;
+    text-align: center;
+    text-shadow: 0 0 0;
+    cursor: pointer;
+
+    &:after {
+        content: "\e239";
+    }
+}
+
+.subscribersIcon {
+    color: $light-gray;
+    font-family: 'LeankorFonts';
+    // font-size: 1.0000rem !important;
+    text-align: center;
+    text-shadow: 0 0 0;
+    cursor: pointer;
+
+    &:after {
+        content: "\e205";
+        font-size: 1rem !important;
+    }
+}
+
+.resourcesIcon {
+    color: $light-gray;
+    font-family: 'LeankorFonts';
+    font-size: 1rem !important;
+    text-align: center;
+    text-shadow: 0 0 0;
+    cursor: pointer;
+
+    &:after {
+        content: "\e255";
+    }
+}
+
+.activityModeIcon {
+    font-family: 'LeankorFonts';
+    font-size: 1rem !important;
+    text-align: center;
+    text-shadow: 0 0 0;
+    cursor: pointer;
+
+    &:after {
+        content: "\e244";
+    }
+}
+
+.bookAppointmentIcon {
+    color: $light-gray;
+    font-family: 'LeankorFonts';
+    font-size: 1.0000rem !important;
+    text-align: center;
+    text-shadow: 0 0 0;
+    cursor: pointer;
+
+    &:after {
+        content: "\e272";
+    }
+}
+
+@mixin hervyBallIcon($checkcontent, $fontSize) {
+    text-align: center;
+    content: $checkcontent;
+    text-shadow: 0 0 0;
+    font-size: $fontSize !important;
+    font-family: 'LeankorFonts';
+    display: -webkit-inline-box;
+}
+
+.statusIcon {
+    &:before {
+        @include hervyBallIcon('\e186', 1rem);
+    }
+}
+
+.combolblCls {
+    font-weight: normal !important;
+    color: $base-gray !important;
+    text-shadow: rgba(255, 255, 255, 0.25) 0 0.08em 0 !important;
+    font-size: 0.813rem !important;
+}
+
+.x-form-item-label-default {
+    font-weight: normal !important;
+    color: $base-gray !important;
+    text-shadow: rgba(255, 255, 255, 0.25) 0 0.08em 0 !important;
+    font-size: 0.813rem !important;
+}
+
+.prority_lbl_white {
+    @include comboCustomFormattingCls;
+    @include placeholderColorCls($light-gray);
+}
+
+.custom-down-cls {
+    display: table-cell !important;
+
+    &.x-form-trigger-default {
+        width: 32px;
+        font: 1rem/1.875rem FontAwesome;
+        background: $lighter-gray !important;
+        color: $gray;
+    }
+
+    &.x-form-trigger-default:before {
+        font-family: 'LeankorFonts';
+        content: "\e216" !important;
+        font-size: 0.4375rem;
+        color: $gray;
+    }
+}
+
+.custom-down-combo-cls {
+    @include comboCustomFormattingCls;
+}
+
+.prority_lbl_white_Subscriber {
+    @include comboCustomFormattingCls;
+    @include placeholderColorCls($light-gray);
+}
+// .customUpdatebtn{
+//     height: 0px  !important;
+// }
+.editPopUpSaveBtn {
+    border-radius: 2px !important;
+    background-color: $green !important;
+    color: #FFFFFF;
+    padding: 7px !important;
+    text-decoration: none !important;
+    background-image: none !important;
+    border: none !important;
+}
+
+.deleteCardBtn {
+    @extend .editPopUpSaveBtn;
+    background-color: $light-gray !important;
+}
+
+.btn_down {
+    width: 85px;
+    margin: 2px;
+    border-radius: 2px !important;
+
+    .x-btn-inner-default-small {
+        font: 400 13px/16px  $leankor-font-family;
+        color: #fff;
+        padding: 0 5px;
+        max-width: 100%;
+    }
+
+    .x-btn-wrap-default-small.x-btn-arrow-right:after {
+        width: 18px;
+        font-family: 'LeankorFonts' !important;
+        content: "\e216" !important;
+        /* font: 16px/1 FontAwesome; */
+        font-size: 0.4375rem;
+        color: #fff !important;
+    }
+}
+
+@mixin statusbtn($color) {
+    background-color: $color !important;
+    border-radius: 0px;
+    max-width: 170px !important;
+    min-height: 34px;
+    color: #ffffff !important;
+    background-image: none !important;
+    text-decoration: none !important;
+    border: none !important;
+
+    .x-btn-button-center {
+        justify-content: flex-start !important;
+    }
+
+    .x-menu-item-text-default {
+        color: #ffffff !important;
+    }
+
+    .x-menu-item-active .x-menu-item-text-default {
+        color: #ffffff !important;
+    }
+}
+
+.Green {
+    @include statusbtn($green);
+    text-align: center;
+
+    &.x-menu-item-active .x-menu-item-text-default {
+        color: #fff !important;
+        background-color: transparent !important;
+    }
+}
+
+.Amber {
+    @include statusbtn($highlight-yellow);
+    text-align: center;
+
+    &.x-menu-item-active .x-menu-item-text-default {
+        color: #fff !important;
+        background-color: transparent !important;
+    }
+}
+
+.Red {
+    @include statusbtn($dead-red);
+    text-align: center;
+
+    &.x-menu-item-active .x-menu-item-text-default {
+        color: #fff !important;
+        background-color: transparent !important;
+    }
+}
+
+.None {
+    @include statusbtn($light-gray);
+
+    &.x-menu-item-active .x-menu-item-text-default {
+        color: #fff !important;
+        background-color: transparent !important;
+    }
+}
+
+.harveyBallPanel_0 {
+    &:before {
+        @include hervyBallIcon('\e185', 24px);
+    }
+}
+
+.harveyBallPanel_25 {
+    &:before {
+        @include hervyBallIcon('\e186', 24px);
+    }
+}
+
+.harveyBallPanel_50 {
+    &:before {
+        @include hervyBallIcon('\e187', 24px);
+    }
+}
+
+.harveyBallPanel_75 {
+    &:before {
+        @include hervyBallIcon('\e189', 24px);
+    }
+}
+
+.harveyBallPanel_100 {
+    &:before {
+        @include hervyBallIcon('\e190', 24px);
+    }
+}
+
+.parcentcompleteCls {
+    border-top: none;
+    border-bottom: none;
+
+    .x-dataview-item {
+        width: 25px;
+        height: 24px;
+
+        div {
+            font-size: 1.3125rem;
+
+            &.overcls:hover {
+                color: $green;
+            }
+        }
+
+        /* Green only on confirmed selection (click/Enter/+/-), not arrow-key nav */
+        &.harvey-confirmed {
+            color: $green;
+        }
+    }
+}
+
+.herveyBallItemCls {
+    width: 25px;
+    height: 24px;
+}
+
+.itemSelectorCls {
+    background: transparent;
+    color: $gray !important;
+    margin-left: 8px;
+    display: -webkit-inline-box;
+    display: inline-block;
+
+}
+
+.radiofieldCls {
+    height: 2rem;
+    margin: 1rem 0px 0px !important;
+    .x-form-checkbox-focus.x-form-radio-default {
+        color: $green;
+    }
+
+    .x-form-radio-default {
+        width: auto;
+        height: 23px;
+    }
+
+    .x-form-cb-label-default.x-form-cb-label-after {
+        padding-left: 30px;
+    }
+
+    .x-form-cb-checked .x-form-radio-default:before {
+        font-family: 'LeankorFonts';
+        content: "\e257";
+        top: 0px;
+        left: 0px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: white;
+        font-size: 0.9375rem;
+        color: $leankor-orange-RB !important;
+        display: inline-block;
+        text-align: center;
+        text-shadow: 0 0 0 $text-shadow-color;
+        font-weight: normal;
+    }
+
+    .x-form-radio-default:before {
+        content: "\f10c";
+        color: $lighter-gray !important;
+    }
+
+    .x-form-checkbox-default, .x-form-radio-default:before {
+        margin: 3px 0.5ex;
+        padding: initial;
+        background-color: white;
+        border: initial;
+        content: "\e256";
+        top: 0px;
+        left: 0px;
+        border-radius: 50%;
+        background: white;
+        font-family: 'LeankorFonts';
+        font-size: 0.938rem !important;
+        display: inline-block;
+        text-align: center;
+        text-shadow: 0 0 0 $text-shadow-color;
+        font-weight: normal;
+        width: 0.938rem !important;
+        height: 0.938rem !important;
+    }
+
+    .x-form-cb-label-default {
+        color: $base-gray;
+        font-weight: normal;
+        font-size: 0.813rem;//
+    }
+
+    input[type="radio"] {
+        margin: 2px 1.5px;
+        width: 18px;
+        height: 15px;
+    }
+
+}
+
+/* Green only on confirmed selection (click/Enter/+/-), not arrow-key nav */
+.harvey-confirmed {
+    .overclass {
+        color: #54A649;
+    }
+}
+
+.selectedClsDataview,
+.selectedClsDataviewOnOver {
+    &.x-view.item-focused {
+        outline: none !important;
+        outline-offset: 0px;
+    }
+}
+
+.statusTabpanelCls {
+    @extend .editCardPopupCls;
+
+    .x-tab-bar-horizontal>.x-tab-bar-body-default {
+        /* border-left: 1px solid #d1d1d1; */
+        padding: 0px;
+    }
+
+    .x-tab-inner-default {
+        font-size: 0.8750rem !important;
+    }
+
+    .x-tab.x-tab-active.x-tab-default {
+        border-top: 3px solid $light-gray;
+        background-color: #ffffff !important;
+        border-bottom: none;
+    }
+
+    .x-tab-default-top {
+        font-size: 1.0000rem;
+        margin-left: -5px;
+        padding: 5px 0px;
+        background-color: $lightest-gray;
+    }
+
+    .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+        color: $light-gray;
+        font-size: 1.0000rem;
+    }
+
+    .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+        color: #999;
+    }
+
+    .x-tab-over.x-tab-default {
+        border-top: 3px solid $lighter-gray;
+        background-color: $lightest-gray;
+    }
+
+    .x-tab-button-center {
+        text-align: center;
+    }
+
+    .x-panel-body-default {
+        overflow-x: hidden !important;
+        overflow-y: auto;
+    }
+}
+
+.statusTabBarCls {
+    background-color: rgba(0, 0, 0, 0.02) !important;
+}
+
+.x-column-header-sort-ASC .x-column-header-text-inner:after {
+    color: transparent !important;
+}
+
+@mixin checkStickerBox {
+    font-size: 0.5000rem;
+    text-align: center;
+    text-shadow: 0 0 0;
+    font-family: 'LeankorFonts';
+    margin-right: 10px;
+    // font-weight: bold;
+    display: inline-block;
+    content: '\e236';
+    line-height: 0.8750rem;
+    width: 13px;
+    float: left;
+    height: 13px;
+    border-radius: 2px;
+}
+
+.setCheck {
+    color: #fff;
+
+    &:before {
+        @include checkStickerBox;
+        // background: $leankor-orange-RB;
+        color: $leankor-orange-RB;
+        font-size: 0.8750rem !important;
+    }
+}
+
+.setUncheck {
+    color: #fff;
+
+    &:before {
+        @include checkStickerBox;
+        background: #fff;
+        border: 1px solid $lighter-gray;
+    }
+}
+
+.deleteLog {
+    cursor: pointer;
+    padding: 5px;
+
+    &:before {
+        @include hervyBallIcon('\e193', 14px);
+        color: $icon-color;
+        font-size: 0.8750rem;
+        text-shadow: none;
+        cursor: pointer;
+    }
+}
+
+/* Category action icons — shared base styles (flexbox layout, no float/negative-margin) */
+.editCategory,
+.deleteCategory,
+.globalCategory {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin: 0 0.188rem !important;
+    /* Reset any leftover inline styles from old template */
+    float: none !important;
+    margin-top: 0 !important;
+}
+.editCategory {
+    &:before {
+        font-family: 'LeankorFonts';
+        content: "\e144" !important;
+        font-size: 0.875rem;
+        color: $icon-color;
+    }
+}
+/* Delete/Global icons are <img> — scale to fit within the box */
+.deleteCategory,
+.globalCategory {
+    object-fit: contain;
+}
+.editLog {
+    cursor: pointer;
+    padding: 6px;
+
+    &:before {
+        @include hervyBallIcon('\e191', 14px);
+        float: left;
+        margin: -2px 0px 0px -2px;
+        color: $icon-color;
+        font-size: 0.8750rem;
+        text-shadow: none;
+        cursor: pointer;
+    }
+}
+
+.editLog_SubscriberPage {
+    cursor: pointer;
+    padding: 0px 10px;
+
+    &:before {
+        @include hervyBallIcon('\e191', 14px);
+        float: left;
+        color: $icon-color;
+        font-size: 0.8750rem;
+        text-shadow: none;
+        cursor: pointer;
+    }
+}
+
+.headerStatusCls {
+    height: 2.188rem !important;
+    border: 1px solid $lighter-gray !important;
+    border-bottom: none !important;
+    font-size: 0.813rem !important;//
+    line-height: 1.75rem;//
+
+    tr {
+        text-align: left;
+    }
+
+    th {
+        font-weight: normal;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        font-size: 0.813rem !important;
+    }
+
+    .x-panel-body-default {
+        background: $lightest-gray !important;
+    }
+    .x-panel-body{
+        height: 2.188rem !important;
+    }
+    .editCmp {
+        max-Width: 34px;
+        min-Width: 34px;
+        Width: 34px;
+    }
+
+    .resolvedColumnCls {
+        font-size: 0.813rem;//
+        width: 65px;
+        max-Width: 65px;
+        min-Width: 65px;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .scoreColumnCls {
+        width: 80px;
+        max-Width: 80px;
+        min-Width: 80px;
+        text-align: left;
+        padding-left: 5px;
+        font-size: 0.813rem;
+    }
+
+    .width_100px {
+        font-size: 0.813rem !important;
+        min-Width: 80px;
+        text-align: -webkit-left;
+        width: 80px;
+        max-Width: 80px;
+        font-weight: normal;
+    }
+
+    .subjectCmp {
+        width: 80px;
+        max-Width: 80px;
+        min-Width: 80px;
+    }
+}
+
+.headerFileCls {
+    border: 1px solid $lighter-gray !important;
+    border-bottom: none !important;
+
+    .x-panel-body-default {
+        background: $lightest-gray !important;
+    }
+
+    font-size: 0.8125rem;
+    line-height: 1.7500rem;
+
+    th {
+        overflow: hidden; //
+        text-overflow: ellipsis; //
+        white-space: nowrap; //
+        font-weight: normal;
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.813rem;
+    }
+
+    tr {
+        text-align: left;
+    }
+}
+
+.checkBoxlblCls {
+    .x-form-checkbox-default {
+        color: $green;
+    }
+
+    .x-form-checkbox-default {
+        color: #afafaf;
+    }
+}
+
+.riskIcon {
+    &:before {
+        @include hervyBallIcon('\e229', 1rem);
+        font-family: 'LeankorFonts';
+    }
+}
+
+.saveBtnClssCross {
+    @extend .sactionbtn;
+    background: $lighter-gray !important;
+    color: $base-gray !important;
+    border: 2px solid $leankor-blue !important;
+    padding: 7px !important;
+    text-decoration: none !important;
+    background-image: none !important;
+
+    &.x-button-pressing {
+        @extend .sactionbtn;
+    }
+
+    .x-button-label {
+        font-weight: 300;
+        font-size: 0.8125rem !important;
+        line-height: 2.2em !important;
+    }
+
+    span {
+        font-family: 'Open Sans', sans-serif;
+        opacity: 1 !important;
+        color: #000 !important;
+    }
+}
+
+.cancelBtnClssCross {
+    @extend .sactionbtn;
+    background: $lighter-gray !important;
+    color: $base-gray !important;
+    border: 2px solid $light-gray !important;
+    padding: 7px !important;
+    text-decoration: none !important;
+    background-image: none !important;
+
+    &.x-button-pressing {
+        @extend .sactionbtn;
+        background: #9ba1aa !important;
+    }
+
+    .x-button-label {
+        font-weight: 300;
+        font-size: 0.8125rem !important;
+        line-height: 2.2em !important;
+    }
+
+    span {
+        font-family: 'Open Sans', sans-serif;
+        opacity: 1 !important;
+        color: #000 !important;
+    }
+}
+
+.addStatusLogBtn {
+    @extend .editPopUpSaveBtn;
+    background: $green !important;
+    left: 352px;
+    right: auto;
+    padding: 7px !important;
+    text-decoration: none !important;
+    background-image: none !important;
+    border: none !important;
+
+    .x-btn-button-center {
+        text-align: left !important;
+        -webkit-box-pack: inherit !important;
+        -ms-flex-pack: inherit !important;
+        justify-content: inherit !important;
+    }
+}
+
+.setCheckHideShow {
+    color: #fff;
+
+    &:before {
+        @include checkStickerBox;
+        color: #6cc95f;
+        width: 34px;
+        height: 28px;
+        line-height: 1.8750rem;
+        font-size: 1.8750rem;
+        border: none;
+    }
+}
+
+.riskIssueAdded {
+    background: $light-gray;
+    color: #ffffff;
+    height: 30px;
+    font-size: 0.875rem;
+    margin-left: 40px;
+    line-height: 1.8750rem;
+}
+
+.hideShowMsgCls {
+    left: 180px;
+}
+
+.statusListCls {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    margin: 0px 0px 12px 0px !important;
+    border: 1px solid $lighter-gray !important;
+
+    div {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    td {
+        font-size: 0.813rem;//
+       line-height: 1.063rem;//
+
+    }
+
+    .x-grid-cell {
+        vertical-align: middle;
+    }
+
+    .x-grid-cell-inner {
+        line-height: normal;
+    }
+
+    .editLog,
+    .deleteLog {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            float: none !important;
+            margin: 0 !important;
+        }
+
+        /* Cell content is empty (renderer returns ''); icon is the :before above.
+           Suppress Ext's default ellipsis on the inner div so the &nbsp; placeholder
+           in a narrow cell doesn't render "..." next to the icon. */
+        .x-grid-cell-inner {
+            text-overflow: clip;
+        }
+    }
+
+    /* Resolved checkbox: setCheck/setUncheck use checkStickerBox mixin which floats
+       :before left with margin-right — that ignores the column's align: center.
+       Unfloat so the icon centers under the Resolved header (matches subcriberlistspan fix). */
+    .setCheck:before,
+    .setUncheck:before {
+        float: none !important;
+        margin-right: 0 !important;
+    }
+
+    /* Keyboard focus outline for grid rows (WCAG 2.4.7 Focus Visible).
+       Grid has disableSelection:true, so cells aren't focusable — Tab lands on .x-grid-item. */
+    .x-keyboard-mode & .x-grid-item:focus,
+    .x-keyboard-mode & .x-grid-item-focused,
+    .x-keyboard-mode & .x-grid-row:focus {
+        outline: $focus-outline-width solid $focus-outline-color !important;
+        outline-offset: $focus-outline-offset-inset !important;
+    }
+
+    .x-keyboard-mode & .x-grid-item-focused .x-grid-cell-inner {
+        &:before {
+            margin: 2px;
+        }
+    }
+
+    .editCmp {
+        max-Width: 34px;
+        min-Width: 34px;
+        Width: 34px;
+    }
+
+    .resolvedColumnCls {
+        font-size: 0.813rem;//
+        width: 65px;
+        max-Width: 65px;
+        min-Width: 65px;
+        text-align: center;
+    }
+
+    .scoreColumnCls {
+        width: 80px;
+        max-Width: 80px;
+        min-Width: 80px;
+        text-align: left;
+    }
+
+    .width_100px {
+        font-size: 0.813rem;//
+        min-Width: 80px;
+        width: 80px;
+        max-Width: 85px;
+        //
+        p{
+            text-overflow: ellipsis !important;
+            white-space: nowrap;
+            overflow: hidden !important;//
+    }
+    }
+
+    .subjectCmp {
+        max-Width: 80px;
+        min-Width: 80px;
+    }
+}
+
+/* Risk Register tab only: shrink row height. Scoped via riskStatusListCls so
+   the Log Time tab (which also uses .statusListCls) is unaffected. */
+.riskStatusListCls {
+    .x-grid-cell-inner {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .x-grid-cell p {
+        margin: 0;
+    }
+}
+
+.subscriberListCls {
+    border: 1px solid $lighter-gray;
+
+    font-size: 0.813rem !important;//
+
+    /* Keyboard focus outline for grid cells (WCAG 2.4.7 Focus Visible).
+       cellmodel selection enables cell-level arrow-key navigation. */
+    .x-keyboard-mode & .x-grid-cell:focus,
+    .x-keyboard-mode & .x-grid-cell:focus-visible {
+        outline: $focus-outline-width solid $focus-outline-color !important;
+        outline-offset: $focus-outline-offset-inset !important;
+    }
+
+    /* Match the legacy headerStatusCls look on the native grid header so column
+       titles align vertically with cell content below. */
+    .x-column-header-inner .x-column-header-text-inner {
+        font-weight: normal;
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.813rem;
+    }
+
+    .x-grid-cell {
+        vertical-align: middle;
+    }
+
+    .x-grid-cell-inner {
+        line-height: normal;
+    }
+
+    /* Center edit/delete/view icons within their cell (overrides global float/margin hack) */
+    .editLog,
+    .deleteLog,
+    .fileView {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            float: none !important;
+            margin: 0 !important;
+        }
+    }
+
+    /* Checkbox span uses checkStickerBox mixin which floats :before left with
+       margin-right — that ignores the column's text-align: center. Unfloat so
+       the inline-block span centers under the Done / Activity Past Due headers. */
+    .subcriberlistspan:before {
+        float: none !important;
+        margin-right: 0 !important;
+    }
+
+    /* Hide icon but preserve cell width when user lacks permission */
+    .hiddenActionIcon:before {
+        display: none !important;
+    }
+
+    tr {
+        line-height: 1.8750rem;
+    }
+
+    div {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        // overflow: hidden;
+    }
+
+    td {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .width_80px {
+        min-width: 80px;
+        max-width: 80px;
+        width: 80px;
+        padding-top: 12px;
+        text-align: -webkit-center;
+    }
+
+    .width_217px {
+        min-width: 217px;
+        max-width: 217px;
+        width: 217px;
+    }
+
+    .width_115px {
+        min-width: 115px;
+        max-width: 115px;
+        width: 115px;
+    }
+
+    .width_40px {
+        min-width: 40px;
+        max-width: 40px;
+        width: 40px;
+    }
+}
+
+.wrapData {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 1 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    input[type="checkbox"]:before {
+        font-size: 0.5000rem;
+        text-align: center;
+        text-shadow: 0 0 0;
+        font-family: 'LeankorFonts';
+        margin-right: 10px;
+        font-weight: bold;
+        display: inline-block;
+        content: '\e235';
+        line-height: 0.8750rem;
+        background: #fff;
+        width: 13px;
+        height: 13px;
+        border-radius: 2px;
+        border: 1px solid #dee1e4;
+        float: left;
+        color: #fff !important;
+    }
+
+    input[type="checkbox"]:checked:after {
+        content: "\e236";
+        position: relative;
+        top: 1px;
+        right: 24px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        //background: #ebebeb;
+        font-family: 'LeankorFonts';
+        font-size: 0.8125rem;
+        //color: ;
+        display: inline-block;
+        text-align: center;
+        text-shadow: 0 0 0 $text-shadow-color;
+        font-weight: normal;
+        border-color: #f48f3b;
+        color: $leankor-orange-RB !important;
+    }
+}
+
+.copyUrlIcon {
+    &:before {
+        @include hervyBallIcon('\e243', 16px);
+        margin-top: 0px;
+        font-family: 'LeankorFonts';
+        color: $light-gray !important;
+    }
+
+    .x-tool-img {
+        background-image: none;
+        opacity: 1;
+        margin-top: -8px;
+        background-color: rgba(127, 255, 212, 0) !important;
+    }
+
+    .x-window-header-default .x-tool-img {
+        background-color: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background: none;
+        background-color: transparent !important;
+    }
+}
+
+.x-window-header-default .x-tool-img {
+    background-color: rgba(255, 255, 255, 0) !important;
+    height: 1.5em !important;
+}
+
+.x-form-text-default {
+    color: $base-gray !important;
+    font-weight: normal !important;
+    font: 400 0.813rem/1.313rem  $leankor-font-family !important;//
+}
+
+.labelClsStatusForm {
+    color: $base-gray !important;
+    font-size: 0.813rem !important;
+    font-weight: normal !important;
+}
+
+.incrementDecrementBtn {
+    @extend .editPopUpSaveBtn;
+    height: 35px;
+    background: $lighter-gray !important;
+    border: 2px solid $lighter-gray !important;
+
+    .x-btn-inner-default-small {
+        color: $base-gray !important;
+        font-size: 1.0000rem;
+        margin-bottom: 2px;
+        font-weight: bold;
+    }
+
+    .x-btn.x-btn-pressed.x-btn-default-small {
+        background: #d6d4d4 !important;
+    }
+}
+
+.percentFldCls {
+    .x-form-trigger-wrap-default {
+        border: none;
+        border-top: 1px solid $lighter-gray;
+        border-bottom: 1px solid $lighter-gray;
+    }
+
+    .x-form-text-default {
+        min-height: 33px !important;
+        text-align: center;
+    }
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+.subscribersCheckBoxCls {
+    border: 1px solid $component-border-color;
+    height: 2.25rem !important;
+    color: #000;
+    width: 99%;
+    opacity: 1 !important;
+
+    .x-form-cb-checked .x-form-checkbox-default {
+        left: auto;
+        right: -5px;
+        font: 1.75rem / 1 ExtJS !important;
+        height: 2.25rem;
+        width: 2.25rem !important;
+        color: $green;
+    }
+
+    .x-form-checkbox-default {
+        left: auto;
+        right: -5px;
+        font: 1.75rem / 1 ExtJS !important;
+        height: 2.25rem;
+        width: 2.25rem !important;
+        color: #afafaf;
+    }
+
+    span {
+        margin-left: 5px;
+        width: 100% !important;
+    }
+
+    .x-form-item-label-default {
+        width: 90% !important;
+    }
+
+    .x-form-cb-default {
+        margin-top: 4px;
+    }
+}
+
+.x-form-cb-checked .x-form-checkbox-default {
+    color: $green !important;
+}
+
+.subcriberlistspan {
+    &:before {
+        @include checkStickerBox;
+        // color: #fff !important;
+    }
+
+    // &.setCheck {
+    //     color: #f48f3b;
+    //     font-size: 0.8750rem !important;
+    //     // color: #000000;
+    // }
+
+    // &.setUncheck {
+    //     color: #fff !important
+    //     // color: rgb(235, 235, 235);
+    // }
+}
+
+.toggleon .x-slider:before {
+    border: none;
+    content: '';
+    position: absolute;
+    border-radius: 11px;
+    background-color: $green-RL;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.toggleoff .x-slider:before {
+    border: none;
+    content: '';
+    position: absolute;
+    border-radius: 11px;
+    background-color: $lighter-gray;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.toggleoff .x-slider-horz .x-slider-thumb {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 25px !important;
+    background-image: url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKD…SSSrHweWP3VHJNJBGY0JbG9zubHTP+eKmqGS3hkbc8Slv72OfzpYoIod3lxqhPUgcmpa//2Q==);
+    background-color: $light-gray !important;
+    background-position: -33px;
+    border-width: 0px;
+    margin-left: 0px !important;
+}
+
+.toggleon .x-slider-horz .x-slider-thumb {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 25px !important;
+    background-image: url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKD…SSSrHweWP3VHJNJBGY0JbG9zubHTP+eKmqGS3hkbc8Slv72OfzpYoIod3lxqhPUgcmpa//2Q==);
+    margin-left: -8px !important;
+    background-color: $green !important;
+    background-position: -33px;
+    border-width: 0px;
+}
+
+.togglebuttonCls {
+    height: 36px;
+    color: #000;
+    width: 98% !important;
+
+    span {
+        font-family: 'Open Sans', sans-serif;
+        width: 90% !important;
+    }
+
+    .x-form-item-label-default {
+        width: 90% !important;
+    }
+
+    .x-slider-horz .x-slider-thumb:before {
+        content: none;
+    }
+
+    .x-slider-horz {
+        padding-left: 0px;
+    }
+
+    .x-form-item-body-default {
+        width: 40px !important;
+        float: left !important;
+    }
+}
+
+.showHideSubscribe {
+    .x-mask {
+        background-color: rgba(255, 255, 255, 0) !important;
+    }
+}
+
+.x-form-item-default.x-item-disabled {
+    opacity: 0.6p;
+}
+
+.colorPickerWindow x-box-inner {
+    background: #FFFFFF;
+}
+
+.colorPickerWindowPanel .x-panel-header-default {
+    background: #FFFFFF !important;
+    color: #000;
+}
+
+.colorPickerWindowPanel .x-panel-header-text-container-default {
+    color: #000;
+    font-weight: normal;
+    font-size: 0.7500rem;
+}
+
+.colorPicker {
+    width: 34px;
+    height: 33px;
+    background-color: white !important;
+    cursor: pointer !important;
+    padding: 2px;
+    float: left !important;
+    text-decoration: none !important;
+    display: block !important;
+    position: relative !important;
+    border: none !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+
+    &:focus-visible {
+        outline: $focus-outline-width solid $focus-outline-color !important;
+        outline-offset: $focus-outline-offset-inset;
+        box-shadow: none !important;
+    }
+}
+
+.colorPicker-inner {
+    display: inline-block;
+    border: 1px solid #ededed;
+    margin: 2px 2px 1px 2px;
+    height: 32px;
+    width: 33px;
+}
+
+.categoryRadioCls {
+    .x-form-cb-label-default {
+        color: $base-gray;
+        font-size: 0.813rem; 
+    }
+}
+
+.categoryListCls {
+
+    min-height: 0.75rem !important;
+    height: 2.375rem !important;
+    border: none !important;
+    font-size: 0.813rem;
+    line-height: 2.188 !important;
+    color: $base-gray;
+
+    .selectedClsDataviewOnOver {
+        color: $leankor-orange !important;
+    }
+}
+
+.categoryListCls,
+.categoryListCls * {
+    line-height: 2.6 !important;
+}
+
+.categoryListCls:hover {
+    background: $lightest-gray !important;
+}
+
+.categoryListCls.x-list .x-list-item.x-item-selected.x-list-item-tpl {
+    min-height: 12px !important;
+    height: 35px !important;
+    background-image: none !important;
+    border: none !important;
+    background-color: #4385F5;
+    color: #fff;
+    font-size: 0.8125rem;
+    border-bottom: 1px solid #dedede !important;
+}
+
+.categoryColorField {
+    margin: 10px;
+    border: 2px solid #ECECEC !important;
+    background: transparent !important;
+    border-radius: 1px !important;
+    color: #ccc;
+    font-size: 0.8750rem;
+    margin-bottom: 18px;
+    background-image: url(images/drop_down.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 98% !important;
+    background-size: 24px !important;
+}
+
+.categoryEditCls {
+    @extend .categoryColorField;
+    margin-bottom: 4px;
+}
+
+.launchmenuCloseIconSml {
+    @extend .x-tool-close;
+    width: 35px;
+    padding-top: 2px !important;
+    border: none !important;
+
+    span {
+        display: none;
+    }
+}
+
+.mycustomTree {
+    .x-tree-icon-leaf {
+        color: #a4a4a4 !important;
+        font-size: 0.7500rem !important;
+
+        &:before {
+            font-family: 'LeankorFonts' !important;
+            content: "\e232";
+        }
+    }
+
+    .x-tree-icon {
+        font-size: 0.9375rem;
+        color: #a4a4a4 !important;
+
+        &.x-tree-icon-parent {
+            font-size: 0.7500rem;
+
+            &:before {
+                font-family: 'Carousel' !important;
+                content: "\b155";
+            }
+        }
+
+        &.x-tree-icon-parent-expanded {
+            font-size: 0.7500rem;
+
+            &:before {
+                font-family: 'LeankorFonts';
+                content: "\e249";
+            }
+        }
+    }
+
+    .x-tree-arrows .x-tree-expander {
+        font-size: 0.8125rem !important;
+        color: #a4a4a4 !important;
+        font-family: 'LeankorFonts' !important;
+
+        &:before {
+            font-family: 'LeankorFonts' !important;
+            content: "\e256" !important;
+        }
+    }
+
+    .x-grid-item {
+        .x-grid-tree-node-leaf {
+
+            .x-tree-elbow,
+            .x-tree-elbow-end {
+                font-size: 0.8125rem !important;
+                color: #a4a4a4 !important;
+                font-family: 'LeankorFonts' !important;
+
+                &:before {
+                    content: "\e256" !important;
+                }
+            }
+        }
+
+        .x-tree-arrows {
+            font-size: 0.8125rem !important;
+            color: #a4a4a4 !important;
+            font-family: 'Carousel' !important;
+        }
+
+        .x-tree-expander,
+        .x-tree-elbow-plus,
+        .x-tree-elbow {
+            font-size: 0.8125rem !important;
+            color: #a4a4a4 !important;
+            font-family: 'LeankorFonts' !important;
+
+            &:before {
+                content: "\e256" !important;
+            }
+        }
+
+        &.x-grid-item-selected {
+
+            .x-tree-elbow,
+            .x-tree-elbow-end {
+                font-size: 0.8125rem !important;
+                color: #a4a4a4 !important;
+                font-family: 'LeankorFonts' !important;
+
+                &:before {
+                    content: "\e257" !important;
+                    color: #ee842b;
+                }
+            }
+
+            .x-tree-elbow-img .x-tree-elbow {
+                font-size: 0.8125rem !important;
+                font-family: 'LeankorFonts' !important;
+                color: $green !important;
+
+                &:before {
+                    content: "\e257";
+                    color: #ee842b;
+                }
+            }
+
+            .x-tree-elbow-plus,
+            .x-tree-expander {
+                font-size: 0.8125rem !important;
+                font-family: 'LeankorFonts' !important;
+                color: $green !important;
+
+                &:before {
+                    content: "\e257" !important;
+                    color: #ee842b;
+                }
+            }
+        }
+    }
+}
+
+.categoryTextInputCls {
+    background-color: #CCCCFF;
+    background-image: url(images/drop_down.png) !important;
+    margin: 5px;
+    width: 95%;
+    background-repeat: no-repeat !important;
+    background-size: 30px !important;
+    background-position-y: -6px !important;
+    background-position-x: 100% !important;
+}
+
+.categoryFieldCls {
+    .x-form-trigger-wrap-default {
+        padding: 3px !important;
+    }
+
+    .x-form-text-default {
+        color: $base-gray;
+        padding: 5px 10px 4px;
+        background-color: #fff;
+        font: 400 13px/21px  $leankor-font-family;
+        min-height: 33px !important;
+    }
+}
+
+.alertMsgCls .x-message-box .x-window-body {
+    overflow: hidden !important;
+}
+
+.messagepopUpCls {
+    text-shadow: none;
+    padding: 4px;
+    font-size: 1rem !important;
+    padding-bottom: 5px;
+    color: $base-gray;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.x-tree-ddindicator {
+    height: 1px;
+    border-width: 1px 0px 0px;
+    border-style: dotted;
+    border-color: green;
+    display: none !important;
+}
+
+//@Auther Hitesh
+.sch-gantt-task-baseline .sch-gantt-task-bar {
+    overflow: hidden !important;
+    height: 0px !important;
+    background: transparent;
+}
+
+.sch-gantt-task-bar {
+    border: none !important;
+    border-radius: 0px !important;
+    //background-color: #e7e8e9;
+    //background-color: #d0d1d2 !important;
+    background-color: $lighter-gray;
+}
+
+.sch-ganttpanel-showbaseline .sch-event-wrap {
+    height: 85%;
+}
+
+.sch-gantt-baseline-item {
+    display: none;
+    top: 5%;
+    z-index: 0 !important;
+    background-color: blue !important;
+}
+
+.sch-ganttpanel-showbaseline .sch-gantt-baseline-item {
+    position: absolute;
+    background-color: white !important;
+    margin-left: -2px;
+    border: dotted 2px;
+    display: flex;
+    border-color: #4a9cdb;
+}
+
+.sch-ganttpanel-showbaseline .sch-gantt-task-bar {
+    height: 23px;
+}
+
+.sch-gantt-baseline-item {
+    top: 5%;
+    z-index: 0 !important;
+    background-color: #111138 !important;
+}
+
+.sch-gantt-parenttask-baseline .sch-gantt-parenttask-bar {
+    background: transparent;
+    border: 0 none;
+    max-width: 100%;
+    box-shadow: none;
+}
+
+.sch-gantt-task-readonly .sch-gantt-task-bar,
+.sch-gantt-task-readonly .sch-gantt-task-segment {
+    border-color: #989898;
+    background-color: #e7e8e9;
+}
+
+.x-combo-hide-scrollbars .x-combo-list-inner {
+    overflow: hidden !important;
+}
+.combo-custom-cls-baselinesubmenu-noitem {
+    .x-menu-item-text-default {
+        font: 400 13px  $leankor-font-family;
+        line-height: 1.9375rem;
+        padding-top: 1px;
+        color: #9d9d9d;
+        background-color: transparent;
+        cursor: pointer;
+        padding-left: 25px;
+    }
+}
+
+.combo-custom-cls-baselinesubmenu-item {
+    .x-menu-item-default {
+        border-width: 0;
+        cursor: pointer;
+        margin-left: 2px !important;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .x-menu-item-text-default {
+        color: #757171;
+    }
+
+    .x-box-scroller-menu-default.x-box-scroller-top {
+        margin-top: 0px;
+        margin-right: 0;
+        margin-bottom: 0px;
+        font: 0px/0px FontAwesome;
+    }
+
+    .x-box-scroller-menu-default.x-box-scroller-top,
+    .x-box-scroller-menu-default.x-box-scroller-bottom {
+        height: 0px;
+        width: 0px;
+    }
+
+    .x-box-scroller-menu-default.x-box-scroller-bottom {
+        margin-top: 0px;
+        margin-right: 0;
+        margin-bottom: 0px;
+        font: 0px/0px FontAwesome;
+    }
+}
+
+.combo-custom-cls-baselinesubmenu-active {
+    .x-menu-item-text-default {
+        color: #ee842b !important;
+    }
+}
+
+.combo-custom-cls-baselineparentmenu-item {
+    .x-menu-item-text-default {
+        font: 400 0.813rem  $leankor-font-family;
+        line-height: 1.938rem;
+        padding-top: 1px;
+        color: #757171;
+        cursor: pointer;
+    }
+}
+
+.combo-custom-cls-baselinepanel {
+    word-break: break-word;
+}
+
+//eof baseline-code
+.logItem {
+    &:before {
+        @include pictosiconsNew("\e226", 1rem);
+    }
+}
+
+.x-form-trigger {
+    display: table-cell;
+    vertical-align: super;
+    cursor: pointer;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 0;
+    white-space: nowrap;
+}
+
+.highlight-task-cls-amber {
+    box-shadow: 0px 0px 0px 2px #FFC200;
+}
+
+.kanbantaskcls-box1 {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    margin-left: 3px;
+    transition: background-color 0.25s;
+
+    &:hover {
+        border: 1px solid white;
+    }
+
+    &.Done {
+        background-color: #1ec81e;
+    }
+
+    &.NotStarted {
+        background-color: #BA3A3A;
+    }
+
+    &.InProgress {
+        background-color: #e7a84b;
+    }
+
+    /**@Author Rahul Raghuvanshi
+	 * Miniature coloring css_Start
+	*/
+    &.blueMiniature {
+        background-color: $leankor-blue;
+    }
+
+    &.whiteMiniature {
+        background-color: #fff;
+        border: 1px solid $base-gray;
+    }
+
+    &.orangeMiniature {
+        background-color: $highlight-yellow;
+    }
+
+    &.redMiniature {
+        background-color: $dead-red !important;
+    }
+
+    &.greenMiniature {
+        background-color: $green !important;
+    }
+
+    /* Miniature coloring css_End */
+}
+
+.grid-row-color {
+    overflow-x: hidden !important;
+    background-color: white !important;
+    border: none;
+
+    .x-grid-cell-inner {
+       width: -moz-fit-content;
+       padding: 5px 0px 5px 3px !important
+ }
+}
+
+.grid-cell-textoverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;    
+}
+
+.highlightMin {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.linked-card-tip {
+    z-index: 99999 !important;
+}
+
+.x-tip {
+    z-index: 99999 !important;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 12px;
+    margin-top: 13px !important;
+    top:1px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $lighter-gray;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    background-color: $icon-color;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: $leankor-orange-RL;
+}
+
+input:checked+.slider:before {
+    background-color: $leankor-orange-RB;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.advance-print-panel .x-tool {
+    left: 0 !important;
+    margin-top: -3px !important;
+}
+
+.advance-print-panel .x-tool-expand-bottom {
+    font: 20px/1 FontAwesome;
+    background: none;
+    width: 26px;
+    height: 26px;
+    margin: 0 2px;
+
+    &:before {
+        vertical-align: middle !important;
+        font-weight: bold;
+        @include pictosiconsNew("\e132", 11px, $gray);
+    }
+}
+
+.advance-print-panel .x-tool-collapse-top {
+    font: 20px/1 FontAwesome;
+    background: none;
+    width: 26px;
+    height: 26px;
+    margin: 0 2px;
+
+    &:before {
+        font-weight: bold;
+        @include pictosiconsNew("\e216", 8px, $gray);
+    }
+}
+
+.advance-print-panel .x-panel-header-default .x-tool-img {
+    background-color: $lighter-gray !important;
+    border-radius: 30px;
+}
+
+.advance-print-panel .x-panel-header-title-default {
+    color: #9f9f9f;
+    font-size: 1.0000rem;
+    font-weight: 400;
+    font-family:  $leankor-font-family;
+    line-height: 1.2500rem;
+    left: 45px !important;
+}
+
+.advance-print-panel .x-panel-header-default {
+    background-color: transparent;
+    padding: 10px 0px !important;
+}
+
+//css for sticker feature.
+.stickermaincls {
+    text-align: left;
+    font-size: 0.813rem;
+    line-height: 0.875rem;
+    //background-color: white;
+    margin-top: 0;
+    //color: $base-gray !important;
+}
+
+.stickertextcls {
+    width: 440px !important;
+    @extend.stickermaincls;
+}
+
+.stickerCheckboxcls {
+    width: 32px !important;
+    @extend.stickermaincls;
+
+    .x-grid-checkcolumn {
+        &:after {
+            margin: 3px 0.5ex;
+            padding: initial;
+            content: "\e235";
+            position: relative;
+            top: 0px;
+            left: 0px;
+            color: $lighter-gray;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            font-family: 'LeankorFonts';
+            font-size: 0.8125rem;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+        }
+    }
+
+    .x-grid-checkcolumn-checked {
+        &:after {
+            content: "\e236";
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #ebebeb;
+            font-family: 'LeankorFonts';
+            font-size: 0.8125rem;
+            color: $leankor-orange-RB;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+        }
+    }
+}
+
+.stickerimagecls {
+    width: 50px !important;
+    @extend.stickermaincls;
+}
+
+.stickercls {
+    .x-panel-header-title-default {
+        color: $base-gray !important;
+    }
+
+    .x-grid-dirty-cell>.x-grid-cell-inner:after {
+        display: none;
+    }
+
+    .x-grid-with-row-lines .x-grid-item {
+        border-style: solid;
+        border-width: 1px 0 0;
+        border-color: $lighter-gray;
+    }
+}
+
+.stickerContaint {
+    table {
+        padding-left: 10px;
+        background: #fff;
+    }
+
+    .x-grid-view {
+        width: 103% !important;
+    }
+}
+
+.stickersItem {
+    &:before {
+        @include listIconImagesFamily("\e202", 1.125rem);
+    }
+}
+
+.stickersColumncls .x-grid-cell-inner {
+    display: inline-flex;
+}
+
+.stickersHeadercls {
+    color: #000;
+}
+
+//26-09-2017 after bryntum upgrade.
+.x-form-trigger-wrap-default.x-form-trigger-wrap-focus {
+    border-color: $lighter-gray !important;
+}
+
+//09-10-2017.
+.sch-terminal {
+    top: 50% !important;
+    border-color: #aaa !important;
+    overflow: hidden !important;
+    box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5) !important;
+}
+
+.sch-terminal:hover {
+    background-color: $lighter-gray;
+    border-color: #7971e2 !important;
+    border-style: solid;
+}
+
+.x-form-checkbox-default {
+    color: $light-gray !important;
+}
+
+//08-11-2017.
+.fa-check-circle:before {
+    color: yellowgreen;
+    font-size: larger;
+}
+
+.fa-times-circle:before {
+    color: red;
+    font-size: larger;
+}
+
+.customViewIcon {
+    color: #9c9c9e;
+    font-family: 'LeankorFonts';
+    // font-size: 1.0000rem !important;
+    text-align: center;
+    text-shadow: 0 0 0;
+    cursor: pointer;
+
+    &:after {
+        content: "\e197";
+        font-size: 1rem !important;
+    }
+}
+
+.headerSet {
+    border: 1px solid $lighter-gray !important;
+    border-bottom: none !important;
+    line-height: 1.75rem;
+
+    .x-panel-body-default {
+        background: $lightest-gray !important;
+    }
+
+    th {
+        font-weight: normal;
+        font-family: sans-serif;
+        font-size: 0.8125rem !important;
+    }
+}
+
+.fileItem {
+    &:before {
+        // font-family: 'LeankorFonts' !important;
+        @include listIconImagesFamily("\e228", 1.125rem);
+    }
+}
+
+.badgeText {
+    text-shadow: 0px -0.08em 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0.1em 0.1em rgba(0, 0, 0, 0.5);
+    float: right;
+    min-width: 15px;
+    border-radius: 100%;
+    min-height: 14px;
+    position: absolute;
+    left: 1.375rem;
+    top: 0.25rem;
+    line-height: 1.2em;
+    font-size: 0.5000rem;
+    background-clip: padding-box;
+    background-color: $dead-red;
+    text-align: center;
+    border: 1px solid $dead-red;
+    color: #FFF;
+}
+
+.fileItemCol {
+    display: -webkit-box;
+    display: inline-block;
+
+    &:before {
+        // font-family: 'Carousel' !important;
+        @include listIconImagesFamily("\e228", 14px);
+        color: $light-gray;
+    }
+}
+
+.chatterIconCol {
+    display: -webkit-box;
+    display: inline-block;
+
+    &:before {
+        @include listIconImagesFamily("\e222", 14px);
+        font-family: 'LeankorFonts';
+        color: $light-gray;
+    }
+}
+
+.riskIconcol {
+    display: -webkit-box;
+    display: inline-block;
+
+    &:before {
+        @include listIconImagesFamily('\e229', 0.938rem);
+        // font-family: 'LeankorFonts';
+        color: $light-gray;
+    }
+}
+
+.atRiskIcon {
+    display: -webkit-box;
+    display: inline-block;
+
+    &:before {
+        @include listIconImagesFamily('\e229', 15px);
+        // font-family: 'LeankorFonts';
+        color: $leankor-orange;
+    }
+}
+
+.fileView {
+    &:before {
+        @include hervyBallIcon('\e243', 14px);
+        margin-left: 5px;
+        float: left;
+        margin-right: 2px;
+        color: $icon-color;
+        font-size: 0.8750rem;
+        text-shadow: none;
+        cursor: pointer;
+        font-family: 'LeankorFonts';
+    }
+}
+
+//23-11-2017. following css is overriden for blank Planggantt background color.
+.customGanttPanelCls {
+    background: white;
+
+    .x-grid-scrollbar-clipper {
+        .x-tree-view {
+            .x-grid-item-container {
+                .x-grid-item-selected {
+                    background-color: $highlight-yellow-RL !important;
+                }
+            }
+        }
+    }
+}
+
+.x-form-item-default.x-item-disabled {
+    opacity: 0.7 !important;
+    color: #000000;
+}
+
+.chatterButtonCls {
+    &:after {
+        @include pictosicons("\e238", 14px, $icon-color);
+        @extend .header-icon-default;
+        bottom: 5px;
+		right:4px;
+    }
+}
+
+.linkColor {
+    a {
+        color: #0000cd;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #0000cd;
+    }
+
+    a:hover {
+        color: #0000cd;
+    }
+}
+
+.tdDate {
+    padding-left: 6px;
+    text-align: left;
+    min-width: 257px;
+    max-width: 257px;
+    user-select: none;
+    font-size: 0.7188rem !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tdLink {
+    text-align: left;
+    padding-left: 5px;
+    user-select: none;
+    min-width: 96px;
+    max-width: 96px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &.tdlinkfirstclmn {
+        padding-left: 5px;
+        min-width: 66px;
+        max-width: 66px;
+    }
+
+    &.tdlinksecondclmn {
+        padding-left: 8px;
+        min-width: 88px;
+        max-width: 88px;
+    }
+}
+
+.serviceApptIcon {
+    &:before {
+        @include hervyBallIcon('\e268', 18px);
+        font-family: 'LeankorFonts';
+    }
+}
+
+.usrImg {
+    min-width: 52px;
+    max-width: 52px;
+
+    img {
+        height: 25px;
+        width: 26px;
+        position: relative;
+        top: 7px;
+        left: 4px;
+    }
+}
+
+.copyUrlText {
+    opacity: 0;
+}
+
+.x-progress-default .x-progress-bar-default {
+    background-color: $green !important;
+}
+
+.x-progress-default .x-progress-text {
+    color: #FFFFFF !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+// FSL css
+.serviceApptItemsCss {
+    width: 28px;
+    position: relative;
+    left: 4px;
+    top: 8px;
+    border-radius: 21px;
+}
+
+.serviceApptTabPanelCss {
+    border: 1px solid;
+
+    &.x-panel-default {
+        border-color: $component-border-color;
+    }
+
+    /*.x-tab.x-tab-active.x-tab-default {
+        border-top: 1px solid #777879;
+        border-right: 1px solid #777879;
+        border-bottom: 0px !important;
+        border-left: 1px solid #777879;
+        background: #eef1f6 !important;
+    }*/
+    /*.x-tab-default-top {
+        border-bottom: 0px !important;
+        height: 35px !important;
+    }*/
+}
+
+.serviceApptDataViewCss {
+    overflow-x: hidden !important;
+    border: 1px solid $component-border-color;
+}
+
+.fieldServiceAppCls {
+    @extend .editCardPopupCls;
+
+    .x-tab-bar-horizontal>.x-tab-bar-body-default {
+        padding: 0px;
+    }
+
+    .x-tab-inner-default {
+        font-size: 0.8750rem !important;
+    }
+
+    .x-tab.x-tab-active.x-tab-default {
+        border-top: 2px inset $lightest-gray;
+        border-bottom: none;
+        background-color: #ffffff !important;
+    }
+
+    .x-tab-default-top {
+        font-size: 1.0000rem;
+        /*margin-left: -5px;*/
+        padding: 5px 10px;
+        background-color: #eef1f6;
+    }
+
+    .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+        color: #999;
+        font-size: 1.0000rem;
+    }
+
+    .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+        color: #999;
+    }
+
+    .x-tab-over.x-tab-default {
+        border-top: 2px solid $component-border-color;
+        background-color: #eef1f6;
+    }
+
+    .x-tab-button-center {
+        text-align: center;
+    }
+
+    .x-panel-body-default {
+        overflow-x: hidden !important;
+    }
+
+    .x-tab-default .x-tab-close-btn {
+        color: #919191;
+    }
+}
+
+.serviceApptDataViewHeaderCss {
+    width: 100%;
+    height: 30px;
+    background: #eef1f6 !important;
+    padding-top: 4px;
+}
+
+.serviceApptTabPanelDataViewCss {
+    border: 1px solid rgba(153, 153, 153, 0.44);
+    height: 136px !important;
+
+    .x-tab-button-center {
+        text-align: center;
+        top: -2px;
+    }
+}
+
+.infoIcon {
+    min-width: 27px;
+    max-width: 30px;
+    color: #9c9c9e;
+    font-family: 'LeankorFonts';
+    font-size: 1.0000rem !important;
+    text-align: center;
+    text-shadow: 0 0 0;
+    cursor: pointer;
+
+    &:after {
+        content: "\e251";
+    }
+}
+
+.tdDateServiceApp {
+    padding-left: 5px;
+    text-align: left;
+    min-width: 256px;
+    max-width: 256px;
+    user-select: none;
+    font-size: 0.7188rem !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tdLinkServiceApp {
+    text-align: left;
+    padding-left: 5px;
+    user-select: none;
+    min-width: 124px !important;
+    max-width: 124px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &.tdLinkServiceAppfirstclmn {
+        min-width: 91px;
+        max-width: 91px;
+    }
+
+    &.tdLinkServiceAppsecondclmn {
+        padding-left: 4px;
+        min-width: 81px;
+        max-width: 81px;
+    }
+}
+
+.addWorkOrderBtn {
+    @extend .editPopUpSaveBtn;
+    background: #A4C99F !important;
+    left: 90% !important;
+    right: auto;
+    padding: 7px !important;
+    text-decoration: none !important;
+    background-image: none !important;
+    border: none !important;
+    width: 53px !important;
+    top: 22px !important;
+
+    .x-btn-button-center {
+        text-align: left !important;
+        -webkit-box-pack: inherit !important;
+        -ms-flex-pack: inherit !important;
+        justify-content: inherit !important;
+    }
+}
+
+.deleteWorkOrderLog {
+    width: 30px;
+    min-Width: 30px;
+    max-Width: 30px;
+    color: #7c7c7c;
+
+    &:after {
+        content: "\a31";
+        padding: 5px;
+    }
+}
+
+.tdLinkWorkOrder {
+    text-align: left;
+    padding-left: 5px;
+    user-select: none;
+    min-width: 81px;
+    width: 122px;
+    max-width: 122px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tdLinkWorkOrderSubject {
+    text-align: left;
+    padding-left: 27px;
+    user-select: none;
+    width: 200px;
+    min-width: 70px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.AllWorkOrderTbl {
+    margin-bottom: 0px;
+    font-size: 0.7500rem;
+
+    th {
+        background: #e4e4e4;
+        color: #333 !important;
+    }
+
+    td {
+        color: #7c7c7c;
+    }
+
+    .workOrderNumber {
+        width: 70px;
+        min-width: 70px;
+        max-Width: 70px;
+        padding-left: 10px;
+    }
+
+    .workType {
+        width: 70px;
+        min-width: 70px;
+        max-Width: 70px;
+        color: #7c7c7c;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-left: 10px;
+    }
+
+    .subject {
+        width: 150px;
+        min-width: 150px;
+        max-Width: 160px;
+        padding-left: 10px;
+        color: #7c7c7c;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .linkOrder {
+        max-Width: 20px;
+
+        &:before {
+            content: '\e243';
+            font-family: 'LeankorFonts';
+            font-size: 0.8750rem;
+        }
+    }
+}
+
+.tdDateWorkorder {
+    padding-left: 25px;
+    text-align: left;
+    min-width: 256px;
+    max-width: 256px;
+    user-select: none;
+    font-size: 0.7188rem !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+//FSL css eds.
+.sch-zone {
+    //background-color: rgb(233,233,233) !important;
+    background-color: #f3f0f0 !important;
+}
+
+.gnt-holiday-custom {
+    background-color: #F8DADA !important;
+}
+
+.statusCls {
+    left: auto !important;
+    right: -5px;
+}
+
+.customStatusCls {
+    height: 40px !important;
+}
+
+.menuBtnCls {
+    min-height: 36px;
+    max-height: 36px;
+    height: 36px;
+
+    .x-menu-item-text-default {
+        padding: 0 10px;
+        font: normal 13px  $leankor-font-family;
+        line-height: 1.8750rem;
+        cursor: pointer;
+        position: relative;
+        border-width: 1px;
+        border-style: dotted;
+        border-color: #fff;
+        color: $base-gray;
+    }
+
+}
+
+.x-menu-default {
+    border-style: solid;
+    border-width: 1px;
+    border-color: $component-border-color;
+    border-top: none !important;
+}
+
+//Miniature cls with MileStone.
+.custome-milestone-white-miniature {
+    @extend .sch-gantt-milestone-diamond-ct;
+
+    &:before {
+        font-family: FontAwesome;
+        content: '';
+        position: absolute;
+        color: #fff;
+        font-size: 0.5625rem;
+        border: 1px solid black;
+        cursor: pointer;
+        left: 4px;
+        // line-height: 0.4375rem;
+        // margin: 4px 5px 4px 0px;
+        height: 7px;
+        width: 7px;
+        top: 4px;
+        z-index: 3;
+        background: #fff;
+
+    }
+}
+
+.custome-milestone-blue-miniature {
+    @extend .sch-gantt-milestone-diamond-ct;
+
+    &:before {
+        font-family: FontAwesome;
+        content: '';
+        position: absolute;
+        color: #13a3e0;
+        font-size: 0.5625rem;
+        cursor: pointer;
+        left: 5px;
+        z-index: 3;
+        width: 6px;
+        height: 6px;
+        background-color: #13a3e0;
+        border: 1px solid;
+        top: 5px;
+    }
+}
+
+.custome-milestone-orange-miniature {
+    @extend .sch-gantt-milestone-diamond-ct;
+
+    &:before {
+        font-family: FontAwesome;
+        content: '';
+        position: absolute;
+        color: #fcc485;
+        font-size: 0.5625rem;
+        cursor: pointer;
+        left: 5px;
+        z-index: 3;
+        width: 6px;
+        height: 6px;
+        background-color: #fcc485;
+        border: 1px solid;
+        top: 5px;
+    }
+}
+
+.custome-milestone-red-miniature {
+    @extend .sch-gantt-milestone-diamond-ct;
+
+    &:before {
+        font-family: FontAwesome;
+        content: '';
+        position: absolute;
+        color: #ee7575 !important;
+        font-size: 0.5625rem;
+        cursor: pointer;
+        left: 5px;
+        z-index: 3;
+        width: 6px;
+        height: 6px;
+        background-color: #ee7575;
+        border: 1px solid;
+        top: 5px;
+    }
+}
+
+.custome-milestone-green-miniature {
+    @extend .sch-gantt-milestone-diamond-ct;
+
+    &:before {
+        font-family: FontAwesome;
+        content: '\f0c8';
+        position: absolute;
+        color: $green !important;
+        font-size: 0.5000rem;
+        border: 1px solid #222222;
+        cursor: pointer;
+        left: 5px;
+        line-height: 0.4375rem;
+        margin: 4px 5px 4px 0px;
+        height: 7px;
+        z-index: 3;
+    }
+}
+
+.custome-milestone-cls {
+    @extend .sch-gantt-milestone-diamond-ct;
+
+    &:before {
+        font-family: FontAwesome;
+        content: '\f0c8';
+        position: absolute;
+        color: #ba3a3a;
+        font-size: 0.5625rem;
+        cursor: pointer;
+        left: 5px;
+        z-index: 3;
+    }
+}
+
+.custome-milestone-complite-cls {
+    @extend .sch-gantt-milestone-diamond-ct;
+
+    &:before {
+        font-family: FontAwesome;
+        content: '\f0c8';
+        position: absolute;
+        color: #0d9a0d;
+        font-size: 0.5625rem;
+        cursor: pointer;
+        left: 5px;
+        z-index: 3;
+    }
+}
+
+.custome-milestone-inprogress-cls {
+    @extend .sch-gantt-milestone-diamond-ct;
+
+    &:before {
+        font-family: FontAwesome;
+        content: '\f0c8';
+        position: absolute;
+        color: #e7a84b;
+        font-size: 0.5625rem;
+        cursor: pointer;
+        left: 5px;
+        z-index: 3;
+    }
+}
+
+//css for Externaly Dependent Card.
+.highlight-task-externalydpendent-cls {
+    -webkit-animation-name: blinksCls;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-name: blinksCls;
+    animation-iteration-count: infinite;
+    animation-duration: .8s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    //background-color :red;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes blinksCls {
+    100% {
+        background-color: red;
+    }
+}
+
+/* Standard syntax */
+@keyframes blinksCls {
+    100% {
+        background-color: red;
+    }
+}
+
+//Css for FilesConnect.
+/*
+.fileconnect-delete-btn-cls {
+    height: 32px;
+    border-radius: 2px !important;
+    background-color: #ed6d02 !important;
+    text-decoration: none !important;
+    background-image: none !important;
+    border: none !important;
+    background: #ed6d02 !important;
+    margin-left: -3px !important;
+
+    &:before {
+        @include hervyBallIcon('\a31', 14px);
+        color: #fafafa;
+        font-size: 0.8750rem;
+        text-shadow: none;
+        cursor: pointer;
+    }
+}
+*/
+
+.table {
+    td {
+        background: transparent;
+        color: $base-gray;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+    }
+
+    td div {
+        cursor: pointer;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+    img {
+        height: 20px;
+        width: 20px;
+        margin-left: 4px;
+    }
+}
+
+.selected-resource {
+    min-height: 12px !important;
+    height: 38px !important;
+    border: none !important;
+    border-bottom: 1px solid $lighter-gray !important;
+    font-size: 0.8125rem;
+    line-height: 2.1875rem;
+
+    &.x-item-selected {
+        color: $leankor-orange;
+        background-color: $lightest-gray;
+
+        &.x-view-item-focused {
+            outline: none !important;
+        }
+    }
+}
+
+.filefield-cls-fileconnect {
+    .x-form-file-wrap .x-form-trigger-wrap .x-form-text {
+        border: none;
+        border-color: $component-border-color;
+        height: 32px;
+    }
+}
+
+.fileconnect-tabpanel-cls {
+    @extend .editCardPopupCls;
+
+    .x-tab-bar-horizontal>.x-tab-bar-body-default {
+        padding: 0px;
+    }
+
+    .x-tab-inner-default {
+        font-size: 0.8750rem !important;
+    }
+
+    .x-tab.x-tab-active.x-tab-default {
+        border-top: 2px solid $light-gray;
+        background-color: #ffffff !important;
+        border-bottom: none;
+    }
+
+    .x-tab-default-top {
+        font-size: 1.0000rem;
+        margin-left: -5px;
+        padding: 4px 10px 4px 10px;
+        background-color: $lightest-gray;
+    }
+
+    .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+        color: $light-gray;
+        font-size: 1.0000rem;
+    }
+
+    .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+        color: #999;
+    }
+
+    .x-tab-over.x-tab-default {
+        border-top: 2px solid $lighter-gray;
+        background-color: $lightest-gray;
+    }
+
+    .x-tab-button-center {
+        text-align: center;
+    }
+
+    .x-panel-body-default {
+        overflow-x: hidden !important;
+    }
+
+}
+
+.fileconnect-header-Cls {
+    border: 1px solid $lighter-gray !important;
+    border-bottom: none !important;
+
+    .x-panel-body-default {
+        background: $lightest-gray !important;
+    }
+
+    th {
+        font-weight: normal;
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.8125rem;
+        padding: 4px;
+        text-align: left;
+    }
+}
+
+.fileconnect-searchfield-cls {
+    .x-form-trigger-wrap-default {
+        border-bottom: 1px solid $component-border-color;
+        border-top: 1px solid $component-border-color;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+.search-cls-filesconnect {
+    color: $light-gray !important;
+    -webkit-text-fill-color: $light-gray !important;
+}
+
+//End of FilesConnect css.
+
+//Toast Css
+
+.customtoastclsAutoHide {
+    padding: 5px !important;
+    background-color: $gray !important;
+    border-color: $gray !important;
+    min-width: 20em !important;
+    max-width: 30em !important;
+    border-radius: 4px !important;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 2px 2px !important;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 2px 2px !important;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 2px 2p !important;
+
+    .x-tab-guard {
+        width: 6px !important;
+        height: 90% !important;
+        border-left: 3px solid $dead-red;
+        z-index: 999;
+        border-radius: 3px !important;
+        clip: auto !important;
+        bottom: 7px !important;
+
+        &.x-tab-guard- {
+            width: 6px !important;
+            height: 90% !important;
+            border-left: 3px solid $dead-red;
+            clip: auto !important;
+            z-index: 999;
+            border-radius: 3px !important;
+            bottom: 7px !important;
+        }
+    }
+
+    .x-toolbar-footer {
+        background-color: transparent !important;
+        background: transparent !important;
+        padding: 0px;
+        margin-top: -5px;
+    }
+
+    .x-window-body-default {
+        background-color: transparent !important;
+        color: #FFFFFF !important;
+        background: transparent !important;
+    }
+}
+
+.customtoastclsAction {
+    @extend .customtoastclsAutoHide;
+    top: 40% !important;
+    left: 1% !important;
+}
+
+.toastbtn {
+    .x-btn-inner-default-small {
+        cursor: pointer;
+        font-size: 0.8125rem !important;
+        font-weight: 400 !important;
+    }
+}
+
+.customtoastclsNotification {
+    .x-tab-guard {
+        border-left: 3px solid $leankor-blue-RB;
+
+        &.x-tab-guard- {
+            border-left: 3px solid $leankor-blue-RB;
+        }
+    }
+}
+
+.customtoastclsNotificationSuccess {
+    .x-tab-guard {
+        border-left: 3px solid $green;
+
+        &.x-tab-guard- {
+            border-left: 3px solid $green;
+        }
+    }
+}
+
+.customtoastclsNotificationInfo {
+    .x-tab-guard {
+        border-left: 3px solid $leankor-blue-RB;
+
+        &.x-tab-guard- {
+            border-left: 3px solid $leankor-blue-RB;
+        }
+    }
+}
+
+.customtoastclsNotificationWarning {
+    .x-tab-guard {
+        border-left: 3px solid $leankor-orange-RB;
+
+        &.x-tab-guard- {
+            border-left: 3px solid $leankor-orange-RB;
+        }
+    }
+}
+
+.customtoastclsNotificationError {
+    .x-tab-guard {
+        border-left: 3px solid $dead-red;
+
+        &.x-tab-guard- {
+            border-left: 3px solid $dead-red;
+        }
+    }
+}
+
+.windowClsCV {
+    opacity: 0 !important;
+}
+
+//Security css.
+.security-access-css {
+    &:before {
+        content: '\e257';
+        font-family: 'LeankorFonts';
+        font-size: 0.8750rem;
+        color: $green;
+        display: inline-block;
+        text-align: center;
+        text-shadow: 0 0 0 $lightest-gray;
+        font-weight: normal;
+        margin: 0 auto;
+        padding: 0px;
+    }
+}
+
+.security-no-access-css {
+    background-color: red;
+    height: 14px;
+    border-radius: 7px;
+    width: 15px;
+
+    &:before {
+        content: '\e210';
+        font-family: 'LeankorFonts';
+        font-size: 0.6250rem;
+        left: 2px;
+        color: #f9f8f8;
+        position: relative;
+        text-shadow: 0 0 0 $lightest-gray;
+        font-weight: normal;
+        bottom: 3px;
+    }
+}
+
+.security-grid-cls {
+    .x-grid-with-row-lines .x-grid-item {
+        border-style: solid !important;
+        border-width: 1px 0 0;
+        border-color: $lighter-gray !important;
+        background-color: #fff;
+    }
+}
+
+.security-div-cls {
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+//End of Security css.
+
+.dynamicltngcmp {
+    padding: 5px 5px 5px 10px;
+}
+
+//End of Security css.
+
+/*.zoneViewListBagetext {
+	box-shadow: 0px 0.1em 0.1em rgba(0, 0, 0, 0.5);
+	float: right;
+	min-width: 15px;
+	border-radius: 100%;
+	min-height: 13px;
+	position: relative;
+	line-height: 1.2em;
+	font-size: 0.5625rem;
+	background-clip: padding-box;
+	background-color: #eef1f6;
+	margin: -34px -10px 0px 0px;
+	text-align: center;
+	padding: 0.1em 0.3em;
+	color: #707070;
+}*/
+.small-photo-url-cls {
+    margin: 3px 0px 0px 2px !important;
+    width: 1.125rem !important;
+    height:1.125rem !important;
+    border-radius: 10px !important;
+}
+
+iframe {
+    border-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-style: inset;
+    border-top-style: inset;
+    border-right-style: inset;
+    border-bottom-style: inset;
+    border-left-style: inset;
+    border-color: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.titleWrap {
+    width: calc(100% - 10px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// .sequencecolumnCls {
+//     .x-column-header-text-inner {
+//         margin-left: 5px !important;
+//     }
+// }
+
+.columnDesign {
+    color: $base-gray;
+}
+
+.x-css-shadow,
+.gnt-dragdrop-tip {
+    pointer-events: none;
+}
+
+.x-form-trigger-wrap-default.x-form-trigger-wrap-invalid {
+    border-color: #cf4c35 !important;
+}
+
+.disabledCls {
+    opacity: 0.5;
+}
+
+.fileuploadbtncls {
+    background-color: $light-gray !important;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
+    border-top: 1px solid $lighter-gray !important;
+    border-right: 1px solid $lighter-gray !important;
+    border-bottom: 1px solid $lighter-gray !important;
+    background-image: none !important;
+    border-radius: 0px !important;
+    padding: 7px 7px 7px 7px !important;
+    height: 32px;
+    margin: 0px !important;
+}
+
+.x-tool-expand-right:before {
+    color: #7b7b7b;
+}
+
+.sch-timelineview .important {
+    border-width: 2px 0 0 2px;
+    border-style: dotted;
+    border-color: $dead-red;
+    margin-top: -2px;
+    overflow: visible;
+}
+
+.line-text {
+    position: absolute;
+    top: 0.938rem;
+    left: 0;
+    background-color: $leankor-blue;
+    color: #fff;
+    display: block;
+    font-size: 0.8em;
+    white-space: nowrap;
+    padding: 0.188rem;
+}
+.line-text-portfolio {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: $leankor-blue;
+    color: #fff;
+    display: block;
+    font-size: 0.7em;
+    white-space: nowrap;
+    padding: 0 2px 0 2px;
+}
+
+.lineParent {
+    background-color: red;
+    display: -webkit-inline-box;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(45deg);
+    bottom: 0px;
+    overflow: visible;
+    margin: 0px auto;
+    text-align: end;
+    -webkit-box-align: stretch;
+}
+
+.filterPanelCls {
+    .x-title-text {
+        color: #FFFFFF;
+    }
+
+    .x-accordion-item .x-accordion-hd {
+        background: $leankor-blue;
+        border-width: 0;
+        border-color: #f9f9f9;
+        padding: 4px 4px;
+        border-radius: 2px;
+        height: 1.688rem !important;
+    }
+
+    .x-accordion-item .x-accordion-body {
+        top: 65px !important;
+    }
+    .x-toolbar-default{
+        td{
+            height: 1.563rem !important;
+        }
+    }
+    .x-form-item-label-toolbar{
+        font: normal 11px/13px tahoma, arial, verdana, sans-serif !important;
+    }
+    .x-accordion-item .x-panel-bodyWrap .x-form-item-label .x-form-item-label-text{
+        font: normal 0.688rem/0.813rem tahoma, arial !important;
+    }
+}
+
+@mixin filterBtnClsMixin($color1, $color2) {
+    background: none !important;
+    border: none !important;
+    color: $color;
+    height: 2.063rem;
+    margin-left: 0.6rem;
+    padding-top: 0.3rem;
+    position: relative;
+    line-height: 1.2 !important;
+
+    &:before {
+        font-family: 'newLeankorfonts';
+        content: "\e309" !important;
+        font-size: 1rem;
+        color: $color1;
+        cursor: pointer !important;
+        line-height: 0;
+        
+    }
+
+    &:after {
+        font-family: 'newLeankorfonts';
+        content: "\e311" !important;
+        font-size: 0.6rem;
+        color: $color2;
+        position: absolute;
+        top: 0.45rem;
+        margin-left: 2.85px;
+        line-height: 1.7;
+        
+    }
+}
+
+.filterBtnCls {
+    @include filterBtnClsMixin($icon-color, #fff);
+}
+
+.applyFilterCls {
+    @include filterBtnClsMixin(#6DC762, #fff);
+}
+
+.applyFilterOnCls {
+    @include filterBtnClsMixin(#8394ab, #34a97b);
+}
+
+.filterPanelChieldCls {
+    .x-accordion-hd .x-tool-collapse-top:before {
+        font-family: 'LeankorFonts';
+        content: "\e219" !important;
+        font-size: 0.5000rem;
+        color: #fff;
+        text-shadow: 0 0 0 #f7f7f7;
+    }
+
+    .x-accordion-hd .x-tool-expand-bottom:before {
+        font-family: 'LeankorFonts';
+        content: "\e216" !important;
+        font-size: 0.5000rem;
+        color: #fff;
+        text-shadow: 0 0 0 #f7f7f7;
+    }
+
+    .x-toolbar-default {
+        padding: 3px 0 3px 3px;
+        border-style: solid;
+        border-color: #d0d0d0;
+        background-image: none;
+        background-color: #fff;
+        height: 33px;
+
+        .x-box-inner {
+            height: 35px !important;
+        }
+    }
+
+    .x-toolbar-default .x-toolbar-item {
+        top: 1px !important;
+        height: 30px;
+    }
+
+    .x-accordion-layout-ct {
+        padding: 1px 5px 0;
+    }
+
+    .x-panel-header-title-default {
+        font-size: 0.8125rem;
+        text-align: center;
+        font-weight: 600 !important;
+    }
+
+    .x-form-cb-wrap-default {
+        height: 30px;
+    }
+}
+
+.filterPanelCloseBtnCls {
+    background: none !important;
+    border: none !important;
+
+    &:before {
+        @include pictosiconsNew("\e210", 16px, #222);
+        margin-left: 5px;
+        cursor: pointer !important;
+    }
+}
+
+.saveFilterBtnCls {
+    height: 32px;
+    border-radius: 2px !important;
+    background-color: $green !important;
+    padding: 7px !important;
+    text-decoration: none !important;
+    background-image: none !important;
+    border: none !important;
+    top: 0px !important;
+
+    .x-btn-inner-default-toolbar-small {
+        color: #fff !important;
+        font-size: 0.8125rem;
+    }
+}
+
+.clearFilterBtnCls {
+    background: none !important;
+    border: none !important;
+    margin-left: 16px !important;
+
+    &:before {
+        content: "\e129";
+        color: #8C8C8C;
+        font-family: 'LeankorFonts';
+        font-size: 0.9375rem;
+        text-align: center;
+        text-shadow: 0 0 0;
+        cursor: pointer !important;
+    }
+}
+
+.filterPanelAccordionPanelChildCls {
+    .x-toolbar-default .x-box-inner {
+        height: 33px !important;
+    }
+
+    .x-toolbar-default {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+.x-grid-checkcolumn-checked:after {
+    color: $leankor-orange-RB !important;
+}
+
+//filter cls 
+.filterActiveButtonCls:before {
+    font-family: 'LeankorFonts';
+    content: "\e236" !important;
+    font-size: 2.0000rem;
+    background-color: #fff;
+    color: #6dc762 !important;
+    margin-left: -8px;
+    height: inherit;
+}
+
+.filterDeactiveButtonCls:before {
+    font-family: 'LeankorFonts';
+    content: "\e236" !important;
+    font-size: 2.0000rem;
+    background-color: #fff;
+    color: #cacaca !important;
+    margin-left: -8px;
+    height: inherit;
+}
+
+// .serchFilterApply {
+//     background: none !important;
+//     border: none !important;
+//     top: 10px !important;
+
+//     &:before {
+//         font-family: 'Carousel';
+//         content: "\b163" !important;
+//         font-size: 1.3125rem;
+//         color: #6DC762 !important;
+//     }
+
+//     &:after {
+//         font-family: 'Carousel';
+//         content: "\b168" !important;
+//         font-size: 1.1875rem;
+//         color: #fff;
+//         position: absolute;
+//         top: -2px;
+//         margin-left: -22px;
+//     }
+// }
+
+.radiofieldCls .x-mask {
+    display: none;
+}
+
+.icon-action {
+    @extend .header-icon-default;
+    
+    &:before {
+        @include newLeankorfonts("\e306", 1.25rem, $icon-color);
+    }
+}
+
+
+/* classes added during resolve inconsistencies */
+.columns-custom-cls {
+    .x-box-inner {
+        .x-box-target {
+            .x-column-header {
+                border-right: 1px solid #f2f4f7;
+                color: $base-gray;
+                font: 400 0.813rem/1.188rem 'Open Sans', sans-serif;
+                outline: 0;
+                background-color: #f2f4f7;
+            }
+        }
+    }
+}
+
+.toolbar-custom-textfield {
+    top: 6px !important;
+}
+
+.sch-gantt-label {
+    color: $base-gray;
+}
+
+.sch-header-indicator {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border: 2px solid $dead-red;
+    background: #fff;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sch-ganttview .sch-todayLine {
+    border-left: 2px dashed $light-gray !important;
+}
+
+.sch-ganttpanel .x-grid-cell-inner {
+    height: inherit !important;
+    color: $base-gray;
+}
+
+.sch-ganttpanel .x-grid-with-row-lines .x-grid-item {
+    border-color: #eaebed;
+}
+
+.sch-header-row {
+    border-top: 1px solid $lighter-gray;
+}
+
+.sch-timelinepanel-highlightweekends .sch-dayheadercell-nonworking,
+.sch-timelinepanel-highlightweekends .sch-dayheadercell-nonworking {
+    background-image: none;
+    background-color: #f3f0f0;
+    color: $base-gray;
+}
+
+.sch-gantt-critical-chain .sch-gantt-task-highlighted .sch-gantt-task-segment,
+.sch-gantt-critical-chain .sch-gantt-task-highlighted .sch-gantt-task-bar.sch-event-notsegmented,
+.sch-gantt-critical-chain .sch-gantt-task-highlighted .sch-gantt-milestone-diamond {
+    box-shadow: 0 0 8px #ee2b2b;
+}
+
+.x-grid-body {
+    border-top-color: $lighter-gray;
+}
+
+.x-grid-with-row-lines .x-grid-item.x-grid-item-selected {
+    border-style: solid;
+    border-color: $highlight-yellow-RB !important;
+}
+
+.x-grid-with-row-lines .x-grid-item-selected+.x-grid-item {
+    border-top-style: solid;
+    border-top-color: $highlight-yellow-RB !important;
+}
+
+.x-grid-locked-split .x-grid-inner-normal {
+    border-width: 0 0 0 2px;
+    border-style: solid;
+    border-left-color: $lighter-gray !important;
+}
+
+.sch-ganttpanel .x-grid-inner-locked {
+    border-right: 2px solid $lighter-gray !important;
+}
+
+.x-grid-body {
+    border-top-color: $lighter-gray !important;
+}
+
+.x-box-scroller-menu-default.x-box-scroller-bottom:before {
+    content: "\f078";
+    color: $gray !important;
+}
+
+.x-box-scroller-menu-default.x-box-scroller-top:before {
+    content: "\f077";
+    color: $gray !important;
+}
+
+.x-menu-item-arrow-default:before {
+    content: "\f0da";
+    color: $light-gray !important;
+}
+
+.x-menu-item-text-default {
+    font: 400 0.813rem  $leankor-font-family !important;
+    line-height: 2.1250rem !important;
+    padding-top: 1px;
+    color: $base-gray !important;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 140px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.x-form-trigger-wrap-default {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $lighter-gray;
+}
+
+.baseLine-history-custom-cls {
+    .x-column-header {
+        border-right: 1px solid $lightest-gray !important;
+        color: $base-gray;
+        font: 400 13px/19px  $leankor-font-family;
+        outline: 0;
+        background-color: $lightest-gray !important;
+    }
+
+    .x-column-header-over {
+        background-color: $lightest-gray !important;
+    }
+
+    .x-grid-item-alt {
+        background-color: #fff;
+    }
+
+    .x-grid-item-over {
+        background-color: $lightest-gray !important;
+        color: $leankor-orange !important;
+    }
+}
+.view-list-custom-cls {
+    .x-grid-item-alt {
+        background-color: #fff;
+    }
+    background-color: #fff;
+    border: none !important;
+}
+.cardEditor-form-cls {
+
+    .x-autocontainer-form-item,
+    .x-anchor-form-item,
+    .x-vbox-form-item,
+    .x-panel-default,
+    .x-table-form-item {
+        margin-bottom: 10px;
+        padding: 0px 5px;
+    }
+}
+
+.x-form-trigger-wrap-default {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $lighter-gray !important;
+}
+
+.green-color-date-icon {
+//    width: 12.75rem !important;
+width: 100% !important;
+    .x-form-date-trigger:before {
+        font-family: 'LeankorFonts';
+        content: "\e240" !important;
+        color: $green !important;
+    }
+}
+
+.red-color-date-icon {
+    .x-form-date-trigger:before {
+        font-family: 'LeankorFonts';
+        content: "\e240" !important;
+        color: $dead-red !important;
+    }
+}
+
+.cardStatusFormCls {
+    .x-btn-inner-default-small {
+        font: 400 13px/16px  $leankor-font-family;
+        color: #fff;
+        padding: 0 5px;
+        max-width: 100%;
+    }
+}
+
+.popupToolbarBorderCls {
+    .x-toolbar.x-toolbar-footer {
+        border-top: 1px solid $lighter-gray;
+    }
+    .green-color-date-icon{
+       width: 50% !important;
+    }
+}
+
+.popupGridStyleCls {
+    .x-grid-view {
+        left: 10px !important;
+        max-width: 330px;
+    }
+
+    .x-toolbar.x-toolbar-footer {
+        border-top: 1px solid $lighter-gray;
+    }
+
+    .x-toolbar-default {
+        padding: 6px 0 6px 8px;
+        border-style: solid;
+        border-color: $lighter-gray;
+        border-top: 1px solid $lighter-gray !important;
+        border-width: 1px;
+        background-image: none;
+        background-color: #fff;
+    }
+
+    @include placeholderColorCls($light-gray);
+
+    .x-grid-with-row-lines .x-grid-item {
+        border-style: solid;
+        border-width: 0px 0 0;
+        border-color: unset;
+        min-height: 36px;
+        max-height: 36px;
+        height: 36px;
+    }
+
+    .x-grid-item-alt {
+        background-color: #fff !important;
+    }
+
+    .x-grid-item-over {
+        background-color: $lightest-gray !important;
+        color: $leankor-orange !important;
+    }
+
+    .x-grid-with-row-lines .x-grid-item-selected+.x-grid-item {
+        border-top-style: solid;
+        border-top-color: #f2e3b2;
+    }
+
+    .x-grid-with-row-lines .x-grid-item:last-child {
+        border-bottom-width: 0px !important;
+    }
+
+    x-form-search-trigger:before {
+        content: "\f002";
+        color: $gray !important;
+    }
+
+    .x-btn-default-toolbar-small {
+        border-color: $lighter-gray !important;
+    }
+
+    .x-btn-default-toolbar-small {
+        background-color: $lightest-gray !important;
+    }
+
+    .x-btn-over {
+        border-color: $lighter-gray !important;
+        background-color: $lighter-gray !important;
+    }
+}
+
+.stickerGridStyleCls {
+    .x-toolbar.x-toolbar-footer {
+        border-top: 1px solid $lighter-gray;
+    }
+
+    .x-toolbar-default {
+        padding: 6px 0 6px 8px;
+        border-style: solid;
+        border-color: $lighter-gray;
+        border-top: 1px solid $lighter-gray !important;
+        border-width: 1px;
+        background-image: none;
+        background-color: #fff;
+    }
+
+    @include placeholderColorCls($light-gray);
+
+    .x-grid-with-row-lines .x-grid-item {
+        border-style: solid;
+        border-width: 0px 0 0;
+        border-color: unset;
+        min-height: 36px;
+        max-height: 36px;
+        height: 36px;
+    }
+
+    .x-grid-item-alt {
+        background-color: #fff !important;
+    }
+
+    .x-grid-item-over {
+        background-color: $lightest-gray !important;
+        color: $leankor-orange !important;
+    }
+
+    .x-grid-with-row-lines .x-grid-item-selected+.x-grid-item {
+        border-top-style: solid;
+        border-top-color: #f2e3b2;
+    }
+
+    .x-grid-with-row-lines .x-grid-item:last-child {
+        border-bottom-width: 0px !important;
+    }
+
+    x-form-search-trigger:before {
+        content: "\f002";
+        color: $gray !important;
+    }
+
+    .x-btn-default-toolbar-small {
+        border-color: $lighter-gray !important;
+    }
+
+    .x-btn-default-toolbar-small {
+        background-color: $lightest-gray !important;
+    }
+
+    .x-btn-over {
+        border-color: $lighter-gray !important;
+        background-color: $lighter-gray !important;
+    }
+}
+
+.combo-placeholder-cls {
+    @include placeholderColorCls($light-gray);
+}
+
+.x-form-clear-trigger:before {
+    content: "\f00d";
+    color: $icon-color;
+}
+
+.x-form-search-trigger:before {
+    content: "\f002";
+    color: $icon-color;
+}
+
+.x-form-field-date .x-form-date-trigger:before {
+    font-family: 'LeankorFonts' !important;
+    font-size: 1rem !important;
+    content: "\e240" !important;
+    color: $green;
+}
+
+.x-btn-inner-default-small {
+    font: 400 0.813rem  $leankor-font-family !important;
+    color: #fff !important;
+    padding: 0 5px;
+    max-width: 100%;
+}
+
+.x-btn-icon-el-default-medium {
+    font-size: 1.2500rem;
+    height: 20px;
+    color: #fff;
+    line-height: 1.2500rem;
+}
+
+.textFieldPlaceholderCls {
+    @include placeholderColorCls($light-gray);
+}
+
+.x-btn-inner-default-medium {
+    font: 400 13px/18px  $leankor-font-family !important;
+    color: #fff !important;
+    padding: 0 8px;
+    max-width: 100%;
+}
+
+.x-tip-default {
+    background-color: $gray !important;
+    border-color: $gray !important;
+}
+
+.x-tip-body-default {
+    padding: 6px 8px;
+    color: #fff !important;
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.x-tip-default .x-tip-anchor-top {
+    border-bottom: 10px solid $gray !important;
+}
+
+.x-tip-default .x-tip-anchor-bottom {
+    border-top: 10px solid $gray !important;
+}
+
+.x-tip-default .x-tip-anchor-left {
+    border-right: 10px solid $gray !important;
+}
+
+.x-tip-default .x-tip-anchor-right {
+    border-left: 10px solid $gray !important;
+}
+
+.activity-history-cls {
+    .x-column-header {
+        color: $base-gray;
+        font: 400 0.875rem/1.188rem  $leankor-font-family !important;
+        outline: 0;
+        background-color: $lightest-gray !important;
+    }
+
+    .x-grid-header-ct {
+        border: 1px solid $lighter-gray !important;
+        border-bottom-color: $lighter-gray;
+        background-color: $lightest-gray !important;
+    }
+
+    .x-grid-item-selected {
+        background-color: white !important;
+    }
+}
+
+.radioButtonCls {
+    li {
+        input[type="radio"] {
+            &:before {
+                margin: 0px;
+                padding: initial;
+                background-color: white;
+                border: initial;
+                content: "\e256";
+                top: 0px;
+                left: 0px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: white;
+                font-family: 'LeankorFonts';
+                font-size: 0.8125rem;
+                color: $lighter-gray;
+                display: inline-block;
+                text-align: center;
+                text-shadow: 0 0 0 $text-shadow-color;
+                font-weight: normal;
+            }
+        }
+
+        input[type="radio"]:checked:before {
+            content: "\e257";
+            top: 0px;
+            left: 0px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: white;
+            font-family: 'LeankorFonts';
+            font-size: 0.8125rem;
+            color: $leankor-orange-RB;
+            display: inline-block;
+            text-align: center;
+            text-shadow: 0 0 0 $text-shadow-color;
+            font-weight: normal;
+        }
+    }
+}
+
+.x-print-field-cls {
+    .x-form-trigger-default:before {
+        content: "\e216";
+        font-size: 0.4375rem;
+        font-family: 'LeankorFonts';
+    }
+
+    .x-form-trigger-default {
+        width: 32px;
+        font: 16px/30px FontAwesome;
+        color: $gray;
+    }
+
+    .x-form-trigger-spinner-default:before {
+        content: '' !important;
+    }
+
+    .printDialogDPIFieldCls {
+        &.x-form-trigger-default {
+            background: #fff !important;
+        }
+    }
+
+    .x-toolbar.x-toolbar-footer {
+        border-top: 1px solid $lighter-gray;
+    }
+}
+
+// .stickerCheckboxcls2 {
+//     width: 32px !important;
+//     @extend.stickermaincls;
+
+//     &:before {
+//         margin: 3px 0.5ex;
+//         padding: initial;
+//         content: "\e235";
+//         position: relative;
+//         top: -3px;
+//         left: 0px;
+//         color: $lighter-gray;
+//         width: 15px;
+//         height: 15px;
+//         border-radius: 50%;
+//         font-family: 'LeankorFonts';
+//         font-size: 0.8125rem;
+//         display: inline-block;
+//         text-align: center;
+//         text-shadow: 0 0 0 $text-shadow-color;
+//         font-weight: normal;
+//     }
+
+//     &:after {
+//         content: "\e236";
+//         position: relative;
+//         top: -3px;
+//         left: 0px;
+//         width: 15px;
+//         height: 15px;
+//         border-radius: 50%;
+//         background: #ebebeb;
+//         font-family: 'LeankorFonts';
+//         font-size: 0.8125rem;
+//         color: $leankor-orange-RB;
+//         display: inline-block;
+//         text-align: center;
+//         text-shadow: 0 0 0 $text-shadow-color;
+//         font-weight: normal;
+//     }
+// }
+
+.checkBoxFilter {
+    margin: 5px !important;
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: 'Open Sans', sans-serif;
+
+    input[type="checkbox"]:before {
+            font-size: 0.5000rem;
+            text-align: center;
+            text-shadow: 0 0 0;
+            font-family: 'LeankorFonts';
+            margin-right: 10px;
+            font-weight: bold;
+            display: inline-block;
+            content: '\e235';
+            line-height: 0.8750rem;
+            background: #fff;
+            width: 13px;
+            height: 13px;
+            border-radius: 2px;
+            border: 1px solid #dee1e4;
+            float: left;
+            color: #fff !important;
+        }
+    
+    input[type="checkbox"]:checked:before {
+        content: "\e236";
+        position: relative;
+        // top: -13px;
+        //right: 24px;
+        width: 13px;
+        height: 13px;
+        // border-radius: 50%;
+        //background: #ebebeb;
+        font-family: 'LeankorFonts';
+        font-size: 0.8125rem;
+        //color: ;
+        display: inline-block;
+        text-align: center;
+        text-shadow: 0 0 0 $text-shadow-color;
+        font-weight: normal;
+        border-color: #ff6d00;
+        color: $leankor-orange-RB !important;
+    }
+    
+}
+
+.x-grid-item-selected .sch-gantt-task-bar {
+    background-color: #dee1e4 !important;
+}
+
+.customDependencyEditorCls {
+    .x-form-item-label-inner {
+        // width: 100px !important;
+        width: 6.25rem !important;
+    }
+
+    .x-form-item-label-default {
+        // width: 100px !important;
+        width: 6.25rem !important;
+        padding-top: 0.48rem !important;
+    }
+
+    .x-form-item-label-default {
+ 		width: 7rem !important;
+ 	}
+}
+
+.sch-gantt-parenttask-bar:before,
+.sch-gantt-parenttask-bar:after {
+    border-color: #41833a;
+}
+
+
+.x-grid-item-selected .sch-gantt-parenttask-bar:before, .x-grid-item-selected .sch-gantt-parenttask-bar:after {
+     border-color: #41833a;
+}
+.sch-dependency-line{
+    border-color: #1573a0 !important;
+}
+.sch-dependency-arrow {
+     border-color: #1573a0;
+}
+.x-grid-item-selected .sch-gantt-parenttask-bar {
+    /*border-color: #8edd84 !important;*/
+    background-color: #fff !important;
+}
+.x-grid-item-selected .sch-gantt-parenttask-bar {
+      border-color: #41833a;
+}
+.x-grid-item-selected .sch-gantt-milestone-diamond {
+    border-color: #ff6d00;
+    background-color: #dee1e4;
+}
+
+.sch-gantt-task-highlighted .sch-gantt-task-bar {
+    border-color: #dee1e4 !important;
+    background-color: #dee1e4 !important;
+}
+
+.sch-gantt-task-highlighted .sch-gantt-parenttask-bar {
+    border-color: #8edd84;
+    background-color: #fff;
+}
+
+.sch-dependency-tip .x-fa {
+    font-size: 0.8125rem;
+}
+
+.sch-dependency-tip dt {
+    font-weight: 400;
+}
+
+.setBaselineButtonCls {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 3.5rem;
+    border: none !important;
+    padding: 0px 0px !important;
+    background: #6dc762 !important;
+    height: 2.46em;
+    min-width: 10px;
+    margin-left: -1px !important;
+    font-family: 'LeankorFonts';
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+}
+
+.msProjectFileUploadButtoncls {
+    @extend .editPopUpSaveBtn;
+
+    .x-btn-inner-default-small {
+        font: 400 10px/16px $leankor-font-family !important;
+    }
+}
+
+.portFolioLAddUpdateButtonCls {
+    text-align: center;
+    text-shadow: 0 0 0 $text-shadow-color;
+    font-weight: normal;
+    cursor: pointer !important;
+    border-radius: 2px !important;
+    border: none !important;
+    background: $green !important;
+    margin-left: -1px !important;
+    height: 2.46em;
+
+    .x-btn-inner-default-small {
+        font: 400 10px/16px $leankor-font-family !important;
+    }
+}
+
+.launchBoardMenuCls {
+    border: 0 !important;
+
+    .x-menu-item-text-default.x-menu-item-indent-no-separator {
+        width: 250px;
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+.quickActioncls {
+    overflow-y: auto !important;  /* Ensure vertical scrolling is enabled */
+    max-height: 300px;  /* Match the ExtJS maxHeight */
+}
+
+.fix-width-button {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 160px;
+    min-width: 30px;
+    margin: 0px 5px 0px 5px !important;
+    padding: 0.6em 0.4em 0.6em 0.4em !important;
+    text-overflow: ellipsis !important;
+}
+
+/* Icon-only header toolbar buttons — consistent square sizing with centered icon.
+   Replaces fix-width-button + inline padding hacks on icon-only buttons. */
+.header-icon-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    min-height: 32px;
+    height: 32px;
+    margin: 0 4px !important;
+    padding: 4px !important;
+    box-sizing: border-box;
+
+    .x-btn-wrap {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .x-btn-button {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .x-btn-icon-el {
+        margin: 0 !important;
+    }
+}
+
+.constraintTypeFieldLableCls {
+    width: 250px !important;
+    font-size: 0.813rem !important;
+}
+
+.constraintViolationPopUpCls {
+    z-index: 190500 !important;
+
+    .x-window-bodyWrap {
+        .x-window-body-default {
+            .x-fit-item {
+                .x-panel-bodyWrap {
+                    .x-form-display-field {
+                        white-space: normal !important;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.taskEditorPluginCls {
+    .x-tab-default-left{//
+        width: 200px !important;
+    }
+    .x-toolbar-item.x-btn-default-small {
+        height: 32px;
+        border-radius: 2px !important;
+        background-color: #646F76 !important;
+        color: #fff;
+        padding: 7px !important;
+        text-decoration: none !important;
+        background-image: none !important;
+        border: none !important;
+    }
+
+    .x-toolbar-item.x-btn-default-small.okbtncls {
+        height: 32px;
+        border-radius: 2px !important;
+        background-color: #41833A !important;
+        color: #fff;
+        padding: 7px !important;
+        text-decoration: none !important;
+        background-image: none !important;
+        border: none !important;
+    }
+
+    .x-fieldset {
+        border: none !important;
+    }
+
+    .x-fieldset-header-default {
+        display: none !important;
+    }
+
+    .x-toolbar.x-toolbar-footer {
+        border-top: 1px solid #dee1e4;
+    }
+
+    .x-tab-bar-default-left>.x-tab-bar-body-default {
+        padding: 0px;
+        border-right: 1px solid #dee1e4;
+    }
+
+    .x-tab-bar-default {
+        background-color: #fff;
+        width: 200px;//170px;
+    }
+
+    .x-tab-inner-default {
+        color: $base-gray;
+        font-size: 0.875rem !important;//
+        .activeInfo {
+            color: $light-gray;
+        }
+
+        .activityModeIcon {
+            color: $light-gray;
+        }
+    }
+
+    .x-tab.x-tab-active.x-tab-default {
+        background: $lightest-gray !important;
+    }
+
+    .x-tab-icon-el-default {
+        color: $light-gray;
+        font-size: 1.1250rem !important;
+        margin-right: 10px !important;
+    }
+
+    .x-tab-over.x-tab-default {
+        min-height: 40px !important;
+        background: $lightest-gray !important;
+
+        .x-tab-icon-el-default {
+            color: $leankor-orange !important;
+        }
+
+        .x-tab-inner-default {
+            color: $leankor-orange !important;
+
+            .activeInfo {
+                color: $leankor-orange;
+            }
+
+            .activityModeIcon {
+                color: $leankor-orange;
+            }
+        }
+    }
+
+    .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+        color: $leankor-orange;
+
+        .activeInfo {
+            color: $leankor-orange;
+        }
+
+        .activityModeIcon {
+            color: $leankor-orange;
+        }
+    }
+
+    .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+        color: $leankor-orange;
+    }
+
+    .x-box-scroller-top {
+        color: #000 !important;
+    }
+
+    .x-box-scroller-bottom {
+        color: #000 !important;
+    }
+}
+
+.durationFieldCls {
+    width: 49% !important;
+
+    .x-form-trigger-wrap-default{
+        // height: 35px !important;
+        height: 2rem !important;
+        }
+}
+
+.activityModeFormCls {
+    padding: 0px !important;
+
+    .x-form-form-item {
+        display: table !important;
+        margin: 10px !important;
+    }
+
+    .x-form-layout-wrap {
+        border-spacing: 0px !important;
+    }
+}
+
+.multiSelectCls {
+    padding: 10px !important;
+
+}
+
+.multiSelectFld {
+    width: 521px !important;
+}
+
+.hideCmp {
+    visibility: collapse;
+}
+
+.right-side-namecolumn1 {
+    @extend .header-icon-default;
+
+    &:before {
+        content: "\e290";
+        color: $icon-color;
+        font-family: 'LeankorFonts';
+        font-size: 1.25rem;
+        text-align: center;
+        text-shadow: 0 0 0;
+    }
+
+}
+.alignleftandright  {
+    width: 100%;
+    display: flex;
+    // justify-content: space-between;
+}
+.alignleftandright span:nth-of-type(1) {
+    flex-grow: 0;
+}
+.alignleftandright span:nth-of-type(2) {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 8px;
+	padding-right: 6px;
+	padding-bottom: 5px;
+}
+.alignleftandright span:nth-of-type(3) {
+    flex-grow: 0;
+    padding-top: 6px;
+    padding-bottom: 5px;
+	align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.right-side-namecolumn2 {
+    @extend .header-icon-default;
+
+    &:before {
+        content: "\e289";
+        color: $icon-color;
+        font-family: 'LeankorFonts';
+        font-size: 1.2500rem;
+        text-align: center;
+        text-shadow: 0 0 0;
+    }
+}
+
+.okUibtn {
+    .x-box-inner {
+        .x-box-target {
+            .x-toolbar-item {
+                background-color: #6dc762 !important;
+                border-radius: 3px !important;
+            }
+        }
+    }
+
+
+    .x-window-body-default{
+        .x-window-text{
+            font-size:0.813rem !important;
+        }
+    }
+}
+
+@-moz-document url-prefix() {
+    .x-boundlist-item {
+        width: max-content;
+    }
+}
+
+.scheduling-mode-indicator:after {
+    font-family: 'LeankorFonts';
+    content: "\e284" !important;
+    color: $leankor-orange;
+    position: absolute;
+    right: -2px;
+    top: -5px;
+}
+
+.sch-gantt-project-line-text {
+    position: absolute;
+    /* top: 15px; */
+    top: 0.938rem !important;
+    left: 0;
+    background-color: $leankor-blue;
+    color: #fff;
+    display: block;
+    font-size: 0.8em !important;
+    white-space: nowrap;
+    // padding: 3px;
+    padding: 0.188rem !important;
+    line-height:1.063rem !important;
+
+}
+
+.project-bar-custom-cls {
+
+    &.sch-gantt-parenttask-bar {
+
+        border-color: $leankor-blue-purple !important;
+    }
+
+    &.sch-gantt-parenttask-bar:after {
+        border-color: $leankor-blue-purple;
+
+    }
+
+    &.sch-gantt-parenttask-bar:before {
+        border-color: $leankor-blue-purple;
+
+    }
+
+    .x-grid-item-selected {
+
+
+        &.sch-gantt-parenttask-bar:before {
+            border-color: $leankor-blue-purple;
+
+        }
+
+        & .sch-gantt-parenttask-bar:after {
+            border-color: $leankor-blue-purple;
+        }
+
+    }
+
+}
+.ascitemcls{
+    .x-menu-item-link{
+        .x-menu-item-text-default{
+            margin-left: 30px !important;
+        }
+    }
+}
+.customUl  li:last-child input[type="radio"] {
+     opacity: 0;
+}
+.customUl  li:last-child{
+    font-size: 0.7500rem !important;
+}
+.customToolbar {
+    margin-top: 3.125rem !important;
+    margin-left: 10px !important;
+}
+.dateRangecls{
+    .x-window-body-closable {
+        height: 100% !important;
+        top: 24px !important;
+    }
+ 
+}
+.stdtCls {
+    width: 200px !important;
+}
+.duetdtCls {
+    width: 200px !important;
+    left: 219px !important;
+}
+.daterangeSelect{
+    color: $leankor-orange !important;
+    background: $lightest-gray;
+}
+.div1{
+    margin-top: -2.1rem;
+    margin-left: 24px;
+    
+}
+.div2{
+    font-size: 0.6875rem !important;
+}
+.customHeightwidth{
+    width: 185px !important;
+    // height: auto !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+.customHeightwidth{
+    .x-boundlist-list-ct{
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        height: 360px !important;
+        width: 185px !important;
+    }
+}
+.checkbox-label {
+    // margin-right: 10px;
+ 
+    .x-form-cb-label-default.x-form-cb-label-after{
+        padding-left: 0;
+
+    }
+    .x-form-cb-label-default{
+        margin: 0;
+        font: 400 0.813rem/1.063rem  $leankor-font-family;
+    }
+    .x-form-cb-default{
+        margin-top: 0.938rem;
+    }
+    .x-box-target{
+        position: relative !important;
+        left: 282px !important;
+    }
+    .x-form-trigger-default{
+        width: 40px !important;
+        padding-right: 5px !important;
+    }
+    .x-form-checkbox-default{
+        height: 1.25rem !important;
+        font-size: 1.125rem !important;
+        width: 1.1rem !important;
+    }
+}
+
+
+.x-form-text-default {
+    color: #404040;
+    padding: 5px 10px 4px;
+    background-color: #fff;
+    font: 300 0.875rem/1.313rem  $leankor-font-family !important;
+    min-height: 1.875rem !important;
+}
+
+.customBoundlist{
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+.labelColorAsperPickListValue{
+    color: #41833A !important;
+}
+.calenderWeekcls{
+  width: 49% !important;
+  left: 247px !important;
+  margin:0;
+}
+.durationFldcls{
+    width: 241px !important;
+}
+
+.x-tree-elbow-img{
+    line-height: 2.1rem !important;
+} // 
+.x-column-header{
+    font-size: 0.813rem !important;
+}
+.x-btn-inner-default-toolbar-small{
+    font-size: 0.813rem !important;
+}
+.x-grid-item{
+    font-size: 0.813rem !important;
+    line-height: 1.313rem !important;
+}
+.x-menu-item-text-default{
+    font-size: 0.813rem !important;
+}
+
+.sch-zone-workingday{
+    background-color: #fff !important;
+  }
+.x-form-text-default {
+    font: 400 0.813rem/1.313rem  $leankor-font-family !important;//
+}
+.x-form-text-default.x-form-textarea {
+    line-height: 1.2500rem !important;
+    min-height: 80px !important;
+}
+.subMenu1{
+    width: 9.375rem !important;
+}
+.subMenu1 .x-menu-item{
+    width:9.25rem !important;
+}
+
+.subMenu1 .x-menu-body{
+    width: 190px !important;
+} 
+.submenu1 .x-menu-item-text-default{
+    width: 190px !important;
+}
+.submenu1 .x-box-inner{
+        width: 190px !important;
+}
+
+.submenu2 .x-menu-item-text-default{
+    width: 8.75rem;
+}
+.riskTabcls .x-boundlist-item {
+    min-height: 2.25rem !important;
+    max-height: 2.25rem!important;
+    white-space: nowrap;      
+    overflow: hidden;      
+    text-overflow: ellipsis;
+}
+
+.radiofieldCls{
+    .x-panel-body{
+        height: 2rem;
+    }
+}
+.x-form-display-field-default{
+    font: 400 0.813rem/1.063rem  $leankor-font-family !important;
+} 
+.x-panel-body-default{
+    font-size: 0.813rem !important;
+}
+.stickerText{
+    font-size: 0.813rem !important;
+}
+.ui-rangeSlider-label{
+    font-size: 0.75rem !important;
+}
+
+/* ADA: Focus outline for range slider handles */
+.ui-rangeSlider-handle:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset;
+}
+.no-wrap-combo .x-boundlist-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.gnt-wbs-cell .x-grid-cell-inner {
+    text-overflow: ellipsis;
+}
+.subeMenucls{
+    max-height: 325px !important;
+    overflow-y: auto !important;
+} 
+.customFieldmenu{
+    max-height: 585px !important;
+    overflow-y: auto !important;
+}
+.highlight-list-item-history{
+   // font-weight: bold !important;
+    color: $leankor-orange;
+}
+.icon-plus {
+    @extend .header-icon-default;
+    &:before {
+        @include pictosicons("\e225", 12px, $icon-color);
+    }
+}
+.icon-save {
+    @extend .header-icon-default;
+    &:before {
+        @include pictosicons("\b133", 12px, $icon-color);
+    }
+}
+.taskEditorPluginCls{
+    .x-mask-msg-inner{
+    font-size: 0.813rem !important;
+    }
+}
+
+.x-form-trigger-default {
+    width: 2rem !important;
+        font: 0.8rem / 1.875rem 'Font Awesome 5 Free' !important;
+    }
+
+.activity-info-tab-cls{
+    width: 100% !important;
+}
+
+.x-body {
+    font-size: 0.813rem !important;
+}
+
+.x-btn-default-small{
+    padding: 0.438rem !important;
+}
+
+.x-panel-header-default {
+    font-size: 1rem !important;
+}
+
+.green-color-date-icon-date-picker{
+    .x-form-date-trigger:before {
+        font-family: 'LeankorFonts';
+        content: "\e240" !important;
+        color: $green !important;
+    }   
+}
+
+.calenderWeekcls .x-form-trigger-default {
+    font: 1.2rem/1.875rem 'Font Awesome 5 Free' !important;
+}
+
+.sch-secondary-canvas .sch-timeline .line-text{
+    line-height: 1.063rem !important;
+    top: 0.938rem !important;
+    padding: 0.188rem !important;
+
+}
+
+.taskEditorPluginCls .x-form-trigger-default .x-form-spinner-up-default {
+    font: 1rem / 1 ExtJS !important;
+    height: 0.938rem !important;
+}
+
+.taskEditorPluginCls .x-form-trigger-default .x-form-spinner-down-default {
+    font: 1rem / 1 ExtJS !important;
+    height: 0.938rem !important;
+}
+
+.loggedTimeEditCls{
+    width: 50% !important;
+}
+
+.loggedTimeEditCls .x-form-trigger-default .x-form-spinner-up-default {
+    font: 1rem / 1 ExtJS !important;
+    height: 0.938rem !important;
+}
+
+.loggedTimeEditCls .x-form-trigger-default .x-form-spinner-down-default {
+    font: 1rem / 1 ExtJS !important;
+    height: 0.938rem !important;
+}
+
+.constraintViolationPopUpCls{
+    width: 31.25rem !important;
+    height: 17.2rem  !important;
+}
+
+
+.constraintViolationPopUpCls .x-form-radio-default,
+.constraintViolationPopUpCls .x-form-checkbox {
+    font-size: 1.125rem !important;
+    line-height: 1 !important;
+    width: 1.125rem !important;
+    height: 1.125rem !important;
+    margin-top: 0.438rem !important;
+}
+
+.constraintViolationPopUpCls .x-form-radio-default {
+    font-family: 'Font Awesome 5 Free Regular' !important;
+}
+
+.constraintViolationPopUpCls .x-toolbar-footer .x-form-checkbox {
+    font-family: ExtJS !important;
+}
+
+.constraintViolationPopUpCls .x-form-cb-label-default {
+    margin-top: 0.5rem !important;
+    padding-left: 1.375rem !important;
+    font: 400 0.813rem / 1.063rem 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif !important;
+}
+
+.sequencecolumnCls .x-column-header-text {
+    margin-right: 0px !important; 
+}
+
+.constraintViolationPopUpCls .x-header{
+    width: 31.25rem !important;
+}
+.constraintViolationPopUpCls .x-header .x-box-inner{
+    width: 29.25rem !important;
+    height: 1rem !important;
+}
+
+.constraintViolationPopUpCls .x-header .x-tool-after-title{
+    left: 28.25rem !important;
+    top: 0.125rem !important;
+}
+
+
+.constraintViolationPopUpCls .x-header .x-tool-close{
+    font: 1rem / 1 'Font Awesome 5 Free' !important;
+    width: 1rem !important;
+    height: 1rem !important;
+}
+
+.constraintViolationPopUpCls .x-tool-close:before{
+    font-size: 1.125rem !important;
+    margin-top: -0.25rem !important;
+}
+
+
+.constraintViolationPopUpCls  .x-window-header-default-top{
+padding: 0.625rem 0.875rem 0.625rem 0.875rem !important;
+}
+
+.constraintViolationPopUpCls  .x-window-header-default-top .x-box-target{
+    width: 29.25rem !important;
+}
+
+.constraintViolationPopUpCls  .x-window-header-default-top  .x-window-header-title{
+    width: 27.875 !important;
+}
+
+.constraintViolationPopUpCls .x-window-bodyWrap .x-window-body{
+    width: 31rem !important;
+    height: 14.1rem !important;
+    top: 2.5rem !important;
+}
+
+.constraintViolationPopUpCls .x-window-bodyWrap .x-window-body .x-panel{
+    width: 31rem !important;
+    height: 14.1rem !important;
+}
+
+.constraintViolationPopUpCls .x-window-bodyWrap .x-window-body .x-panel .x-panel-body{
+    width: 31rem !important;
+    height: 9.813rem !important;
+    overflow:hidden !important;
+}
+
+.constraintViolationPopUpCls .x-window-bodyWrap .x-window-body .x-panel .x-autocontainer-innerCt{
+    padding: 0.625rem !important;
+}
+
+.constraintViolationPopUpCls  .x-table-form-item .x-autocontainer-innerCt{
+    padding: 0.625rem !important;
+}
+
+.constraintViolationPopUpCls  .x-panel-body .x-autocontainer-innerCt .x-anchor-form-item{
+    margin-bottom: 0.625rem !important;
+}
+
+.constraintViolationPopUpCls   .x-form-display-field-default {
+    min-height: 2rem !important;
+    margin-top: 0.50rem !important;
+}
+
+.constraintViolationPopUpCls  .x-table-plain{
+    width: 27.6rem !important;
+}
+
+.constraintViolationPopUpCls  .x-table-plain .x-form-radio-group .x-form-cb-wrap-default {
+    height: 2rem !important;
+    min-width: 1.125rem !important;
+}
+
+.constraintViolationPopUpCls .x-toolbar.x-toolbar-footer{
+    top: 11.5rem !important;
+    padding: 0.375rem 0 0.375rem 0.375rem !important;
+    width: 31rem !important;
+}
+
+.constraintViolationPopUpCls .x-toolbar-footer .x-form-checkbox {
+    margin-top: 0.5rem !important;
+}
+
+.constraintViolationPopUpCls .x-toolbar-footer .x-form-cb-wrap-inner{
+    font-size: 0.813rem !important;
+}
+
+.constraintViolationPopUpCls .x-toolbar-footer .x-btn-button-default-small {
+    min-height: 1rem !important;
+}
+.constraintViolationPopUpCls .x-toolbar.x-toolbar-footer .x-box-inner{
+    width: 30.938rem !important;
+    height: 2.5rem !important;
+}
+
+.constraintViolationPopUpCls .x-toolbar.x-toolbar-footer .editPopUpSaveBtn{
+    min-width: 4.688rem !important;
+    width: 4.688rem !important;
+    left: 20.5rem !important;
+    top: 0.25rem !important;
+}
+
+.constraintViolationPopUpCls .x-toolbar.x-toolbar-footer .deleteCardBtn{
+    min-width: 4.688rem !important;
+    width: 4.688rem !important;
+    left: 25.6rem !important;
+    top: 0.25rem !important;
+} 
+
+.showErrorMessagePopupCls {
+    width: 18.7rem !important;
+    height: 8rem !important;
+}
+
+.showErrorMessagePopupCls .x-header {
+    top: -0.125rem !important;
+    left: -0.125rem !important;
+    width: 18.688rem !important;
+}
+
+.showErrorMessagePopupCls .x-header .x-box-inner {
+    width: 16.7rem !important;
+    height: 1rem !important;
+}
+
+.showErrorMessagePopupCls .x-header .x-tool {
+    top: 0.125rem !important;
+    left: 15.688rem !important;
+    font-size: 1rem !important;
+}
+
+.showErrorMessagePopupCls .x-header .x-tool .x-tool-tool-el {
+    font: 1rem / 1 'Font Awesome 5 Free' !important;
+    width: 1rem !important;
+    height: 1rem !important;
+}
+
+.showErrorMessagePopupCls .x-header .x-tool .x-tool-close:before {
+    font-size: 1.125rem;
+}
+
+.showErrorMessagePopupCls .x-header .x-window-header-title {
+    top: 0.125rem !important;
+    width: 15.313rem !important;
+}
+
+.showErrorMessagePopupCls .x-window-body-default,
+.showErrorMessagePopupCls .x-window-body-default .x-box-inner,
+.showErrorMessagePopupCls .x-window-body-default .x-box-inner .x-box-target {
+    width: 18.438rem !important;
+    height: 2.313rem !important;
+}
+
+.showErrorMessagePopupCls .x-window-body-default {
+    top: 2.6rem !important;
+    line-height: 1.063rem !important;
+}
+
+.showErrorMessagePopupCls .x-window-body-default .x-box-inner .x-box-target .x-box-item {
+    padding-left: 0.2rem !important;
+}
+
+.showErrorMessagePopupCls .x-window-body-default .x-box-inner .x-box-target .x-box-item .x-box-inner {
+    width: 18rem !important;
+    height: 1.063rem !important;
+}
+
+.showErrorMessagePopupCls .x-window-body-default .x-box-inner .x-box-target .x-box-item .x-box-inner .x-box-target {
+    width: 17.5rem !important;
+}
+
+.showErrorMessagePopupCls .x-toolbar-footer {
+    top: 5rem !important;
+    width: 18.438rem !important;
+    padding: 0.375rem 0 0.375rem 0.375rem !important;
+}
+
+.showErrorMessagePopupCls .x-toolbar-footer .x-box-inner,
+.showErrorMessagePopupCls .x-toolbar-footer .x-box-inner .x-box-target {
+    width: 18.063rem !important;
+}
+
+.showErrorMessagePopupCls .x-toolbar-footer .x-box-inner {
+    height: 3.125rem !important;
+}
+
+.showErrorMessagePopupCls .x-toolbar-footer .x-box-inner .x-box-target .x-box-item {
+    min-width: 4.688rem !important;
+    left: 6.5rem !important;
+}
+
+.showErrorMessagePopupCls .x-window-header-default-top {
+    padding: 0.525rem 0.875rem 0.9rem !important;
+}
+
+.showErrorMessagePopupCls .x-toolbar-footer .x-btn-button-default-small {
+    min-height: 1rem !important;
+}
+
+/* Suppress focus ring on error message popup OK button for mouse clicks */
+.showErrorMessagePopupCls .x-toolbar-footer .x-btn:focus,
+.showErrorMessagePopupCls .x-toolbar-footer .x-btn.x-btn-focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Focus ring for error message popup OK button — keyboard only (inset to avoid clipping) */
+.x-keyboard-mode .showErrorMessagePopupCls .x-toolbar-footer .x-btn.x-btn-focus,
+.showErrorMessagePopupCls .x-toolbar-footer .x-btn:focus-visible {
+    outline: none !important;
+    box-shadow: inset 0 0 0 $focus-outline-width $focus-outline-color !important;
+    border-radius: 2px;
+}
+.showErrorMessagePopupShadowCls{
+    width: 18.688rem !important;
+    height: 7.813rem !important;
+}
+.combo-nowrap-list{
+    white-space: nowrap;
+}
+.export-header-custom{
+    background:$lightest-gray;
+}
+    
+/* ══════════════════════════════════════════════════════════════
+   FOCUS MANAGEMENT: Show outlines on keyboard only, not mouse.
+   All interactive element rules use :focus-visible so outlines
+   only appear on keyboard navigation, never on mouse click.
+   Grid cells/views/panels are fully suppressed — keyboard nav
+   uses the .cell-keyboard-focus JS class instead.
+   ══════════════════════════════════════════════════════════════ */
+
+/* Suppress focus on grid cells, rows, views, scrollers, editors — inside the
+   locked Gantt grid view ONLY. Scoped to .gantt-locked-view (added by JS on the
+   lockedView element) so popup grids (Owner, Subscriber, etc.) keep default focus.
+   High specificity with [tabindex] to override LeankorApp-all_2.css rules. */
+.gantt-locked-view td.x-grid-cell[tabindex]:focus,
+.gantt-locked-view td.x-grid-cell[tabindex]:focus-visible,
+.gantt-locked-view td.x-grid-cell:focus,
+.gantt-locked-view td.x-grid-cell:focus-visible,
+.gantt-locked-view td.x-grid-cell.x-grid-cell-focused,
+.gantt-locked-view td.x-grid-cell.x-grid-cell-focused .x-grid-cell-inner,
+.gantt-locked-view td.x-grid-cell:focus-within .x-grid-cell-inner,
+.gantt-locked-view td.x-grid-cell .x-editor:focus,
+.gantt-locked-view td.x-grid-cell .x-editor .x-form-field:focus,
+.gantt-locked-view td.x-grid-cell .x-editor .x-form-text:focus,
+.gantt-locked-view .x-grid-item:focus,
+.gantt-locked-view .x-grid-item:focus-visible,
+.gantt-locked-view .x-grid-item-focused,
+.gantt-locked-view .x-grid-row:focus,
+.gantt-locked-view .x-grid-row:focus-visible,
+.gantt-locked-view[tabindex]:focus,
+.gantt-locked-view[tabindex]:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+
+/* Keyboard-only focus for the locked grid view container.
+   Uses .x-keyboard-mode (added on keydown, removed on mousedown by ExtJS)
+   so borders only appear during keyboard navigation, never on mouse click. */
+.x-keyboard-mode .gantt-locked-view[tabindex]:focus {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+    box-shadow: none !important;
+}
+
+/* Keyboard cell navigation — JS class overrides suppression above.
+   High specificity to beat LeankorApp-all_2.css [tabindex]:focus rule. */
+td.x-grid-cell.cell-keyboard-focus,
+td.x-grid-cell.cell-keyboard-focus[tabindex]:focus {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+    background-color: rgba(0, 102, 204, 0.08) !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+
+
+
+/* Show focus ring on keyboard only */
+.x-keyboard-mode .popupGridStyleCls .x-grid-item:focus,
+.x-keyboard-mode .popupGridStyleCls .x-grid-item-focused,
+.x-keyboard-mode .popupGridStyleCls .x-grid-row:focus,
+.x-keyboard-mode .stickerGridStyleCls .x-grid-item:focus,
+.x-keyboard-mode .stickerGridStyleCls .x-grid-item-focused,
+.x-keyboard-mode .stickerGridStyleCls .x-grid-row:focus,
+.x-keyboard-mode .combo-custom-cls-baselinepanel .x-grid-item:focus,
+.x-keyboard-mode .combo-custom-cls-baselinepanel .x-grid-item-focused,
+.x-keyboard-mode .combo-custom-cls-baselinepanel .x-grid-row:focus {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   KEYBOARD FOCUS STYLES — :focus-visible = keyboard only
+   ══════════════════════════════════════════════════════════════ */
+
+/* Suppress LeankorApp-all_2.css :focus and .x-btn-focus on header buttons for mouse clicks.
+   ExtJS adds x-btn-focus CLASS on any focus (mouse or keyboard), so suppress that too.
+   Uses .controlheader.x-panel-header (0-4-0+) to beat LeankorApp-all_2.css
+   .x-panel-header .x-btn:focus (0-3-0) which loads later via source order. */
+.controlheader.x-panel-header .x-btn:focus,
+.controlheader.x-panel-header .x-btn.x-btn-focus,
+.controlheader.x-panel-header [role="button"]:focus,
+.controlheader.x-panel-header [tabindex]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+
+/* Keyboard-only focus for header buttons (0-4-0 beats _2.css 0-3-0) */
+.controlheader.x-panel-header .x-btn:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+}
+
+/* Suppress :focus-visible on form fields inside combo trigger wraps — text inputs
+   always match :focus-visible even on mouse click (browser spec). Combo focus is
+   handled via .x-keyboard-mode on the wrapper instead. */
+.controlheader.x-panel-header .x-form-trigger-wrap .x-form-field:focus-visible,
+.controlheader.x-panel-header .x-form-trigger-wrap .x-form-field:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Suppress LeankorApp-all_2.css :focus-within on combos/triggers for mouse clicks.
+   Uses .controlheader.x-panel-header parent (0-4-0) to beat _2.css
+   .combo-custom-cls-*:focus-within (0-2-0) and .x-form-trigger-wrap:focus-within (0-2-0). */
+.controlheader.x-panel-header .x-form-trigger-wrap:focus-within,
+.controlheader.x-panel-header .combo-custom-cls-baseline:focus-within,
+.controlheader.x-panel-header .combo-custom-cls-showview:focus-within,
+.controlheader.x-panel-header .combo-custom-cls-setting:focus-within,
+.controlheader.x-panel-header .combo-custom-cls-period:focus-within {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Re-enable combo focus for keyboard mode only (0-5-0 beats suppression above).
+   Use outline-offset: 1px (outside) instead of -2px (inset) because combos
+   have no internal padding — an inset outline overlaps the arrow and text. */
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-baseline:focus-within,
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-showview:focus-within,
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-setting:focus-within,
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-period:focus-within {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: 1px !important;
+}
+
+/* Fix combo focus outline vertical alignment — remove min-height from hidden
+   text-input so combo wrapper isn't taller than needed. Keep height:auto so
+   the element still participates in horizontal layout (preserves trigger spacing). */
+.controlheader.x-panel-header .combo-custom-cls-baseline .x-form-text-default,
+.controlheader.x-panel-header .combo-custom-cls-showview .x-form-text-default,
+.controlheader.x-panel-header .combo-custom-cls-setting .x-form-text-default,
+.controlheader.x-panel-header .combo-custom-cls-period .x-form-text-default {
+    min-height: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+/* Hide combo header outline when its dropdown is open — focus outline should
+   only show on the picker list items, not the header combo icon.
+   combo-expanded class is toggled via expand/collapse listeners in ControlHeader.js.
+   (0-6-0 beats the re-enable rule above at 0-5-0) */
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-baseline.combo-expanded:focus-within,
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-showview.combo-expanded:focus-within,
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-setting.combo-expanded:focus-within,
+.x-keyboard-mode .controlheader.x-panel-header .combo-custom-cls-period.combo-expanded:focus-within {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Consistent min-height for all date field inputs inside popups.
+   Targets any text input inside a trigger-wrap that contains a date trigger. */
+.x-window .x-form-trigger-wrap:has(.x-form-date-trigger) .x-form-text-default {
+    min-height: 33px !important;
+}
+.addBtnTop:focus,
+.addBtnTop.x-btn-focus {
+    outline: none !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+
+.addBtnTop:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+}
+
+.view-list-custom-cls .x-btn:focus,
+.view-list-custom-cls .x-btn.x-btn-focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.view-list-custom-cls .x-btn:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset;
+}
+
+/* Suppress column header focus on mouse click */
+.x-column-header:focus,
+.x-column-header:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Column header focus ring — keyboard only (WCAG 2.4.7) */
+.x-keyboard-mode .x-column-header.x-column-header-focus .x-column-header-inner:after {
+    border: 2px solid $focus-outline-color !important;
+}
+
+/* Generic focus highlight for gantt panel elements (WCAG 2.4.7).
+   Uses outline — NOT position:relative + ::after, because adding
+   position:relative changes the offset parent for ExtJS CellEditor
+   (floating:true / position:absolute) and breaks editor alignment. */
+.gantt-focus-visible {
+    outline: 2px solid $focus-outline-color !important;
+    outline-offset: -2px !important;
+}
+
+/* Elements that already have position:relative (e.g. splitters, panels)
+   can safely use the ::after pseudo-element so the border renders above
+   absolutely positioned children that would paint over a plain outline. */
+.gantt-focus-visible.x-splitter {
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+         border: 2px solid $focus-outline-color;
+        pointer-events: none;
+        z-index: 10000;
+    }
+}
+
+/* Horizontal scrollbar on browser zoom overflow (WCAG 1.4.10 Reflow)
+ * JS in MainViewport.js toggles the x-zoom-overflow class when the
+ * viewport is narrower than the initial layout width (zoom or resize).
+ * --min-viewport-width is set by JS to the actual full-size width.
+ */
+html.x-viewport.x-zoom-overflow {
+    overflow-x: auto !important;
+    position: relative;
+    /* makes html the containing block for the absolute body */
+}
+
+html.x-viewport.x-zoom-overflow>.x-body {
+    position: absolute !important;
+    /* switch from fixed so html can scroll it */
+    min-width: var(--min-viewport-width, 1024px);
+}
+
+@media print {
+    html.x-viewport>.x-body {
+        position: static !important;
+        min-width: unset;
+    }
+
+    html.x-viewport {
+        overflow-x: hidden !important;
+    }
+}
+/* ─────────────────────────────────────────────────────────────────────────────
+   WCAG 1.4.10 Reflow – Vertical overflow at zoom > 100%
+   Ensures menus, popups, windows and their internal content remain reachable
+   when the browser is zoomed and the viewport height shrinks.
+   !important is required because ExtJS sets inline styles on these elements.
+   ───────────────────────────────────────────────────────────────────────────── */
+html.x-viewport.x-zoom-overflow {
+
+    /* Layer 1: Windows / Modals / Dialogs (Edit Information, etc.) */
+    .x-window {
+        max-height: 100vh !important;
+
+        > .x-window-body {
+            overflow-y: auto !important;
+        }
+    }
+
+    /* Layer 2: Menus (Settings, context menus, header menus) */
+.x-menu:not(.submenu2):not(.addBtnMenuClass) {
+    max-height: 90vh !important;
+    overflow-y: auto !important;
+}
+ 
+.x-menu:not(.submenu2) > .x-menu-body {
+    overflow-y: auto !important;
+}
+
+    /* Layer 3: Combo / Select dropdowns (Select Period, etc.) */
+    .x-boundlist {
+        max-height: 80vh !important;
+
+        .x-boundlist-list-ct {
+            max-height: 80vh !important;
+            overflow-y: auto !important;
+        }
+    }
+
+    /* Layer 4: Tab panel content inside modals – direct child only to avoid nested scrollbars */
+    .x-window .x-tabpanel > .x-panel-body {
+        overflow-y: auto !important;
+    }
+
+    /* Layer 5: Card Editor (Gnt.plugin.TaskEditor window) */
+    .taskEditorPluginCls {
+        max-height: 100vh !important;
+
+        > .x-window-body {
+            overflow-y: auto !important;
+        }
+
+        .x-tab-panel-body-default {
+            overflow-y: auto !important;
+        }
+    }
+
+ .searchFilterPanelCls {
+       max-height: 75vh !important;
+    }
+
+    .searchFilterPanelCls .filterPanelCls {
+        max-height: 60vh !important;
+        height: auto !important;
+        overflow-y: auto !important;
+    }
+
+    .popupToolbarBorderCls {
+        max-height: 100vh !important;
+    }
+    .popupToolbarBorderCls .x-window-body-default{
+        max-height: 75vh !important;
+        overflow-y: auto !important;
+    }
+
+    .sch-exportdialog {
+        max-height: 95vh !important;
+         overflow-y: auto !important;
+    
+    }
+}
+
+.x-boundlist-list-ct > ul > li {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (min-resolution: 1.6dppx) {
+    html.x-viewport.x-zoom-overflow .x-mask > .x-mask-msg {
+       left:5rem !important;
+    }
+
+    html.x-viewport.x-zoom-overflow .popupGridStyleCls{
+      top: auto !important;
+    } 
+
+   html.x-viewport.x-zoom-overflow .x-datepicker {
+        max-height: 90vh !important;
+        overflow-y: auto !important;
+        top: auto !important;
+        scrollbar-width: thin !important;
+    }
+}
+
+
+/* Category list keyboard focus */
+.selectedClsDataview>div {
+    color: #f07f18;
+}
+
+/* Focus ring for category row action icons (Edit/Delete/Global) — all same size now */
+.editCategory:focus-visible,
+.deleteCategory:focus-visible,
+.globalCategory:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: 1px;
+    border-radius: 2px;
+    box-shadow: none !important;
+}
+
+/* Suppress focus ring on category popup Create button for mouse clicks */
+.editPopUpSaveBtn.x-btn:focus,
+.editPopUpSaveBtn.x-btn.x-btn-focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Focus ring for category popup Create button — keyboard only */
+.x-keyboard-mode .editPopUpSaveBtn.x-btn.x-btn-focus,
+.editPopUpSaveBtn.x-btn:focus-visible {
+    outline: none !important;
+    box-shadow: inset 0 0 0 2px $focus-outline-color !important;
+}
+
+/* Focus ring for dialog close tool */
+/* Focus ring for dialog close tool (focus is on outer .x-tool) */
+.x-tool.x-tool-close:focus-visible,
+.x-tool.x-tool-default:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset;
+}
+
+/* File actions focus outline */
+.fileAction {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    width: 22px;
+    padding: 0;
+}
+
+.fileView:focus-visible,
+.deleteLog:focus-visible,
+.editLog_SubscriberPage:focus-visible,
+a.workOrderLink:focus-visible,
+a.serviceApptLink:focus-visible {
+    outline: 2px solid $focus-outline-color !important;
+    outline-offset: -2px;
+    border-color: $focus-outline-color !important;
+    box-shadow: none !important;
+}
+
+/* Focus ring for Edit Information popup fields — inset to avoid overflow clipping */
+.x-keyboard-mode .taskEditorPluginCls .x-form-field:focus,
+.x-keyboard-mode .taskEditorPluginCls .x-form-text:focus,
+.x-keyboard-mode .taskEditorPluginCls .x-form-textarea:focus,
+.x-keyboard-mode .taskEditorPluginCls .x-form-trigger-wrap:focus-within,
+.x-keyboard-mode .taskEditorPluginCls .x-form-item-body:focus-within {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+
+/* Focus ring for Edit Information popup tool/close buttons */
+.x-keyboard-mode .taskEditorPluginCls .x-tool:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset !important;
+    box-shadow: none !important;
+}
+
+/* Focus ring for Edit Information popup tabs — inset to avoid tab bar clipping */
+.x-keyboard-mode .taskEditorPluginCls .x-tab:focus-visible,
+.x-keyboard-mode .taskEditorPluginCls .x-tab.x-tab-focus,
+.x-keyboard-mode .taskEditorPluginCls .x-tab-button:focus-visible,
+.x-keyboard-mode .taskEditorPluginCls .x-tab-inner:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+
+
+
+/* Percent complete spinner field — inset focus */
+.x-keyboard-mode .taskEditorPluginCls .x-form-spinner:focus,
+.x-keyboard-mode .taskEditorPluginCls .x-numberfield .x-form-text:focus,
+.x-keyboard-mode .taskEditorPluginCls .x-numberfield .x-form-trigger-wrap:focus-within {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+
+
+
+/* Focus ring for Edit Information popup buttons — inset box-shadow to avoid toolbar overflow clipping */
+.x-keyboard-mode .taskEditorPluginCls .x-btn.x-btn-focus,
+.x-keyboard-mode .taskEditorPluginCls .x-btn:focus-visible {
+    outline: none !important;
+    box-shadow: inset 0 0 0 2px $focus-outline-color !important;
+}
+
+/* Focus ring for Multi-Select Edit popup fields — inset to avoid overflow clipping */
+.x-keyboard-mode .taskEditorCls .x-form-field:focus,
+.x-keyboard-mode .taskEditorCls .x-form-text:focus,
+.x-keyboard-mode .taskEditorCls .x-form-textarea:focus,
+.x-keyboard-mode .taskEditorCls .x-form-trigger-wrap:focus-within,
+.x-keyboard-mode .taskEditorCls .x-form-item-body:focus-within {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+
+/* Focus ring for Multi-Select Edit popup tool/close buttons */
+.x-keyboard-mode .taskEditorCls .x-tool:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset !important;
+    box-shadow: none !important;
+}
+
+/* Focus ring for Multi-Select Edit popup tabs — inset to avoid tab bar clipping */
+.x-keyboard-mode .taskEditorCls .x-tab:focus-visible,
+.x-keyboard-mode .taskEditorCls .x-tab.x-tab-focus,
+.x-keyboard-mode .taskEditorCls .x-tab-button:focus-visible,
+.x-keyboard-mode .taskEditorCls .x-tab-inner:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+
+
+
+/* Focus ring for Multi-Select Edit popup buttons — inset box-shadow to avoid toolbar overflow clipping */
+.x-keyboard-mode .taskEditorCls .x-btn.x-btn-focus,
+.x-keyboard-mode .taskEditorCls .x-btn:focus-visible {
+    outline: none !important;
+    box-shadow: inset 0 0 0 2px $focus-outline-color !important;
+}
+
+/* Card editor checkboxes: suppress outer wrapper outline to avoid double border.
+   Targets both individual checkboxes (.x-form-type-checkbox) and
+   checkbox groups (.checkbox-label / checkboxgroup) */
+.x-keyboard-mode .taskEditorPluginCls .x-form-type-checkbox .x-form-item-body:focus-within,
+.x-keyboard-mode .taskEditorPluginCls .x-form-type-checkbox .x-form-field:focus,
+.x-keyboard-mode .taskEditorPluginCls .checkbox-label.x-form-checkboxgroup .x-form-item-body:focus-within,
+.x-keyboard-mode .taskEditorCls .x-form-type-checkbox .x-form-item-body:focus-within,
+.x-keyboard-mode .taskEditorCls .x-form-type-checkbox .x-form-field:focus,
+.x-keyboard-mode .taskEditorCls .checkbox-label.x-form-checkboxgroup .x-form-item-body:focus-within {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Card editor checkboxes: single focus ring on the checkbox element */
+.x-keyboard-mode .taskEditorPluginCls .x-form-cb-wrap:focus-within .x-form-checkbox-default,
+.x-keyboard-mode .taskEditorCls .x-form-cb-wrap:focus-within .x-form-checkbox-default {
+    outline: none;
+    box-shadow: 0 0 0 2px $focus-outline-color !important;
+    border-radius: 2px;
+}
+
+/* Preferences toggle: avoid double focus ring from taskEditor focus styles */
+.x-keyboard-mode .preferencesWindowCls .togglebuttonCls .x-form-field:focus-visible,
+.x-keyboard-mode .preferencesWindowCls .togglebuttonCls .x-form-item-body:focus-within {
+    outline: none !important;
+}
+
+/* Preferences toggle: show single focus ring on the slider control */
+.x-keyboard-mode .preferencesWindowCls .togglebuttonCls .x-slider-focus,
+.x-keyboard-mode .preferencesWindowCls .togglebuttonCls .x-slider:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset;
+}
+
+/* Export PDF dialog toggle: avoid double focus ring */
+.x-keyboard-mode .x-print-field-cls .togglebuttonCls .x-form-field:focus-visible,
+.x-keyboard-mode .x-print-field-cls .togglebuttonCls .x-form-item-body:focus-within {
+    outline: none !important;
+}
+
+/* Export PDF dialog toggle: show single focus ring on the slider control */
+.x-keyboard-mode .x-print-field-cls .togglebuttonCls .x-slider-focus,
+.x-keyboard-mode .x-print-field-cls .togglebuttonCls .x-slider:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset;
+}
+
+/* Focus ring for Export PDF dialog fields */
+.x-keyboard-mode .sch-exportdialog .x-form-field:focus,
+.x-keyboard-mode .sch-exportdialog .x-form-text:focus,
+.x-keyboard-mode .sch-exportdialog .x-form-trigger-wrap:focus-within {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+    box-shadow: none !important;
+}
+
+/* Focus ring for Export PDF dialog buttons */
+.x-keyboard-mode .sch-exportdialog .x-btn.x-btn-focus,
+.x-keyboard-mode .sch-exportdialog .x-btn:focus-visible {
+    outline: none !important;
+    box-shadow: inset 0 0 0 2px $focus-outline-color !important;
+}
+
+/* Focus ring for Harvey ball items (Percent Complete) */
+.x-keyboard-mode .x-view-item-focused.itemSelectorCls,
+.x-keyboard-mode .x-view-item-focused .itemSelectorCls,
+.x-keyboard-mode .itemSelectorCls:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset
+}
+
+
+
+/* Focus ring for filter toolbar buttons — inset box-shadow to avoid overflow clipping */
+.x-keyboard-mode .saveFilterBtnCls.x-btn-focus,
+.x-keyboard-mode .saveFilterBtnCls.x-btn:focus-visible,
+.x-keyboard-mode .clearFilterBtnCls.x-btn-focus,
+.x-keyboard-mode .clearFilterBtnCls.x-btn:focus-visible,
+.x-keyboard-mode .filterPanelCloseBtnCls.x-btn-focus,
+.x-keyboard-mode .filterPanelCloseBtnCls.x-btn:focus-visible{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Focus ring for filter toolbar buttons — keyboard only (box-shadow to avoid clipping) */
+.x-keyboard-mode .saveFilterBtnCls.x-btn.x-btn-focus,
+.x-keyboard-mode .saveFilterBtnCls.x-btn:focus-visible,
+.x-keyboard-mode .clearFilterBtnCls.x-btn.x-btn-focus,
+.x-keyboard-mode .clearFilterBtnCls.x-btn:focus-visible,
+.x-keyboard-mode .filterPanelCloseBtnCls.x-btn.x-btn-focus,
+.x-keyboard-mode .filterPanelCloseBtnCls.x-btn:focus-visible {
+    outline: none !important;
+    box-shadow: inset 0 0 0 2px $focus-outline-color !important;
+}
+
+.x-keyboard-mode .checkBoxFilter input[type="checkbox"]:focus-visible,
+.x-keyboard-mode .filterPanelCls .filterCheckBoxCls:focus-visible,
+.x-keyboard-mode .filterPanelAccordionPanelChildCls .x-dataview-item input[type="checkbox"]:focus-visible,
+.x-keyboard-mode .filterPanelAccordionPanelChildCls .x-accordion-hd:focus-visible,
+.x-keyboard-mode .filterPanelAccordionPanelChildCls .x-accordion-hd:focus-within {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset;
+}
+
+/* CheckAll checkbox focus ring (square only) inside filter panel */
+.x-keyboard-mode .filterPanelAccordionPanelChildCls .x-form-cb-wrap:focus-within .x-form-checkbox-default,
+.x-keyboard-mode .filterPanelCls .x-form-cb-wrap:focus-within .x-form-checkbox-default {
+    outline: none;
+    box-shadow: 0 0 0 2px $focus-outline-color !important;
+    border-radius: 2px;
+}
+
+.x-keyboard-mode .filterPanelCls .x-form-cb-wrap:focus-within,
+.x-keyboard-mode .filterPanelAccordionPanelChildCls .x-form-cb-wrap:focus-within,
+.x-keyboard-mode .filterPanelAccordionPanelChildCls .x-dataview-item:focus-visible,
+.x-keyboard-mode .filterPanelAccordionPanelChildCls .x-dataview-item:focus-within {
+    outline: none !important;
+}
+
+.x-keyboard-mode .chatterButtonCls:focus-visible,
+.x-keyboard-mode .x-btn:has(.chatterButtonCls):focus,
+.x-keyboard-mode .x-btn:has(.chatterButtonCls):focus-visible,
+.x-keyboard-mode .x-tool-close:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset;
+}
+
+/* Focus ring for Category dialog (catDialog) popup items — keyboard only */
+.x-keyboard-mode .catDialogCls .x-form-text-default:focus-visible {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+}
+
+.x-keyboard-mode .catDialogCls .x-form-trigger-wrap-default:focus-within {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+    box-shadow: none !important;
+}
+
+.x-keyboard-mode .catDialogCls [role="button"]:focus-visible,
+.x-keyboard-mode .catDialogCls [tabindex]:focus-visible {
+    outline: none !important;
+    box-shadow: inset 0 0 0 2px $focus-outline-color !important;
+}
+
+.x-keyboard-mode .catDialogCls .x-form-cb-wrap:focus-within .x-form-radio-default {
+    outline: none;
+    box-shadow: 0 0 0 2px $focus-outline-color !important;
+    border-radius: 50%;
+}
+
+.x-keyboard-mode .cancelBtnClss:has(:focus-visible),
+.x-keyboard-mode .cancelBtnClss:focus-visible,
+.x-keyboard-mode .saveBtnClss:has(:focus-visible),
+.x-keyboard-mode .saveBtnClss:focus-visible,
+.x-keyboard-mode .alertRedBtn:has(:focus-visible),
+.x-keyboard-mode .alertRedBtn:focus-visible,
+.x-keyboard-mode .cancelBtn:has(:focus-visible),
+.x-keyboard-mode .cancelBtn:focus-visible,
+.x-keyboard-mode .editPopUpSaveBtn:has(:focus-visible),
+.x-keyboard-mode .editPopUpSaveBtn:focus-visible,
+.x-keyboard-mode .deleteCardBtn:has(:focus-visible),
+.x-keyboard-mode .deleteCardBtn:focus-visible,
+.x-keyboard-mode .btn_down:has(:focus-visible),
+.x-keyboard-mode .btn_down:focus-visible,
+.x-keyboard-mode .addBtnCls:has(:focus-visible),
+.x-keyboard-mode .addBtnCls:focus-visible,
+.x-keyboard-mode .addStatusLogBtn:has(:focus-visible),
+.x-keyboard-mode .addStatusLogBtn:focus-visible,
+.x-keyboard-mode .incrementDecrementBtn:has(:focus-visible),
+.x-keyboard-mode .incrementDecrementBtn:focus-visible,
+.x-keyboard-mode .addWorkOrderBtn:has(:focus-visible),
+.x-keyboard-mode .addWorkOrderBtn:focus-visible,
+.x-keyboard-mode .toolbar-custom-btn:has(:focus-visible),
+.x-keyboard-mode .toolbar-custom-btn:focus-visible,
+.x-keyboard-mode .toolbar-settings-custom-btn:has(:focus-visible),
+.x-keyboard-mode .toolbar-settings-custom-btn:focus-visible,
+.x-keyboard-mode .fileuploadbtncls:has(:focus-visible),
+.x-keyboard-mode .fileuploadbtncls:focus-visible,
+.x-keyboard-mode .saveFilterBtnCls:has(:focus-visible),
+.x-keyboard-mode .saveFilterBtnCls:focus-visible,
+.x-keyboard-mode .clearFilterBtnCls:has(:focus-visible),
+.x-keyboard-mode .clearFilterBtnCls:focus-visible,
+.x-keyboard-mode .filterPanelCloseBtnCls:has(:focus-visible),
+.x-keyboard-mode .filterPanelCloseBtnCls:focus-visible,
+.x-keyboard-mode .filterBtnCls:has(:focus-visible),
+.x-keyboard-mode .filterBtnCls:focus-visible,
+.x-keyboard-mode .applyFilterCls:has(:focus-visible),
+.x-keyboard-mode .applyFilterCls:focus-visible,
+.x-keyboard-mode .applyFilterOnCls:has(:focus-visible),
+.x-keyboard-mode .applyFilterOnCls:focus-visible,
+.x-keyboard-mode .toastbtn:has(:focus-visible),
+.x-keyboard-mode .toastbtn:focus-visible,
+.x-keyboard-mode .menuBtnCls:has(:focus-visible),
+.x-keyboard-mode .menuBtnCls:focus-visible,
+.x-keyboard-mode .setBaselineButtonCls:has(:focus-visible),
+.x-keyboard-mode .setBaselineButtonCls:focus-visible{
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+}
+
+// Keyboard-only focus outline for menu items (uses box-shadow inset
+// because outline gets clipped by overflow-y:auto on .x-menu containers)
+.x-keyboard-mode .x-menu-item-active {
+    box-shadow: inset 0 0 0 $focus-outline-width $focus-outline-color !important;
+}
+
+.x-keyboard-mode .x-boundlist-item-over {
+    outline: $focus-outline-width solid $focus-outline-color !important;
+    outline-offset: $focus-outline-offset-inset !important;
+}
+
+/* ADA: Settings combo — allow items to grow for WCAG 1.4.12 text spacing */
+.settings-boundlist .x-boundlist-item {
+    height: auto !important;
+    max-height: none !important;
+    min-height: 36px !important;
+}
+
+/* ADA: Settings combo — ensure toggle switch items have focus outline covering full row.
+   The toggle <label class="switch"> is now inside the <li>, floated right. */
+.x-boundlist-item .switch {
+    float: right;
+    pointer-events: auto;
+}
+
+// Overflow fix — fix-width-button + cancelBtnClss + saveBtnClss
+.x-keyboard-mode .fix-width-button:has(:focus-visible),
+.x-keyboard-mode .fix-width-button:focus-visible,
+.x-keyboard-mode .cancelBtnClss:has(:focus-visible),
+.x-keyboard-mode .cancelBtnClss:focus-visible,
+.x-keyboard-mode .saveBtnClss:has(:focus-visible),
+.x-keyboard-mode .saveBtnClss:focus-visible {
+    overflow: visible !important;
+}

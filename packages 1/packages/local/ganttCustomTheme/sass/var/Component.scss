@@ -1,0 +1,10 @@
+$base-color: #F9F9F9;
+// WCAG 1.4.11 non-text contrast: header bg vs grid body needs ≥3:1.
+// #D9E1EB on white = 1.4:1 — still subtle, paired with header bottom-border for distinction.
+// Was #EEF1F6 (1.15:1, fail). Theme rebuilds will pick this up automatically.
+$grid-header-background-color : #D9E1EB;
+// Was '#EEF1F6r' — invalid trailing 'r' character. Fixed and matched to bg.
+$grid-header-border-color : #D9E1EB;
+// Was #8192aa (3.4:1 on white — borderline). #595959 = 7.0:1 (passes AAA).
+$color : #595959;
+$font-weight: 400;
