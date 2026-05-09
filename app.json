@@ -17,7 +17,10 @@
      */
     "requires": [
         "font-awesome",
-		"bryntum-gantt-pro"
+		"bryntum-gantt-pro",
+		
+		"ext-ux",
+		"sencha-charts"
     ],
 
     /**
@@ -410,7 +413,7 @@
 
     "cache": {
         "enable": false,
-        "deltas": true
+        "deltas": false
     },
 
     /**

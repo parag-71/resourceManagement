@@ -1,3 +1,7 @@
+# leankor-app-resource-management
+Leankor App's Javascript Code and Components for Resource Utilization and Resource Scheduler
+
+
 # LeankorApp
 
 This folder is primarily a container for the top-level pieces of the application.
