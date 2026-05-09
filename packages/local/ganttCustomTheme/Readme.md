@@ -1,2 +1,0 @@
-# ganttCustomTheme - Read Me
-
